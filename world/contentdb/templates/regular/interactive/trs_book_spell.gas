@@ -19,6 +19,7 @@
 	[common]
 	{
 		allow_modifiers = false;
+	  b is_pcontent_allowed = false;
 	}
 	[magic]
 	{
@@ -35,6 +36,10 @@
 		{
 			0 = b_i_glb_book-magic-04;
 		}
+	}
+	[common]
+	{
+	  b is_pcontent_allowed = false;
 	}
 	[gui]
 	{
@@ -63,6 +68,10 @@
 		{
 			0 = b_i_glb_book-magic-05;
 		}
+	}
+	[common]
+	{
+	  b is_pcontent_allowed = false;
 	}
 	[gui]
 	{
@@ -93,6 +102,10 @@
 			0 = b_i_glb_book-magic-06;
 		}
 	}
+	[common]
+	{
+	  b is_pcontent_allowed = false;
+	}
 	[gui]
 	{
 		equip_requirements = intelligence:13;
@@ -121,6 +134,10 @@
 		{
 			0 = b_i_glb_book-magic-07;
 		}
+	}
+	[common]
+	{
+	  b is_pcontent_allowed = false;
 	}
 	[gui]
 	{
@@ -151,6 +168,10 @@
 			0 = b_i_glb_book-magic-08;
 		}
 	}
+	[common]
+	{
+	  b is_pcontent_allowed = false;
+	}
 	[gui]
 	{
 		equip_requirements = intelligence:18;
@@ -179,6 +200,10 @@
 		{
 			0 = b_i_glb_book-magic-10;
 		}
+	}
+	[common]
+	{
+	  b is_pcontent_allowed = false;
 	}
 	[gui]
 	{
@@ -209,6 +234,10 @@
 			0 = b_i_glb_book-magic-11;
 		}
 	}
+	[common]
+	{
+	  b is_pcontent_allowed = false;
+	}
 	[gui]
 	{
 		equip_requirements = intelligence:26;
@@ -238,6 +267,10 @@
 			0 = b_i_glb_book-magic-12;
 		}
 	}
+	[common]
+	{
+	  b is_pcontent_allowed = false;
+	}
 	[gui]
 	{
 		equip_requirements = intelligence:30;
@@ -266,6 +299,10 @@
 		{
 			0 = b_i_glb_book-magic-13;
 		}
+	}
+	[common]
+	{
+	  b is_pcontent_allowed = false;
 	}
 	[gui]
 	{
@@ -332,6 +369,10 @@
 			0 = b_i_glb_book-magic-14;
 		}
 	}
+	[common]
+	{
+	  b is_pcontent_allowed = false;
+	}
 	[gui]
 	{
 		equip_requirements = intelligence:35;
@@ -360,6 +401,10 @@
 		{
 			0 = b_i_glb_book-magic-15;
 		}
+	}
+	[common]
+	{
+	  b is_pcontent_allowed = false;
 	}
 	[gui]
 	{
@@ -390,6 +435,10 @@
 			0 = b_i_glb_book-magic-16;
 		}
 	}
+	[common]
+	{
+	  b is_pcontent_allowed = false;
+	}
 	[gui]
 	{
 		equip_requirements = intelligence:40;
@@ -418,6 +467,10 @@
 		{
 			0 = b_i_glb_book-magic-17;
 		}
+	}
+	[common]
+	{
+	  b is_pcontent_allowed = false;
 	}
 	[gui]
 	{
@@ -448,6 +501,10 @@
 			0 = b_i_glb_book-magic-18;
 		}
 	}
+	[common]
+	{
+	  b is_pcontent_allowed = false;
+	}
 	[gui]
 	{
 		equip_requirements = intelligence:49;
@@ -476,6 +533,10 @@
 		{
 			0 = b_i_glb_book-magic-19;
 		}
+	}
+	[common]
+	{
+	  b is_pcontent_allowed = false;
 	}
 	[gui]
 	{
@@ -506,6 +567,10 @@
 			0 = b_i_glb_book-magic-20;
 		}
 	}
+	[common]
+	{
+	  b is_pcontent_allowed = false;
+	}
 	[gui]
 	{
 		equip_requirements = intelligence:54;
@@ -534,6 +599,10 @@
 		{
 			0 = b_i_glb_book-magic-21;
 		}
+	}
+	[common]
+	{
+	  b is_pcontent_allowed = false;
 	}
 	[gui]
 	{
@@ -564,6 +633,10 @@
 			0 = b_i_glb_book-magic-22;
 		}
 	}
+	[common]
+	{
+	  b is_pcontent_allowed = false;
+	}
 	[gui]
 	{
 		equip_requirements = intelligence:59;
@@ -592,6 +665,10 @@
 		{
 			0 = b_i_glb_book-magic-23;
 		}
+	}
+	[common]
+	{
+	  b is_pcontent_allowed = false;
 	}
 	[gui]
 	{
@@ -622,6 +699,10 @@
 			0 = b_i_glb_book-magic-24;
 		}
 	}
+	[common]
+	{
+	  b is_pcontent_allowed = false;
+	}
 	[gui]
 	{
 		equip_requirements = intelligence:62;
@@ -650,6 +731,10 @@
 		{
 			0 = b_i_glb_book-magic-25;
 		}
+	}
+	[common]
+	{
+	  b is_pcontent_allowed = false;
 	}
 	[gui]
 	{
@@ -680,6 +765,10 @@
 			0 = b_i_glb_book-magic-26;
 		}
 	}
+	[common]
+	{
+	  b is_pcontent_allowed = false;
+	}
 	[gui]
 	{
 		equip_requirements = intelligence:67;
@@ -708,6 +797,10 @@
 		{
 			0 = b_i_glb_book-magic-27;
 		}
+	}
+	[common]
+	{
+	  b is_pcontent_allowed = false;
 	}
 	[gui]
 	{
