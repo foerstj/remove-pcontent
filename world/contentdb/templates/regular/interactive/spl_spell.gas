@@ -549,6 +549,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		screen_name = "Ambivalence";
 	}
 	[common]
@@ -722,6 +723,7 @@
 	[common]
 	{
 		description = "Ignites a magical bomb and hurls it at the Target.";
+	  b is_pcontent_allowed = false;
 		screen_name = "Bomb";
 	}
 	[common]
@@ -1432,6 +1434,7 @@
 	[common]
 	{
 		description = "Ignites a handful of magical bombs and hurls them at the Enemy.";
+	  b is_pcontent_allowed = false;
 		screen_name = "Cluster Bomb";
 	}
 	[common]
@@ -1864,6 +1867,7 @@
 	[common]
 	{
 		description = "Delivering killing blows will explode the Enemy in a powerful burst of flame. Click on the Caster to enable this spell.";
+	  b is_pcontent_allowed = false;
 		screen_name = "Death Blast";
 	}
 	[common]
@@ -2486,6 +2490,7 @@
 	[common]
 	{
 		description = "Lures Enemies to attack the Target Party Member. Stronger monsters may be immune to the Target's pull.";
+	  b is_pcontent_allowed = false;
 		screen_name = "Draw Near";
 	}
 	[common]
@@ -2645,6 +2650,7 @@
 	[common]
 	{
 		description = "Blasts apart the flesh of the dead, causing concussion damage to surrounding Enemies.";
+	  b is_pcontent_allowed = false;
 		screen_name = "Explode Body";
 	}
 	[common]
@@ -2821,6 +2827,7 @@
 	[common]
 	{
 		description = "Calls forth explosive rain from the sky that incinerates Enemies with each strike.";
+	  b is_pcontent_allowed = false;
 		screen_name = "Fireball Rain";
 	}
 	[common]
@@ -3008,6 +3015,7 @@
 	[common]
 	{
 		description = "Calls forth a hail of fire from the sky, burning Enemies with each strike.";
+	  b is_pcontent_allowed = false;
 		screen_name = "Firerain";
 	}
 	[common]
@@ -3562,6 +3570,7 @@
 	[common]
 	{
 		description = "Causes the air around the Enemy to explode in a flash of light, damaging the Target.";
+	  b is_pcontent_allowed = false;
 		screen_name = "Flash";
 	}
 	[common]
@@ -3747,6 +3756,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		screen_name = "Freak";
 	}
 	[common]
@@ -6347,6 +6357,7 @@
 	[common]
 	{
 		description = "Arcs a tight spray of ice shards toward the Target.";
+	  b is_pcontent_allowed = false;
 		screen_name = "Iceblast";
 	}
 	[common]
@@ -6428,6 +6439,7 @@
 	[common]
 	{
 		description = "Shreds the Target with a swift spray of ice shards.";
+	  b is_pcontent_allowed = false;
 		screen_name = "Icefury";
 	}
 	[common]
@@ -6597,6 +6609,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		screen_name = "Iceshard";
 	}
 	[common]
@@ -6675,6 +6688,7 @@
 	[common]
 	{
 		description = "Dispatches a storm of jagged ice shards from the sky above the Target.";
+	  b is_pcontent_allowed = false;
 		screen_name = "Ice Storm";
 	}
 	[common]
@@ -7653,6 +7667,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		screen_name = "Leech Life";
 	}
 	[common]
@@ -8034,6 +8049,7 @@
 	[common]
 	{
 		description = "Calls forth a severe lightning storm that damages Enemies in the area.";
+	  b is_pcontent_allowed = false;
 		screen_name = "Lightning Storm";
 	}
 	[attack]
@@ -8611,6 +8627,7 @@
 	[common]
 	{
 		description = "Slowly transfers Mana from the Caster to the Target.";
+	  b is_pcontent_allowed = false;
 		screen_name = "Mana Channel";
 	}
 	[common]
@@ -8686,6 +8703,7 @@
 	[common]
 	{
 		description = "Slowly transfers Mana from the Caster to the Target.";
+	  b is_pcontent_allowed = false;
 		screen_name = "Mana Channel Scroll";
 	}
 	[common]
@@ -8906,6 +8924,7 @@
 	[common]
 	{
 		description = "Arcs a tight spray of jagged metal shards toward the Target.";
+	  b is_pcontent_allowed = false;
 		screen_name = "Metal Shards";
 	}
 	[common]
@@ -8983,6 +9002,7 @@
 	[common]
 	{
 		description = "Calls a meteor from the sky to smite the Target.";
+	  b is_pcontent_allowed = false;
 		screen_name = "Meteor";
 	}
 	[common]
@@ -9051,6 +9071,7 @@
 	[common]
 	{
 		description = "Calls forth Meteors from the sky and smashes them into the target area.";
+	  b is_pcontent_allowed = false;
 		screen_name = "Meteor Storm";
 	}
 	[common]
@@ -9494,6 +9515,7 @@
 	[common]
 	{
 		description = "Calls forth a cloud of plague over the targeted area, damaging Enemies caught within.";
+	  b is_pcontent_allowed = false;
 		screen_name = "Pestilence";
 	}
 	[common]
@@ -9554,6 +9576,7 @@
 	[common]
 	{
 		description = "Calls forth a massive cloud of plague over the targeted area, damaging Enemies caught within.";
+	  b is_pcontent_allowed = false;
 		screen_name = "Pestilence cloud";
 	}
 	[common]
@@ -10263,6 +10286,7 @@
 	[common]
 	{
 		description = "Allows Caster to draw Mana from the bodies of the dead.";
+	  b is_pcontent_allowed = false;
 		screen_name = "Corpse Transmutation";
 	}
 	[common]
@@ -10314,6 +10338,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		screen_name = "Resurrect";
 	}
 	[common]
@@ -10434,6 +10459,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		screen_name = "Full Resurrect";
 	}
 	[common]
@@ -10487,6 +10513,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		screen_name = "Return Summoned";
 	}
 	[common]
@@ -10545,6 +10572,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		screen_name = "Revive";
 	}
 	[common]
@@ -10597,6 +10625,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		screen_name = "Sharg's Revive";
 	}
 	[common]
@@ -10650,6 +10679,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		screen_name = "Rip Mana";
 	}
 	[common]
@@ -12144,6 +12174,7 @@
 	[common]
 	{
 		description = "Calls forth lightning from the sky to strike nearby Enemies every few seconds.";
+	  b is_pcontent_allowed = false;
 		screen_name = "Storm";
 	}
 	[common]
@@ -12269,6 +12300,7 @@
 	[common]
 	{
 		description = "Summons a Desert Braak to guard the Caster.";
+	  b is_pcontent_allowed = false;
 		screen_name = "Summon Desert Braak";
 	}
 	[common]
@@ -12519,6 +12551,7 @@
 	[common]
 	{
 		description = "Summons a Darkling to guard the Caster.";
+	  b is_pcontent_allowed = false;
 		screen_name = "Summon Darkling";
 	}
 	[common]
@@ -12645,6 +12678,7 @@
 	[common]
 	{
 		description = "Summons a Black Drake to guard the Caster.";
+	  b is_pcontent_allowed = false;
 		screen_name = "Summon Black Drake";
 	}
 	[common]
@@ -13301,6 +13335,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		screen_name = "Summon Jade Gargoyle";
 	}
 	[common]
@@ -13733,6 +13768,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		screen_name = "Summon Helper Scroll";
 	}
 	[common]
@@ -14039,6 +14075,7 @@
 	[common]
 	{
 		description = "Summons a Skeleton Krug Dog to guard the Caster.";
+	  b is_pcontent_allowed = false;
 		screen_name = "Summon Skeleton Krug Dog";
 	}
 	[common]
@@ -14289,6 +14326,7 @@
 	[common]
 	{
 		description = "Summons a Lava Spirit to guard the Caster.";
+	  b is_pcontent_allowed = false;
 		screen_name = "Summon Lava Spirit";
 	}
 	[common]
@@ -14539,6 +14577,7 @@
 	[common]
 	{
 		description = "Summons a Mucosa to guard the Caster.";
+	  b is_pcontent_allowed = false;
 		screen_name = "Summon Mucosa";
 	}
 	[common]
@@ -14665,6 +14704,7 @@
 	[common]
 	{
 		description = "Summons a Mucosa Predator to guard the Caster.";
+	  b is_pcontent_allowed = false;
 		screen_name = "Summon Mucosa Predator";
 	}
 	[common]
@@ -14791,6 +14831,7 @@
 	[common]
 	{
 		description = "Summons a Picker to guard the Caster.";
+	  b is_pcontent_allowed = false;
 		screen_name = "Summon Picker";
 	}
 	[common]
@@ -14917,6 +14958,7 @@
 	[common]
 	{
 		description = "Summons a Rock Golem to guard the Caster.";
+	  b is_pcontent_allowed = false;
 		screen_name = "Summon Rock Golem";
 	}
 	[common]
@@ -15292,6 +15334,7 @@
 	[common]
 	{
 		description = "Summons a Skeleton to guard the Caster.";
+	  b is_pcontent_allowed = false;
 		screen_name = "Summon Skeleton";
 	}
 	[common]
@@ -15418,6 +15461,7 @@
 	[common]
 	{
 		description = "Summons a Skick to guard the Caster.";
+	  b is_pcontent_allowed = false;
 		screen_name = "Summon Skick";
 	}
 	[common]
@@ -15668,6 +15712,7 @@
 	[common]
 	{
 		description = "Summons a Forest Troll to guard the Caster.";
+	  b is_pcontent_allowed = false;
 		screen_name = "Summon Forest Troll";
 	}
 	[common]
@@ -15918,6 +15963,7 @@
 	[common]
 	{
 		description = "Summons a Wraith to guard the Caster.";
+	  b is_pcontent_allowed = false;
 		screen_name = "Summon Wraith";
 	}
 	[common]
@@ -16044,6 +16090,7 @@
 	[common]
 	{
 		description = "Summons a Wraith Archer to guard the Caster.";
+	  b is_pcontent_allowed = false;
 		screen_name = "Summon Wraith Archer";
 	}
 	[common]
@@ -16170,6 +16217,7 @@
 	[common]
 	{
 		description = "Summons a Zombie to guard the Caster.";
+	  b is_pcontent_allowed = false;
 		screen_name = "Summon Zombie";
 	}
 	[common]
@@ -17146,6 +17194,7 @@
 	[common]
 	{
 		description = "Transforms objects on the ground into gold with some loss in value. Move the pointer over an item and press the cast button ('c' by default). Potions and Spells cannot be transmuted.";
+	  b is_pcontent_allowed = false;
 		screen_name = "Transmute";
 	}
 	[common]
@@ -17198,6 +17247,7 @@
 	[common]
 	{
 		description = "Transforms objects on the ground into gold with some loss in value. Move the pointer over an item and press the cast button ('c' by default). Potions and Spells cannot be transmuted.";
+	  b is_pcontent_allowed = false;
 		screen_name = "Transmute Scroll";
 	}
 	[common]
@@ -17256,6 +17306,7 @@
 	[common]
 	{
 		description = "Calls forth a violent earthquake, shaking apart Enemies caught within.";
+	  b is_pcontent_allowed = false;
 		screen_name = "Tremor";
 	}
 	[common]
@@ -17317,6 +17368,7 @@
 	[common]
 	{
 		description = "Grants the Target the ability to attack three adjacent Enemies with each swing.";
+	  b is_pcontent_allowed = false;
 		screen_name = "Triple Strike";
 	}
 	[common]

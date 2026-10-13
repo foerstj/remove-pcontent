@@ -178,11 +178,12 @@
 	doc = "Lloyd's Ring";
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		screen_name = "Lloyd's Ring";
 	}
 	[common]
 	{
-		is_pcontent_allowed = false;
+	  b is_pcontent_allowed = false;
 	}
 	[gui]
 	{
@@ -221,7 +222,7 @@
 	}
 	[common]
 	{
-		is_pcontent_allowed = false;
+	  b is_pcontent_allowed = false;
 	}
 	[generator_multiple_mp]
 	{
@@ -234,20 +235,23 @@
 	doc = "utraean_signet_ring";
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		screen_name = "Signet Ring of the Utraean Protectors";
 	}
 	category_name = "quest";
 	[common]
 	{
-		is_pcontent_allowed = false;
+	  b is_pcontent_allowed = false;
 	}
 	[common]
 	{
 		forced_expiration_class = never;
+	  b is_pcontent_allowed = false;
 	}
 	[common]
 	{
 		auto_expiration_class = never;
+	  b is_pcontent_allowed = false;
 	}
 	[aspect]
 	{

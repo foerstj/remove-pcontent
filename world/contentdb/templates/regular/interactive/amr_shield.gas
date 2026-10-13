@@ -2097,7 +2097,7 @@
 	}
 	[common]
 	{
-		is_pcontent_allowed = false;
+	  b is_pcontent_allowed = false;
 		screen_name = "Mystic Kite Shield";
 	}
 	[defend]
@@ -2656,7 +2656,7 @@
 	}
 	[common]
 	{
-		is_pcontent_allowed = false;
+	  b is_pcontent_allowed = false;
 		screen_name = "Dermal Shield";
 	}
 	[defend]
@@ -4114,7 +4114,7 @@
 	[common]
 	{
 	  b allow_modifiers = false;
-		is_pcontent_allowed = false;
+	  b is_pcontent_allowed = false;
 		screen_name = "Krohar's Buckler";
 	}
 	[defend]
@@ -4242,7 +4242,7 @@
 	}
 	[common]
 	{
-		is_pcontent_allowed = false;
+	  b is_pcontent_allowed = false;
 		screen_name = "Tongs";
 	}
 	[gui]

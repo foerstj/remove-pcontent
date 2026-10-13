@@ -238,7 +238,7 @@
 	}
 	[common]
 	{
-		is_pcontent_allowed = false;
+	  b is_pcontent_allowed = false;
 		screen_name = "Swanny's Club";
 	}
 	[gui]
@@ -264,7 +264,7 @@
 	}
 	[common]
 	{
-		is_pcontent_allowed = false;
+	  b is_pcontent_allowed = false;
 		screen_name = "Massive Club";
 	}
 	[gui]
@@ -290,7 +290,7 @@
 	}
 	[common]
 	{
-		is_pcontent_allowed = false;
+	  b is_pcontent_allowed = false;
 		screen_name = "Horrid Club";
 	}
 	[gui]
@@ -316,7 +316,7 @@
 	}
 	[common]
 	{
-		is_pcontent_allowed = false;
+	  b is_pcontent_allowed = false;
 		screen_name = "Troll Club";
 	}
 	[gui]
@@ -342,7 +342,7 @@
 	}
 	[common]
 	{
-		is_pcontent_allowed = false;
+	  b is_pcontent_allowed = false;
 		screen_name = "Tree Club";
 	}
 	[gui]
@@ -368,7 +368,7 @@
 	}
 	[common]
 	{
-		is_pcontent_allowed = false;
+	  b is_pcontent_allowed = false;
 		screen_name = "Rocky Club";
 	}
 	[gui]
@@ -394,7 +394,7 @@
 	}
 	[common]
 	{
-		is_pcontent_allowed = false;
+	  b is_pcontent_allowed = false;
 		screen_name = "Swamp Club";
 	}
 	[gui]

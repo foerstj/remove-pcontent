@@ -25,7 +25,7 @@
 	specializes = dsx_base_helm;
 	[common]
 	{
-		is_pcontent_allowed = false;
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = rare, unique;
 		screen_name = "Helm of Khar";
 	}
@@ -46,7 +46,7 @@
 	specializes = dsx_base_helm;
 	[common]
 	{
-		is_pcontent_allowed = false;
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = rare, unique;
 		screen_name = "Super Helm of Khar";
 	}
@@ -67,7 +67,7 @@
 	specializes = dsx_base_helm;
 	[common]
 	{
-		is_pcontent_allowed = false;
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = rare, unique;
 		screen_name = "Supreme Helm of Khar";
 	}
@@ -88,7 +88,7 @@
 	specializes = dsx_base_helm;
 	[common]
 	{
-		is_pcontent_allowed = false;
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = unique;
 		screen_name = "Mac Daddy Cap of Procurement";
 	}

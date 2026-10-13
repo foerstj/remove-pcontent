@@ -336,7 +336,7 @@
 	[common]
 	{
 		screen_name = "Spell Book";
-		is_pcontent_allowed = false;
+	  b is_pcontent_allowed = false;
 	}
 	[gui]
 	{

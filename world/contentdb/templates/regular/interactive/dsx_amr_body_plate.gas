@@ -53,7 +53,7 @@
 	[common]
 	{
 		screen_name = "Death Knight Armour";
-		is_pcontent_allowed = false;
+	  b is_pcontent_allowed = false;
 	}
 	[defend]
 	{

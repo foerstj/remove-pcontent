@@ -10,6 +10,7 @@
 	[common]
 	{
 		description = "Transforms objects on the ground into health potions. Move the pointer over an item and press the Cast button ('c' by default). Only weapons and armor can be transmuted.";
+	  b is_pcontent_allowed = false;
 		screen_name = "Transmute to Health Potion";
 	}
 	[common]
@@ -64,6 +65,7 @@
 	[common]
 	{
 		description = "Transforms objects on the ground into mana potions. Move the pointer over an item and press the Cast button ('c' by default). Only weapons and armor can be transmuted.";
+	  b is_pcontent_allowed = false;
 		screen_name = "Transmute to Mana Potion";
 	}
 	[common]
@@ -118,6 +120,7 @@
 	[common]
 	{
 		description = "Generates a health potion from mana";
+	  b is_pcontent_allowed = false;
 		screen_name = "Create Health Potion";
 	}
 	[common]
@@ -344,6 +347,7 @@
 	[common]
 	{
 		description = "Transforms health potions on the ground in a radius around the caster into mana potions, and mana potions into health potions.";
+	  b is_pcontent_allowed = false;
 		screen_name = "Transmogrification";
 	}
 	[common]
@@ -399,6 +403,7 @@
 	[common]
 	{
 		description = "Transforms all items on the ground near the caster into gold.";
+	  b is_pcontent_allowed = false;
 		screen_name = "Transmute All";
 	}
 	[common]
@@ -1341,7 +1346,7 @@
 	}
 	[common]
 	{
-		is_pcontent_allowed = false;
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = unique;
 		description = "A mystical chicken orbits the caster, shooting deadly eggs at nearby enemies.";
 		screen_name = "Bubberjack's Orb of Poultry";
@@ -1641,6 +1646,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		screen_name = "Summon Clone";
 	}
 	[common]
@@ -1951,6 +1957,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		screen_name = "Turncoat";
 	}
 	[common]
@@ -2012,6 +2019,7 @@
 	[common]
 	{
 		description = "Summons a Twisted Mucosa to guard the Caster.";
+	  b is_pcontent_allowed = false;
 		screen_name = "Summon Twisted Mucosa";
 	}
 	[common]
@@ -2157,6 +2165,7 @@
 	[common]
 	{
 		description = "Summons a Vile Twisted Mucosa to guard the Caster.";
+	  b is_pcontent_allowed = false;
 		screen_name = "Summon Vile Twisted Mucosa";
 	}
 	[common]
@@ -2426,6 +2435,7 @@
 	[common]
 	{
 		description = "Summons Deadly Armor to guard the Caster.";
+	  b is_pcontent_allowed = false;
 		screen_name = "Summon Deadly Armor";
 	}
 	[common]
@@ -2553,6 +2563,7 @@
 	[common]
 	{
 		description = "Summons an Ursae to guard the Caster.";
+	  b is_pcontent_allowed = false;
 		screen_name = "Summon Ursae";
 	}
 	[common]
@@ -2680,6 +2691,7 @@
 	[common]
 	{
 		description = "Summons a Rune Guardian to guard the Caster.";
+	  b is_pcontent_allowed = false;
 		screen_name = "Summon Rune Guardian";
 	}
 	[common]
@@ -3303,6 +3315,7 @@
 	[common]
 	{
 		description = "Summons a Fleshrender to guard the Caster.";
+	  b is_pcontent_allowed = false;
 		screen_name = "Summon Fleshrender";
 	}
 	[common]
@@ -3430,6 +3443,7 @@
 	[common]
 	{
 		description = "Summons a Death Knight to guard the Caster.";
+	  b is_pcontent_allowed = false;
 		screen_name = "Summon Death Knight";
 	}
 	[common]
@@ -3557,6 +3571,7 @@
 	[common]
 	{
 		description = "Summons a Slithermage to guard the Caster.";
+	  b is_pcontent_allowed = false;
 		screen_name = "Summon Slithermage";
 	}
 	[common]
@@ -4171,6 +4186,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		screen_name = "Respite";
 	}
 	[common]
@@ -4694,6 +4710,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		screen_name = "Acid Glyph";
 	}
 	[common]

@@ -14,7 +14,7 @@
 	}
 	[common]
 	{
-		is_pcontent_allowed = false;
+	  b is_pcontent_allowed = false;
 	  b allow_modifiers = false;
 		screen_name = "Nosirrom's Staff";
 	}
@@ -61,7 +61,7 @@
 	}
 	[common]
 	{
-		is_pcontent_allowed = false;
+	  b is_pcontent_allowed = false;
 		screen_name = "Sickle Staff";
 	}
 	[gui]
@@ -486,7 +486,7 @@
 	}
 	[common]
 	{
-		is_pcontent_allowed = false;
+	  b is_pcontent_allowed = false;
 		screen_name = "Staff of Stars";
 		forced_expiration_class = never;
 		auto_expiration_class = never;
@@ -565,7 +565,7 @@
 	}
 	[common]
 	{
-		is_pcontent_allowed = false;
+	  b is_pcontent_allowed = false;
 		screen_name = "Super Staff of Stars";
 		forced_expiration_class = never;
 		auto_expiration_class = never;
@@ -644,7 +644,7 @@
 	}
 	[common]
 	{
-		is_pcontent_allowed = false;
+	  b is_pcontent_allowed = false;
 		screen_name = "Supreme Staff of Stars";
 		forced_expiration_class = never;
 		auto_expiration_class = never;
@@ -720,7 +720,7 @@
 	}
 	[common]
 	{
-		is_pcontent_allowed = false;
+	  b is_pcontent_allowed = false;
 		screen_name = "Necron Death Staff";
 	}
 	[gui]
@@ -942,7 +942,7 @@
 	}
 	[common]
 	{
-		is_pcontent_allowed = false;
+	  b is_pcontent_allowed = false;
 		screen_name = "Cane";
 	}
 	[gui]

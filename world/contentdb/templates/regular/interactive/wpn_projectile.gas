@@ -148,7 +148,7 @@
 	}
 	[common]
 	{
-		is_pcontent_allowed = false;
+	  b is_pcontent_allowed = false;
 		screen_name = "Chicken Gun";
 	}
 	[gui]
@@ -637,7 +637,7 @@
 	}
 	[common]
 	{
-		is_pcontent_allowed = false;
+	  b is_pcontent_allowed = false;
 		screen_name = "Dragon Minigun";
 	}
 	[gui]
@@ -680,7 +680,7 @@
 	}
 	[common]
 	{
-		is_pcontent_allowed = false;
+	  b is_pcontent_allowed = false;
 		screen_name = "Flamethrower";
 	}
 	[gui]
@@ -731,7 +731,7 @@
 	}
 	[common]
 	{
-		is_pcontent_allowed = false;
+	  b is_pcontent_allowed = false;
 		screen_name = "Grenade Launcher";
 	}
 	[gui]
@@ -773,7 +773,7 @@
 	}
 	[common]
 	{
-		is_pcontent_allowed = false;
+	  b is_pcontent_allowed = false;
 		screen_name = "Lightning Gun";
 	}
 	[gui]

@@ -44,7 +44,7 @@
 	[common]
 	{
 		screen_name = "Claws of Kajj";
-		is_pcontent_allowed = false;
+	  b is_pcontent_allowed = false;
 	}
 	[gui]
 	{
@@ -76,7 +76,7 @@
 	{
 		pcontent_special_type = rare, unique;
 		screen_name = "Claws of Kajj";
-		is_pcontent_allowed = false;
+	  b is_pcontent_allowed = false;
 	}
 	[gui]
 	{
@@ -107,7 +107,7 @@
 	[common]
 	{
 		screen_name = "SJ Minion 5 Weapon";
-		is_pcontent_allowed = false;
+	  b is_pcontent_allowed = false;
 	}
 	[gui]
 	{

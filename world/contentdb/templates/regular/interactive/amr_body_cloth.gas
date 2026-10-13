@@ -2549,7 +2549,7 @@
 	}
 	[common]
 	{
-		is_pcontent_allowed = false;
+	  b is_pcontent_allowed = false;
 		screen_name = "Starlight Vesture";
 	}
 	[defend]

@@ -15,7 +15,7 @@
 	}
 	[common]
 	{
-		is_pcontent_allowed = false;
+	  b is_pcontent_allowed = false;
 	  b allow_modifiers = false;
 		screen_name = "Najj's Clamshell Axe";
 	}
@@ -53,7 +53,7 @@
 	}
 	[common]
 	{
-		is_pcontent_allowed = false;
+	  b is_pcontent_allowed = false;
 		screen_name = "Death Knight Hack";
 	}
 	[gui]
@@ -82,7 +82,7 @@
 	}
 	[common]
 	{
-		is_pcontent_allowed = false;
+	  b is_pcontent_allowed = false;
 	  b allow_modifiers = false;
 		screen_name = "Worn Full Axe";
 	}

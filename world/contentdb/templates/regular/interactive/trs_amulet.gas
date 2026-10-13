@@ -166,11 +166,12 @@
 	doc = "Horseshoe Amulet";
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		screen_name = "Goldsniffer's Amulet";
 	}
 	[common]
 	{
-		is_pcontent_allowed = false;
+	  b is_pcontent_allowed = false;
 	}
 	[gui]
 	{
@@ -202,11 +203,12 @@
 	doc = "Keeper Amulet";
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		screen_name = "Elder Wood Amulet";
 	}
 	[common]
 	{
-		is_pcontent_allowed = false;
+	  b is_pcontent_allowed = false;
 	}
 	[gui]
 	{

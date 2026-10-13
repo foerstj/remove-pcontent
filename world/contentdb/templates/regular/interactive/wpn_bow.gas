@@ -2020,7 +2020,7 @@
 	}
 	[common]
 	{
-		is_pcontent_allowed = false;
+	  b is_pcontent_allowed = false;
 		screen_name = "Heart Stopper";
 	}
 	[gui]
@@ -2140,7 +2140,7 @@
 	}
 	[common]
 	{
-		is_pcontent_allowed = false;
+	  b is_pcontent_allowed = false;
 		screen_name = "Droog Archer Bow";
 	}
 	[gui]
@@ -2171,7 +2171,7 @@
 	}
 	[common]
 	{
-		is_pcontent_allowed = false;
+	  b is_pcontent_allowed = false;
 		screen_name = "Ice Bow";
 	}
 	[gui]
@@ -2201,7 +2201,7 @@
 	}
 	[common]
 	{
-		is_pcontent_allowed = false;
+	  b is_pcontent_allowed = false;
 		screen_name = "Seck Bow";
 	}
 	[gui]
@@ -2231,7 +2231,7 @@
 	}
 	[common]
 	{
-		is_pcontent_allowed = false;
+	  b is_pcontent_allowed = false;
 		screen_name = "Seck Elite Bow";
 	}
 	[gui]
@@ -2261,7 +2261,7 @@
 	}
 	[common]
 	{
-		is_pcontent_allowed = false;
+	  b is_pcontent_allowed = false;
 		screen_name = "Seck Battle Bow";
 	}
 	[gui]
@@ -2299,7 +2299,7 @@
 	}
 	[common]
 	{
-		is_pcontent_allowed = false;
+	  b is_pcontent_allowed = false;
 		screen_name = "Rock";
 	}
 	[gui]

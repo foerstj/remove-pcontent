@@ -12,7 +12,7 @@
 	}
 	[common]
 	{
-		is_pcontent_allowed = false;
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = unique;
 		screen_name = "Turtle Shield";
 	}
@@ -68,7 +68,7 @@
 	}
 	[common]
 	{
-		is_pcontent_allowed = false;
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = unique;
 		screen_name = "Turtle Shield";
 	}
@@ -124,7 +124,7 @@
 	}
 	[common]
 	{
-		is_pcontent_allowed = false;
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = unique;
 		screen_name = "Turtle Shield";
 	}
@@ -180,7 +180,7 @@
 	}
 	[common]
 	{
-		is_pcontent_allowed = false;
+	  b is_pcontent_allowed = false;
 		screen_name = "Dermal Shield";
 	}
 	[defend]
@@ -348,7 +348,7 @@
 	}
 	[common]
 	{
-		is_pcontent_allowed = false;
+	  b is_pcontent_allowed = false;
 	  b allow_modifiers = false;
 	}
 	[defend]

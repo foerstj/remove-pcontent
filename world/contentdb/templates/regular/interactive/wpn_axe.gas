@@ -1226,7 +1226,7 @@
 	[common]
 	{
 	  b allow_modifiers = false;
-		is_pcontent_allowed = false;
+	  b is_pcontent_allowed = false;
 		screen_name = "Ordus' Axe";
 	}
 	[gui]
@@ -1775,7 +1775,7 @@
 	}
 	[common]
 	{
-		is_pcontent_allowed = false;
+	  b is_pcontent_allowed = false;
 		screen_name = "Bone Axe";
 	}
 	[gui]
@@ -1920,7 +1920,7 @@
 	}
 	[common]
 	{
-		is_pcontent_allowed = false;
+	  b is_pcontent_allowed = false;
 		screen_name = "Pickaxe";
 	}
 	[gui]
@@ -1981,7 +1981,7 @@
 	}
 	[common]
 	{
-		is_pcontent_allowed = false;
+	  b is_pcontent_allowed = false;
 		screen_name = "Short Scythe";
 	}
 	[gui]

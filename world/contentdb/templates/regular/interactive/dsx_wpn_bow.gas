@@ -16,7 +16,7 @@
 	}
 	[common]
 	{
-		is_pcontent_allowed = false;
+	  b is_pcontent_allowed = false;
 	  b allow_modifiers = false;
 		screen_name = "Reynard's Gift";
 	}
@@ -48,7 +48,7 @@
 	}
 	[common]
 	{
-		is_pcontent_allowed = false;
+	  b is_pcontent_allowed = false;
 	  b allow_modifiers = false;
 		screen_name = "cicatrix skeleton bow";
 	}
@@ -86,7 +86,7 @@
 	}
 	[common]
 	{
-		is_pcontent_allowed = false;
+	  b is_pcontent_allowed = false;
 		screen_name = "Rock";
 	}
 	[gui]
@@ -116,7 +116,7 @@
 	}
 	[common]
 	{
-		is_pcontent_allowed = false;
+	  b is_pcontent_allowed = false;
 		screen_name = "Fire Bow";
 	}
 	[gui]
@@ -146,7 +146,7 @@
 	}
 	[common]
 	{
-		is_pcontent_allowed = false;
+	  b is_pcontent_allowed = false;
 		screen_name = "SJ 4 Fire Bow";
 	}
 	[gui]
@@ -176,7 +176,7 @@
 	}
 	[common]
 	{
-		is_pcontent_allowed = false;
+	  b is_pcontent_allowed = false;
 	  b allow_modifiers = false;
 		screen_name = "Zaurask Long Bow";
 	}
@@ -207,7 +207,7 @@
 	}
 	[common]
 	{
-		is_pcontent_allowed = false;
+	  b is_pcontent_allowed = false;
 	  b allow_modifiers = false;
 		screen_name = "Zaurask Long Bow";
 	}
@@ -238,7 +238,7 @@
 	}
 	[common]
 	{
-		is_pcontent_allowed = false;
+	  b is_pcontent_allowed = false;
 		screen_name = "Droog Archer Bow";
 	}
 	[gui]
@@ -268,7 +268,7 @@
 	}
 	[common]
 	{
-		is_pcontent_allowed = false;
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = rare, unique;
 		screen_name = "Hassat Bow";
 	}
@@ -298,7 +298,7 @@
 	}
 	[common]
 	{
-		is_pcontent_allowed = false;
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = rare, unique;
 		screen_name = "Hassat Bow";
 	}
@@ -328,7 +328,7 @@
 	}
 	[common]
 	{
-		is_pcontent_allowed = false;
+	  b is_pcontent_allowed = false;
 	  b allow_modifiers = false;
 		screen_name = "Hassat Bow";
 	}
@@ -358,7 +358,7 @@
 	}
 	[common]
 	{
-		is_pcontent_allowed = false;
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = rare, unique;
 	  b allow_modifiers = false;
 		screen_name = "Zaurask Long Bow";
@@ -391,7 +391,7 @@
 	}
 	[common]
 	{
-		is_pcontent_allowed = false;
+	  b is_pcontent_allowed = false;
 	  b allow_modifiers = false;
 		screen_name = "Zaurask Long Bow";
 	}
@@ -422,7 +422,7 @@
 	}
 	[common]
 	{
-		is_pcontent_allowed = false;
+	  b is_pcontent_allowed = false;
 	  b allow_modifiers = false;
 		screen_name = "Skeleton's Short Recurve";
 	}
@@ -490,7 +490,7 @@
 	}
 	[common]
 	{
-		is_pcontent_allowed = false;
+	  b is_pcontent_allowed = false;
 	  b allow_modifiers = false;
 		screen_name = "Zaurask Long Bow";
 	}
@@ -521,7 +521,7 @@
 	}
 	[common]
 	{
-		is_pcontent_allowed = false;
+	  b is_pcontent_allowed = false;
 	  b allow_modifiers = false;
 		screen_name = "Zaurask Long Bow";
 	}
@@ -552,7 +552,7 @@
 	}
 	[common]
 	{
-		is_pcontent_allowed = false;
+	  b is_pcontent_allowed = false;
 		screen_name = "Rune Caster Bow";
 	}
 	[gui]
@@ -582,7 +582,7 @@
 	}
 	[common]
 	{
-		is_pcontent_allowed = false;
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = rare, unique;
 		screen_name = "Hassat Bow";
 	}

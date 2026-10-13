@@ -1866,7 +1866,7 @@
 	}
 	[common]
 	{
-		is_pcontent_allowed = false;
+	  b is_pcontent_allowed = false;
 		screen_name = "Droog Sword";
 	}
 	[gui]
@@ -2188,7 +2188,7 @@
 	}
 	[common]
 	{
-		is_pcontent_allowed = false;
+	  b is_pcontent_allowed = false;
 		screen_name = "Ice Sword";
 	}
 	[gui]
@@ -2215,7 +2215,7 @@
 	}
 	[common]
 	{
-		is_pcontent_allowed = false;
+	  b is_pcontent_allowed = false;
 		screen_name = "Seck Sword";
 	}
 	[gui]
@@ -2242,7 +2242,7 @@
 	}
 	[common]
 	{
-		is_pcontent_allowed = false;
+	  b is_pcontent_allowed = false;
 		screen_name = "Seck Elite Sword";
 	}
 	[gui]
@@ -2809,7 +2809,7 @@
 	}
 	[common]
 	{
-		is_pcontent_allowed = false;
+	  b is_pcontent_allowed = false;
 		screen_name = "Crude Gladius";
 	}
 	[gui]

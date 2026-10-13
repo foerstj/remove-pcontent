@@ -1818,7 +1818,7 @@
 	specializes = base_helm;
 	[common]
 	{
-		is_pcontent_allowed = false;
+	  b is_pcontent_allowed = false;
 		screen_name = "Sightless Helm";
 	}
 	[defend]
@@ -1964,7 +1964,7 @@
 	[common]
 	{
 	  b allow_modifiers = false;
-		is_pcontent_allowed = false;
+	  b is_pcontent_allowed = false;
 		screen_name = "Utraean Helm";
 	}
 	[defend]
@@ -3371,7 +3371,7 @@
 	specializes = base_helm;
 	[common]
 	{
-		is_pcontent_allowed = false;
+	  b is_pcontent_allowed = false;
 		screen_name = "Archer Helm";
 	}
 	[defend]
@@ -3638,7 +3638,7 @@
 	specializes = base_helm;
 	[common]
 	{
-		is_pcontent_allowed = false;
+	  b is_pcontent_allowed = false;
 		screen_name = "Captain Helm";
 	}
 	[defend]
@@ -3667,7 +3667,7 @@
 	specializes = base_helm;
 	[common]
 	{
-		is_pcontent_allowed = false;
+	  b is_pcontent_allowed = false;
 		screen_name = "Guard Helm";
 	}
 	[defend]

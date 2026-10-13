@@ -58,7 +58,7 @@
 	}
 	[common]
 	{
-		is_pcontent_allowed = false;
+	  b is_pcontent_allowed = false;
 		screen_name = "Dragon Minigun";
 	}
 	[gui]
@@ -176,7 +176,7 @@
 	}
 	[common]
 	{
-		is_pcontent_allowed = false;
+	  b is_pcontent_allowed = false;
 		screen_name = "Mini-Grenade Launcher";
 	}
 	[gui]
@@ -223,7 +223,7 @@
 	}
 	[common]
 	{
-		is_pcontent_allowed = false;
+	  b is_pcontent_allowed = false;
 		screen_name = "Grenade Launcher";
 	}
 	[gui]
@@ -265,7 +265,7 @@
 	}
 	[common]
 	{
-		is_pcontent_allowed = false;
+	  b is_pcontent_allowed = false;
 		screen_name = "Lightning Gun";
 	}
 	[gui]
@@ -300,7 +300,7 @@
 	}
 	[common]
 	{
-		is_pcontent_allowed = false;
+	  b is_pcontent_allowed = false;
 		[template_triggers]
 		{
 			[*]
@@ -347,7 +347,7 @@
 	}
 	[common]
 	{
-		is_pcontent_allowed = false;
+	  b is_pcontent_allowed = false;
 		screen_name = "Gob of Napalm";
 		[template_triggers]
 		{
@@ -407,7 +407,7 @@
 	}
 	[common]
 	{
-		is_pcontent_allowed = false;
+	  b is_pcontent_allowed = false;
 		screen_name = "Napalm Gun";
 	}
 	[gui]
@@ -536,7 +536,7 @@
 	}
 	[common]
 	{
-		is_pcontent_allowed = false;
+	  b is_pcontent_allowed = false;
 		screen_name = "Crossbow of many, many magic missiles";
 	}
 	[gui]

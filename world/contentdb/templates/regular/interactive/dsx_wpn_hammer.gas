@@ -42,7 +42,7 @@
 	}
 	[common]
 	{
-		is_pcontent_allowed = false;
+	  b is_pcontent_allowed = false;
 		screen_name = "Goblin Clockwork Hammer";
 	}
 	[gui]
@@ -70,7 +70,7 @@
 	[common]
 	{
 		screen_name = "Large War Mallet";
-		is_pcontent_allowed = false;
+	  b is_pcontent_allowed = false;
 	}
 	[gui]
 	{
@@ -106,7 +106,7 @@
 	}
 	[common]
 	{
-		is_pcontent_allowed = false;
+	  b is_pcontent_allowed = false;
 		screen_name = "Goblin Cutter";
 	}
 	[gui]

@@ -327,7 +327,7 @@
 	[common]
 	{
 	  b allow_modifiers = false;
-		is_pcontent_allowed = false;
+	  b is_pcontent_allowed = false;
 		screen_name = "Healthy Boots";
 	}
 	[defend]
@@ -369,7 +369,7 @@
 	[common]
 	{
 	  b allow_modifiers = false;
-		is_pcontent_allowed = false;
+	  b is_pcontent_allowed = false;
 		screen_name = "Satin Boots";
 	}
 	[defend]
@@ -426,7 +426,7 @@
 	specializes = base_boot;
 	[common]
 	{
-		is_pcontent_allowed = false;
+	  b is_pcontent_allowed = false;
 		screen_name = "Light Boots";
 	}
 	[defend]
