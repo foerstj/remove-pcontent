@@ -2,6 +2,10 @@
 {
 	doc = "Template common to all amulets";
 	specializes = amulet;
+	[common]
+	{
+	  b is_pcontent_allowed = false;
+	}
 	[pcontent]
 	{
 		[b_c_avg]
@@ -234,6 +238,7 @@
 	specializes = amulet;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = rare, unique;
 	}
 	[pcontent]

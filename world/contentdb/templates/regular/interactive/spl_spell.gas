@@ -368,6 +368,7 @@
 	[common]
 	{
 		description = "Raises the Dexterity of a Party Member by <alter_dexterity>.";
+	  b is_pcontent_allowed = false;
 		screen_name = "Accuracy";
 	}
 	[gui]
@@ -430,6 +431,7 @@
 	[common]
 	{
 		description = "Surrounds the Target with a cloud of acid, damaging nearby Enemies.";
+	  b is_pcontent_allowed = false;
 		screen_name = "Acid Cloud";
 		[template_triggers]
 		{
@@ -491,6 +493,7 @@
 	[common]
 	{
 		description = "Surrounds the Target with a small puff of acid, damaging Enemies caught within.";
+	  b is_pcontent_allowed = false;
 		screen_name = "Acid Gas";
 		[template_triggers]
 		{
@@ -551,6 +554,7 @@
 	[common]
 	{
 		description = "Holds the Enemy in place.";
+	  b is_pcontent_allowed = false;
 		[template_triggers]
 		{
 			[*]
@@ -609,6 +613,7 @@
 	[common]
 	{
 		description = "Conjures a flurry of intense flameballs to pelt the Enemy.";
+	  b is_pcontent_allowed = false;
 		screen_name = "Blaster";
 		[template_triggers]
 		{
@@ -670,6 +675,10 @@
 		damage_min = 108;
 		use_aiming_error = true;
 	}
+	[common]
+	{
+	  b is_pcontent_allowed = false;
+	}
 	[magic]
 	{
 		cast_range = 10;
@@ -717,6 +726,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		[template_triggers]
 		{
 			[*]
@@ -784,6 +794,7 @@
 	[common]
 	{
 		description = "Ignites a magical charge and hurls it at the Target.";
+	  b is_pcontent_allowed = false;
 		screen_name = "Explosive Powder";
 		[template_triggers]
 		{
@@ -847,6 +858,7 @@
 	[common]
 	{
 		description = "Summons a powerful magical lance that arcs toward the target.";
+	  b is_pcontent_allowed = false;
 		screen_name = "Soul Lance";
 		[template_triggers]
 		{
@@ -909,6 +921,7 @@
 	[common]
 	{
 		description = "Catapults several exploding balls of fire towards the Enemy.";
+	  b is_pcontent_allowed = false;
 		screen_name = "Bombard";
 		[template_triggers]
 		{
@@ -960,6 +973,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		[template_triggers]
 		{
 			[*]
@@ -998,6 +1012,10 @@
 		damage_min = 184;
 		use_aiming_error = true;
 	}
+	[common]
+	{
+	  b is_pcontent_allowed = false;
+	}
 	[magic]
 	{
 		cast_range = 12;
@@ -1029,6 +1047,7 @@
 	[common]
 	{
 		description = "Bursts an Enemy corpse with searing flame.";
+	  b is_pcontent_allowed = false;
 		screen_name = "Burn Body";
 		[template_triggers]
 		{
@@ -1081,6 +1100,7 @@
 	[common]
 	{
 		description = "Arcs a powerful bolt of lightning through up to four Enemies at once.";
+	  b is_pcontent_allowed = false;
 		screen_name = "Chain Lightning";
 		[template_triggers]
 		{
@@ -1138,6 +1158,7 @@
 	[common]
 	{
 		description = "Raises the Max Melee damage of the Caster by <alter_melee_damage_max>.";
+	  b is_pcontent_allowed = false;
 		screen_name = "Charged Fist";
 		[template_triggers]
 		{
@@ -1203,6 +1224,7 @@
 	[common]
 	{
 		description = "Forces the Enemy to guard the Caster. Mana cost dependent on power of the Target.";
+	  b is_pcontent_allowed = false;
 		screen_name = "Charm";
 		[template_triggers]
 		{
@@ -1263,6 +1285,7 @@
 	[common]
 	{
 		description = "Raises the Target's chance to hit in Melee combat by <alter_chance_to_hit_melee>%.";
+	  b is_pcontent_allowed = false;
 		screen_name = "Clean Strike";
 		[template_triggers]
 		{
@@ -1329,6 +1352,7 @@
 	[common]
 	{
 		description = "Raises the entire Party's chance to hit in Melee combat by <alter_chance_to_hit_melee>%.";
+	  b is_pcontent_allowed = false;
 		screen_name = "Battle Rally";
 		[template_triggers]
 		{
@@ -1412,6 +1436,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		[template_triggers]
 		{
 			[*]
@@ -1467,6 +1492,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		[template_triggers]
 		{
 			[*]
@@ -1502,6 +1528,7 @@
 	[common]
 	{
 		description = "Strikes the enemy with a curse, lowering its ability to fight and recover from damage. Mana cost dependent on the power of the Target.";
+	  b is_pcontent_allowed = false;
 		screen_name = "Curse";
 		[template_triggers]
 		{
@@ -1590,6 +1617,7 @@
 	[common]
 	{
 		description = "Releases small globes of electricity that track the Target and damage Enemies they contact.";
+	  b is_pcontent_allowed = false;
 		screen_name = "Dancing zap";
 		[template_triggers]
 		{
@@ -1646,6 +1674,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		[template_triggers]
 		{
 			[*]
@@ -1681,6 +1710,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		[template_triggers]
 		{
 			[*]
@@ -1719,6 +1749,10 @@
 		damage_min = 49;
 		use_aiming_error = true;
 	}
+	[common]
+	{
+	  b is_pcontent_allowed = false;
+	}
 	[magic]
 	{
 		cast_range = 12;
@@ -1753,6 +1787,10 @@
 		damage_min = 105;
 		use_aiming_error = true;
 	}
+	[common]
+	{
+	  b is_pcontent_allowed = false;
+	}
 	[magic]
 	{
 		cast_range = 12;
@@ -1784,6 +1822,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		[template_triggers]
 		{
 			[*]
@@ -1829,6 +1868,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		[template_triggers]
 		{
 			[*]
@@ -1888,6 +1928,7 @@
 	[common]
 	{
 		description = "Raises the Ranged Skill of a Party Member by <alter_ranged>.";
+	  b is_pcontent_allowed = false;
 		screen_name = "Eagle Eye";
 		[template_triggers]
 		{
@@ -1954,6 +1995,7 @@
 	[common]
 	{
 		description = "Raises the Dexterity of the entire Party by <alter_dexterity>.";
+	  b is_pcontent_allowed = false;
 		screen_name = "Lightfoot";
 		[template_triggers]
 		{
@@ -2021,6 +2063,7 @@
 	[common]
 	{
 		description = "Raises the Target's chance to hit in Ranged combat by <alter_chance_to_hit_ranged>%.";
+	  b is_pcontent_allowed = false;
 		screen_name = "Anchored Shot";
 		[template_triggers]
 		{
@@ -2085,6 +2128,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		[template_triggers]
 		{
 			[*]
@@ -2122,6 +2166,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		[template_triggers]
 		{
 			[*]
@@ -2158,6 +2203,10 @@
 		damage_min = 275;
 		area_damage_radius = 22;
 	}
+	[common]
+	{
+	  b is_pcontent_allowed = false;
+	}
 	[magic]
 	{
 		cast_range = 2.5;
@@ -2191,6 +2240,7 @@
 	[common]
 	{
 		description = "Invokes a searing gout of Flame to rake the Enemy.";
+	  b is_pcontent_allowed = false;
 		screen_name = "Dragon Fire";
 		[template_triggers]
 		{
@@ -2239,6 +2289,10 @@
 		damage_max = 200;
 		damage_min = 160;
 	}
+	[common]
+	{
+	  b is_pcontent_allowed = false;
+	}
 	[magic]
 	{
 		cast_range = 8;
@@ -2266,6 +2320,10 @@
 	{
 		damage_max = 220;
 		damage_min = 190;
+	}
+	[common]
+	{
+	  b is_pcontent_allowed = false;
 	}
 	[magic]
 	{
@@ -2295,6 +2353,10 @@
 		damage_max = 194;
 		damage_min = 184;
 	}
+	[common]
+	{
+	  b is_pcontent_allowed = false;
+	}
 	[magic]
 	{
 		cast_range = 8;
@@ -2322,6 +2384,10 @@
 	{
 		damage_max = 215;
 		damage_min = 205;
+	}
+	[common]
+	{
+	  b is_pcontent_allowed = false;
 	}
 	[magic]
 	{
@@ -2352,6 +2418,10 @@
 		damage_max = 74;
 		damage_min = 70;
 	}
+	[common]
+	{
+	  b is_pcontent_allowed = false;
+	}
 	[magic]
 	{
 		cast_range = 8;
@@ -2380,6 +2450,10 @@
 	{
 		damage_max = 155;
 		damage_min = 145;
+	}
+	[common]
+	{
+	  b is_pcontent_allowed = false;
 	}
 	[magic]
 	{
@@ -2416,6 +2490,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		[template_triggers]
 		{
 			[*]
@@ -2471,6 +2546,7 @@
 	[common]
 	{
 		description = "Summons a powerful globe of electricity and hurls it at the Enemy.";
+	  b is_pcontent_allowed = false;
 		screen_name = "Starburst";
 		[template_triggers]
 		{
@@ -2522,6 +2598,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		[template_triggers]
 		{
 			[*]
@@ -2572,6 +2649,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		[template_triggers]
 		{
 			[*]
@@ -2630,6 +2708,7 @@
 	[common]
 	{
 		description = "Hurls a large ball of flame that explodes on impact.";
+	  b is_pcontent_allowed = false;
 		screen_name = "Fireball";
 		[template_triggers]
 		{
@@ -2691,6 +2770,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		[template_triggers]
 		{
 			[*]
@@ -2745,6 +2825,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		[template_triggers]
 		{
 			[*]
@@ -2807,6 +2888,7 @@
 	[common]
 	{
 		description = "Launches several exploding balls of fire at the Target.";
+	  b is_pcontent_allowed = false;
 		screen_name = "Fireblast";
 		[template_triggers]
 		{
@@ -2864,6 +2946,7 @@
 	[common]
 	{
 		description = "Catapults an exploding ball of fire toward the Enemy.";
+	  b is_pcontent_allowed = false;
 		screen_name = "Firebomb";
 		[template_triggers]
 		{
@@ -2929,6 +3012,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		[template_triggers]
 		{
 			[*]
@@ -2989,6 +3073,7 @@
 	[common]
 	{
 		description = "Calls forth a massive cyclone of fire from the sky that incinerates Enemies caught in its path.";
+	  b is_pcontent_allowed = false;
 		screen_name = "Cyclone Of Fire";
 		[template_triggers]
 		{
@@ -3044,6 +3129,7 @@
 	[common]
 	{
 		description = "Surrounds the Caster with a seething ring of fire, burning Enemies within range.";
+	  b is_pcontent_allowed = false;
 		screen_name = "Fire Ring";
 		[template_triggers]
 		{
@@ -3103,6 +3189,7 @@
 	[common]
 	{
 		description = "Hurls a ball of fire at the Target.";
+	  b is_pcontent_allowed = false;
 		screen_name = "Fireshot";
 		[template_triggers]
 		{
@@ -3163,6 +3250,7 @@
 	[common]
 	{
 		description = "Adds <alter_armor> to Armor and blasts a Fireshot back at attacking Enemies.";
+	  b is_pcontent_allowed = false;
 		screen_name = "Fireshot Armor";
 		[template_triggers]
 		{
@@ -3235,6 +3323,7 @@
 	[common]
 	{
 		description = "Summons a flaming skull and hurls it at the Target.";
+	  b is_pcontent_allowed = false;
 		screen_name = "Fireskull";
 		[template_triggers]
 		{
@@ -3296,6 +3385,7 @@
 	[common]
 	{
 		description = "Sends Multiple Fireshots fanning out from the Caster's hand.";
+	  b is_pcontent_allowed = false;
 		screen_name = "Firespray";
 		[template_triggers]
 		{
@@ -3357,6 +3447,7 @@
 	[common]
 	{
 		description = "Lays a searing wall of flame before the caster, burning all Enemies who pass through.";
+	  b is_pcontent_allowed = false;
 		screen_name = "Fire Wall";
 		[template_triggers]
 		{
@@ -3414,6 +3505,7 @@
 	[common]
 	{
 		description = "Burns nearby Enemies with a sweep of fire.";
+	  b is_pcontent_allowed = false;
 		screen_name = "Flame";
 		[template_triggers]
 		{
@@ -3474,6 +3566,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		[template_triggers]
 		{
 			[*]
@@ -3532,6 +3625,7 @@
 	[common]
 	{
 		description = "Conjures flaming blades and hurls them at the Target.";
+	  b is_pcontent_allowed = false;
 		screen_name = "Flame Blades";
 		[template_triggers]
 		{
@@ -3590,6 +3684,7 @@
 	[common]
 	{
 		description = "Calls forth a protective coat of flame around the Caster, adding <alter_armor> to Armor and burning attackers.";
+	  b is_pcontent_allowed = false;
 		screen_name = "Flame Shield";
 		[template_triggers]
 		{
@@ -3657,6 +3752,7 @@
 	[common]
 	{
 		description = "Forces a single Enemy to flee from the Caster. Mana cost dependent on power of the Target.";
+	  b is_pcontent_allowed = false;
 		[template_triggers]
 		{
 			[*]
@@ -3713,6 +3809,7 @@
 	[common]
 	{
 		description = "Surrounds the Enemy with ice, freezing them in place. Mana cost dependent on power of the Target.";
+	  b is_pcontent_allowed = false;
 		screen_name = "Freeze";
 		[template_triggers]
 		{
@@ -3775,6 +3872,7 @@
 	[common]
 	{
 		description = "Envelops the Target in a coat of protective frost, adding <alter_armor> to Armor and damages attackers, with a chance to freeze.";
+	  b is_pcontent_allowed = false;
 		screen_name = "Frigid Armor";
 		[template_triggers]
 		{
@@ -3849,6 +3947,10 @@
 		damage_max = 44;
 		damage_min = 40;
 	}
+	[common]
+	{
+	  b is_pcontent_allowed = false;
+	}
 	[magic]
 	{
 		cast_range = 12;
@@ -3877,6 +3979,10 @@
 		damage_max = 170;
 		damage_min = 120;
 		area_damage_radius = 6;
+	}
+	[common]
+	{
+	  b is_pcontent_allowed = false;
 	}
 	[magic]
 	{
@@ -3907,6 +4013,10 @@
 		damage_min = 130;
 		area_damage_radius = 4;
 	}
+	[common]
+	{
+	  b is_pcontent_allowed = false;
+	}
 	[magic]
 	{
 		cast_sub_animation = 6;
@@ -3934,6 +4044,10 @@
 	{
 		damage_max = 170;
 		damage_min = 140;
+	}
+	[common]
+	{
+	  b is_pcontent_allowed = false;
 	}
 	[magic]
 	{
@@ -3966,6 +4080,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		[template_triggers]
 		{
 			[*]
@@ -4007,6 +4122,10 @@
 		damage_min = 110;
 		area_damage_radius = 8;
 	}
+	[common]
+	{
+	  b is_pcontent_allowed = false;
+	}
 	[magic]
 	{
 		cast_sub_animation = 0;
@@ -4037,6 +4156,10 @@
 		damage_min = 140;
 		area_damage_radius = 8;
 	}
+	[common]
+	{
+	  b is_pcontent_allowed = false;
+	}
 	[magic]
 	{
 		cast_sub_animation = 1;
@@ -4066,6 +4189,10 @@
 		damage_max = 170;
 		damage_min = 140;
 		area_damage_radius = 8;
+	}
+	[common]
+	{
+	  b is_pcontent_allowed = false;
 	}
 	[magic]
 	{
@@ -4101,6 +4228,10 @@
 		damage_min = 8;
 		use_aiming_error = true;
 	}
+	[common]
+	{
+	  b is_pcontent_allowed = false;
+	}
 	[magic]
 	{
 		cast_range = 10;
@@ -4132,6 +4263,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		[template_triggers]
 		{
 			[*]
@@ -4167,6 +4299,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		[template_triggers]
 		{
 			[*]
@@ -4202,6 +4335,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		[template_triggers]
 		{
 			[*]
@@ -4237,6 +4371,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		[template_triggers]
 		{
 			[*]
@@ -4272,6 +4407,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		[template_triggers]
 		{
 			[*]
@@ -4307,6 +4443,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		[template_triggers]
 		{
 			[*]
@@ -4340,6 +4477,10 @@
 		damage_max = 50;
 		damage_min = 40;
 	}
+	[common]
+	{
+	  b is_pcontent_allowed = false;
+	}
 	[magic]
 	{
 		cast_range = 15;
@@ -4370,6 +4511,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		[template_triggers]
 		{
 			[*]
@@ -4398,6 +4540,10 @@
 	category_name = "magic";
 	doc = "spell_super_gom_summon";
 	specializes = base_spell_monster;
+	[common]
+	{
+	  b is_pcontent_allowed = false;
+	}
 	[inventory]
 	{
 		[delayed_pcontent]
@@ -4453,6 +4599,10 @@
 	category_name = "magic";
 	doc = "spell_super_gom_summon";
 	specializes = base_spell_monster;
+	[common]
+	{
+	  b is_pcontent_allowed = false;
+	}
 	[inventory]
 	{
 		[delayed_pcontent]
@@ -4508,6 +4658,10 @@
 	category_name = "magic";
 	doc = "3w spell_super_gom_summon";
 	specializes = base_spell_monster;
+	[common]
+	{
+	  b is_pcontent_allowed = false;
+	}
 	[inventory]
 	{
 		[delayed_pcontent]
@@ -4565,6 +4719,7 @@
 	specializes = base_spell_monster;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		[template_triggers]
 		{
 			[*]
@@ -4614,6 +4769,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		[template_triggers]
 		{
 			[*]
@@ -4653,6 +4809,10 @@
 		damage_max = 210;
 		damage_min = 180;
 	}
+	[common]
+	{
+	  b is_pcontent_allowed = false;
+	}
 	[magic]
 	{
 		cast_range = 12;
@@ -4680,6 +4840,10 @@
 	{
 		damage_max = 220;
 		damage_min = 180;
+	}
+	[common]
+	{
+	  b is_pcontent_allowed = false;
 	}
 	[magic]
 	{
@@ -4711,6 +4875,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		[template_triggers]
 		{
 			[*]
@@ -4747,6 +4912,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		[template_triggers]
 		{
 			[*]
@@ -4781,6 +4947,10 @@
 		damage_max = 220;
 		damage_min = 180;
 	}
+	[common]
+	{
+	  b is_pcontent_allowed = false;
+	}
 	[magic]
 	{
 		cast_range = 8;
@@ -4809,6 +4979,10 @@
 	{
 		damage_max = 220;
 		damage_min = 180;
+	}
+	[common]
+	{
+	  b is_pcontent_allowed = false;
 	}
 	[magic]
 	{
@@ -4841,6 +5015,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		[template_triggers]
 		{
 			[*]
@@ -4879,6 +5054,10 @@
 		damage_min = 180;
 		area_damage_radius = 8;
 	}
+	[common]
+	{
+	  b is_pcontent_allowed = false;
+	}
 	[magic]
 	{
 		cast_range = 8;
@@ -4903,6 +5082,10 @@
 	category_name = "magic";
 	doc = "spell gom summon";
 	specializes = base_spell_monster;
+	[common]
+	{
+	  b is_pcontent_allowed = false;
+	}
 	[inventory]
 	{
 		[delayed_pcontent]
@@ -4947,6 +5130,10 @@
 	category_name = "magic";
 	doc = "spell gom summon";
 	specializes = base_spell_monster;
+	[common]
+	{
+	  b is_pcontent_allowed = false;
+	}
 	[inventory]
 	{
 		[delayed_pcontent]
@@ -4991,6 +5178,10 @@
 	category_name = "magic";
 	doc = "spell gom summon";
 	specializes = base_spell_monster;
+	[common]
+	{
+	  b is_pcontent_allowed = false;
+	}
 	[inventory]
 	{
 		[delayed_pcontent]
@@ -5040,6 +5231,10 @@
 		damage_max = 200;
 		damage_min = 160;
 	}
+	[common]
+	{
+	  b is_pcontent_allowed = false;
+	}
 	[inventory]
 	{
 		[delayed_pcontent]
@@ -5088,6 +5283,10 @@
 		damage_max = 220;
 		damage_min = 180;
 	}
+	[common]
+	{
+	  b is_pcontent_allowed = false;
+	}
 	[magic]
 	{
 		cast_range = 12;
@@ -5126,6 +5325,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		[template_triggers]
 		{
 			[*]
@@ -5170,6 +5370,10 @@
 		damage_max = 190;
 		damage_min = 170;
 	}
+	[common]
+	{
+	  b is_pcontent_allowed = false;
+	}
 	[magic]
 	{
 		cast_range = 14;
@@ -5199,6 +5403,10 @@
 	{
 		damage_max = 180;
 		damage_min = 170;
+	}
+	[common]
+	{
+	  b is_pcontent_allowed = false;
 	}
 	[magic]
 	{
@@ -5236,6 +5444,10 @@
 		damage_min = 72;
 		use_aiming_error = true;
 	}
+	[common]
+	{
+	  b is_pcontent_allowed = false;
+	}
 	[magic]
 	{
 		cast_range = 12;
@@ -5267,6 +5479,7 @@
 	[common]
 	{
 		description = "Combines the resonant power of Life and Mana, balanced between all Party Members.";
+	  b is_pcontent_allowed = false;
 		screen_name = "Harmony";
 		[template_triggers]
 		{
@@ -5327,6 +5540,7 @@
 	[common]
 	{
 		description = "Infuses a Party Member with <alter_life> Health.";
+	  b is_pcontent_allowed = false;
 		screen_name = "Battle Healing";
 		[template_triggers]
 		{
@@ -5385,6 +5599,7 @@
 	specializes = base_spell_monster;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		[template_triggers]
 		{
 			[*]
@@ -5435,6 +5650,7 @@
 	specializes = base_spell_monster;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		[template_triggers]
 		{
 			[*]
@@ -5490,6 +5706,7 @@
 	[common]
 	{
 		description = "Infuses the entire Party with <alter_life> Health per second.";
+	  b is_pcontent_allowed = false;
 		screen_name = "Reconstitution";
 		[template_triggers]
 		{
@@ -5558,6 +5775,7 @@
 	[common]
 	{
 		description = "Restores up to <alter_life> Health to a single Party Member.";
+	  b is_pcontent_allowed = false;
 		screen_name = "Healing Hands";
 		[template_triggers]
 		{
@@ -5673,6 +5891,7 @@
 	[common]
 	{
 		description = "Restores up to <alter_life> Health to a single Party Member.";
+	  b is_pcontent_allowed = false;
 		screen_name = "Healing Hands Scroll";
 		[template_triggers]
 		{
@@ -5731,6 +5950,7 @@
 	specializes = base_spell_monster;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		[template_triggers]
 		{
 			[*]
@@ -5772,6 +5992,7 @@
 	specializes = base_spell_monster;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		[template_triggers]
 		{
 			[*]
@@ -5811,6 +6032,7 @@
 	specializes = base_spell_monster;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		[template_triggers]
 		{
 			[*]
@@ -5858,6 +6080,7 @@
 	[common]
 	{
 		description = "Surrounds the Party with a healing breeze, adding <alter_life> Health.";
+	  b is_pcontent_allowed = false;
 		screen_name = "Healing Wind";
 		[template_triggers]
 		{
@@ -5925,6 +6148,7 @@
 	[common]
 	{
 		description = "Surrounds the Party with a healing breeze, adding <alter_life> Health.";
+	  b is_pcontent_allowed = false;
 		screen_name = "Healing Wind Scroll";
 		[template_triggers]
 		{
@@ -5989,6 +6213,10 @@
 		damage_max = 130;
 		damage_min = 120;
 	}
+	[common]
+	{
+	  b is_pcontent_allowed = false;
+	}
 	[magic]
 	{
 		cast_range = 10;
@@ -6018,6 +6246,7 @@
 	[common]
 	{
 		description = "Roots a single Enemy in place. Mana cost dependent on the power of the Target.";
+	  b is_pcontent_allowed = false;
 		screen_name = "Hold Creature";
 		[template_triggers]
 		{
@@ -6074,6 +6303,10 @@
 		damage_min = 114;
 		area_damage_radius = 3;
 	}
+	[common]
+	{
+	  b is_pcontent_allowed = false;
+	}
 	[magic]
 	{
 		cast_range = 14;
@@ -6118,6 +6351,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		[template_triggers]
 		{
 			[*]
@@ -6198,6 +6432,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		[template_triggers]
 		{
 			[*]
@@ -6275,6 +6510,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		[template_triggers]
 		{
 			[*]
@@ -6317,6 +6553,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		[template_triggers]
 		{
 			[*]
@@ -6365,6 +6602,7 @@
 	[common]
 	{
 		description = "Arcs a jagged shard of ice toward the Target.";
+	  b is_pcontent_allowed = false;
 		[template_triggers]
 		{
 			[*]
@@ -6441,6 +6679,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		[template_triggers]
 		{
 			[*]
@@ -6499,6 +6738,7 @@
 	[common]
 	{
 		description = "Emits waves of disruptive energy around the Target.";
+	  b is_pcontent_allowed = false;
 		screen_name = "Implosion";
 		[template_triggers]
 		{
@@ -6555,6 +6795,7 @@
 	[common]
 	{
 		description = "Envelops the Enemy with searing flames.";
+	  b is_pcontent_allowed = false;
 		screen_name = "Incinerate";
 		[template_triggers]
 		{
@@ -6610,6 +6851,7 @@
 	[common]
 	{
 		description = "Extends a fan of intense flames in front of the Caster.";
+	  b is_pcontent_allowed = false;
 		screen_name = "Inferno";
 		[template_triggers]
 		{
@@ -6660,6 +6902,7 @@
 	[common]
 	{
 		description = "Enhances casting abilities of the Target, raising Intelligence by <alter_intelligence>, Nature Magic by <alter_nature_magic> and Combat Magic by <alter_combat_magic>.";
+	  b is_pcontent_allowed = false;
 		screen_name = "Inspiration";
 		[template_triggers]
 		{
@@ -6738,6 +6981,7 @@
 	[common]
 	{
 		description = "Raises the Intelligence of a Party Member by <alter_intelligence>.";
+	  b is_pcontent_allowed = false;
 		screen_name = "Focused Mind";
 		[template_triggers]
 		{
@@ -6802,6 +7046,7 @@
 	[common]
 	{
 		description = "Raises the Intelligence of the entire Party by <alter_intelligence>.";
+	  b is_pcontent_allowed = false;
 		screen_name = "Mind Spring";
 		[template_triggers]
 		{
@@ -6867,6 +7112,7 @@
 	[common]
 	{
 		description = "Renders the Target nearly impervious to attack.";
+	  b is_pcontent_allowed = false;
 		screen_name = "Invincibility";
 		[template_triggers]
 		{
@@ -6932,6 +7178,7 @@
 	[common]
 	{
 		description = "Raises the Strength of a Party Member by <alter_strength>.";
+	  b is_pcontent_allowed = false;
 		screen_name = "Iron Fist";
 		[template_triggers]
 		{
@@ -6998,6 +7245,7 @@
 	[common]
 	{
 		description = "Raises the Strength of the entire Party by <alter_strength>.";
+	  b is_pcontent_allowed = false;
 		screen_name = "Blood And Iron";
 		[template_triggers]
 		{
@@ -7063,6 +7311,10 @@
 		damage_max = 280;
 		damage_min = 240;
 	}
+	[common]
+	{
+	  b is_pcontent_allowed = false;
+	}
 	[magic]
 	{
 		cast_range = 13;
@@ -7090,6 +7342,10 @@
 	{
 		damage_max = 240;
 		damage_min = 220;
+	}
+	[common]
+	{
+	  b is_pcontent_allowed = false;
 	}
 	[magic]
 	{
@@ -7120,6 +7376,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		[template_triggers]
 		{
 			[*]
@@ -7161,6 +7418,7 @@
 	[common]
 	{
 		description = "Unleashes the unbridled fury of nature in a single, killing touch.";
+	  b is_pcontent_allowed = false;
 		screen_name = "Kill";
 		[template_triggers]
 		{
@@ -7223,6 +7481,7 @@
 	[common]
 	{
 		description = "Strikes the Target with a titanic force of pure will.";
+	  b is_pcontent_allowed = false;
 		screen_name = "Killing Fist";
 		[template_triggers]
 		{
@@ -7279,6 +7538,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		[template_triggers]
 		{
 			[*]
@@ -7314,6 +7574,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		[template_triggers]
 		{
 			[*]
@@ -7349,6 +7610,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		[template_triggers]
 		{
 			[*]
@@ -7396,6 +7658,7 @@
 	[common]
 	{
 		description = "Tears <alter_life> Health from the Enemy and gives it to the Caster.";
+	  b is_pcontent_allowed = false;
 		[template_triggers]
 		{
 			[*]
@@ -7469,6 +7732,7 @@
 	[common]
 	{
 		description = "Creates a healing resonance, allowing all Party Members to share Health.";
+	  b is_pcontent_allowed = false;
 		screen_name = "Life Balance";
 		[template_triggers]
 		{
@@ -7533,6 +7797,7 @@
 	[common]
 	{
 		description = "Focuses an intense beam of pure light at the Target.";
+	  b is_pcontent_allowed = false;
 		screen_name = "Light Ray";
 		[template_triggers]
 		{
@@ -7591,6 +7856,7 @@
 	[common]
 	{
 		description = "Sends piercing bolts of lightning that cut into the Target.";
+	  b is_pcontent_allowed = false;
 		screen_name = "Lightning";
 		[template_triggers]
 		{
@@ -7649,6 +7915,7 @@
 	[common]
 	{
 		description = "Unleashes a focused mass of lightning at the Target.";
+	  b is_pcontent_allowed = false;
 		screen_name = "Lightning Blast";
 		[template_triggers]
 		{
@@ -7707,6 +7974,7 @@
 	[common]
 	{
 		description = "Expels a sustained arc of lightning at the Target until the Caster moves or is struck.";
+	  b is_pcontent_allowed = false;
 		screen_name = "Lightning Bolt";
 		[template_triggers]
 		{
@@ -7776,6 +8044,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		[template_triggers]
 		{
 			[*]
@@ -7832,6 +8101,7 @@
 	[common]
 	{
 		description = "Surrounds the Target with a shell of magical energy, adding <alter_armor> to Armor.";
+	  b is_pcontent_allowed = false;
 		screen_name = "Magic Armor";
 		[template_triggers]
 		{
@@ -7898,6 +8168,7 @@
 	[common]
 	{
 		description = "Surrounds the Party with a shell of magical energy, adding <alter_armor> to Armor.";
+	  b is_pcontent_allowed = false;
 		screen_name = "Stone Skin";
 		[template_triggers]
 		{
@@ -7963,6 +8234,7 @@
 	[common]
 	{
 		description = "Restores up to <alter_life> Health to a single Party Member.";
+	  b is_pcontent_allowed = false;
 		screen_name = "Major Heal";
 		[template_triggers]
 		{
@@ -8080,6 +8352,7 @@
 	[common]
 	{
 		description = "Restores up to <alter_life> Health to a single Party Member.";
+	  b is_pcontent_allowed = false;
 		screen_name = "Major Heal Scroll";
 		[template_triggers]
 		{
@@ -8142,6 +8415,7 @@
 	[common]
 	{
 		description = "Heals the entire Party by <alter_life> Health per second.";
+	  b is_pcontent_allowed = false;
 		screen_name = "Nurture";
 		[template_triggers]
 		{
@@ -8210,6 +8484,7 @@
 	[common]
 	{
 		description = "Weakens an enemy by reducing its Armor. Mana cost dependent on the power of the Target.";
+	  b is_pcontent_allowed = false;
 		screen_name = "Malign";
 		[template_triggers]
 		{
@@ -8276,6 +8551,7 @@
 	[common]
 	{
 		description = "Creates a magic resonance, allowing all Party Members to share and balance out Mana. Party Members must be within cast Range.";
+	  b is_pcontent_allowed = false;
 		screen_name = "Mana Balance";
 		[template_triggers]
 		{
@@ -8339,6 +8615,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		[template_triggers]
 		{
 			[*]
@@ -8413,6 +8690,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		[template_triggers]
 		{
 			[*]
@@ -8482,6 +8760,7 @@
 	[common]
 	{
 		description = "Adds to Mana recovery at the expense of Health.";
+	  b is_pcontent_allowed = false;
 		screen_name = "Mana Chant";
 		[template_triggers]
 		{
@@ -8553,6 +8832,7 @@
 	[common]
 	{
 		description = "Absorbs damage to the Caster by drawing from Mana reserves.";
+	  b is_pcontent_allowed = false;
 		screen_name = "Mana Shield";
 		[template_triggers]
 		{
@@ -8630,6 +8910,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		[template_triggers]
 		{
 			[*]
@@ -8706,6 +8987,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		[template_triggers]
 		{
 			[*]
@@ -8773,6 +9055,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		[template_triggers]
 		{
 			[*]
@@ -8833,6 +9116,10 @@
 		damage_min = 22;
 		use_aiming_error = true;
 	}
+	[common]
+	{
+	  b is_pcontent_allowed = false;
+	}
 	[magic]
 	{
 		cast_range = 10;
@@ -8864,6 +9151,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		[template_triggers]
 		{
 			[*]
@@ -8910,6 +9198,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		[template_triggers]
 		{
 			[*]
@@ -8932,6 +9221,10 @@
 	{
 		damage_max = 15;
 		damage_min = 10;
+	}
+	[common]
+	{
+	  b is_pcontent_allowed = false;
 	}
 	[magic]
 	{
@@ -8960,6 +9253,10 @@
 	{
 		damage_max = 210;
 		damage_min = 190;
+	}
+	[common]
+	{
+	  b is_pcontent_allowed = false;
 	}
 	[magic]
 	{
@@ -8991,6 +9288,7 @@
 	[common]
 	{
 		description = "Boosts the Target physical power, adding <alter_strength> to Strength.";
+	  b is_pcontent_allowed = false;
 		screen_name = "Ogre's Might";
 	}
 	[gui]
@@ -9048,6 +9346,7 @@
 	[common]
 	{
 		description = "Blurs the vision of the Enemy, causing ranged attacks to be less accurate. Mana cost dependent on the power of the Target.";
+	  b is_pcontent_allowed = false;
 		screen_name = "Oversight";
 		[template_triggers]
 		{
@@ -9121,6 +9420,10 @@
 		damage_min = 82;
 		area_damage_radius = 1.5;
 	}
+	[common]
+	{
+	  b is_pcontent_allowed = false;
+	}
 	[magic]
 	{
 		cast_range = 12;
@@ -9150,6 +9453,10 @@
 		ammo_template = phrak_dart;
 		damage_max = 5;
 		damage_min = 3;
+	}
+	[common]
+	{
+	  b is_pcontent_allowed = false;
 	}
 	[magic]
 	{
@@ -9191,6 +9498,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		[template_triggers]
 		{
 			[*]
@@ -9250,6 +9558,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		[template_triggers]
 		{
 			[*]
@@ -9305,6 +9614,7 @@
 	[common]
 	{
 		description = "Creates a pillar of fire that wanders the grounds, igniting Enemies caught in its path.";
+	  b is_pcontent_allowed = false;
 		screen_name = "Pillar Of Fire";
 		[template_triggers]
 		{
@@ -9355,6 +9665,7 @@
 	[common]
 	{
 		description = "Transforms the Enemy into a common animal. Mana cost dependent on power of the Target.";
+	  b is_pcontent_allowed = false;
 		screen_name = "Polymorph";
 		[template_triggers]
 		{
@@ -9439,6 +9750,10 @@
 		damage_max = 5;
 		damage_min = 4;
 	}
+	[common]
+	{
+	  b is_pcontent_allowed = false;
+	}
 	[magic]
 	{
 		cast_range = 3;
@@ -9468,6 +9783,7 @@
 	[common]
 	{
 		description = "Adds <alter_melee_damage_min> to Minimum Melee Damage and <alter_melee_damage_max> to Maximum Melee Damage at the expense of Health.";
+	  b is_pcontent_allowed = false;
 		screen_name = "Rage";
 		[template_triggers]
 		{
@@ -9549,6 +9865,7 @@
 	[common]
 	{
 		description = "Infuses the Party with both Mana and Health.";
+	  b is_pcontent_allowed = false;
 		screen_name = "Party Recharge";
 		[template_triggers]
 		{
@@ -9630,6 +9947,7 @@
 	[common]
 	{
 		description = "<alter_reflect_damage>% of damage taken is reflected back to the attacker.";
+	  b is_pcontent_allowed = false;
 		screen_name = "Pain Reflux";
 		[template_triggers]
 		{
@@ -9701,6 +10019,7 @@
 	[common]
 	{
 		description = "Surrounds the Target with a natural aura, increasing Health recovery.";
+	  b is_pcontent_allowed = false;
 		screen_name = "Regeneration";
 		[template_triggers]
 		{
@@ -9767,6 +10086,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		[template_triggers]
 		{
 			[*]
@@ -9803,6 +10123,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		[template_triggers]
 		{
 			[*]
@@ -9839,6 +10160,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		[template_triggers]
 		{
 			[*]
@@ -9875,6 +10197,7 @@
 	[common]
 	{
 		description = "Temporarily changes a Nature Magician into a Combat Magician of the same skill level.";
+	  b is_pcontent_allowed = false;
 		screen_name = "Convert";
 	}
 	[gui]
@@ -9944,6 +10267,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		[template_triggers]
 		{
 			[*]
@@ -9995,6 +10319,7 @@
 	[common]
 	{
 		description = "Grants the power to raise the dead. Mana cost dependant on power of the Target.";
+	  b is_pcontent_allowed = false;
 		[template_triggers]
 		{
 			[*]
@@ -10040,6 +10365,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		screen_name = "Resurrect Scroll";
 		description = "Grants the power to raise the dead. Mana cost dependent on the power of the Target.";
 		[template_triggers]
@@ -10078,6 +10404,10 @@
 	category_name = "magic";
 	doc = "spell resurrect";
 	specializes = base_spell_monster;
+	[common]
+	{
+	  b is_pcontent_allowed = false;
+	}
 	[magic]
 	{
 		cast_range = 10;
@@ -10109,6 +10439,7 @@
 	[common]
 	{
 		description = "Grants the power to raise the dead and restore them to full Health. Mana cost dependent on power of the Target.";
+	  b is_pcontent_allowed = false;
 		[template_triggers]
 		{
 			[*]
@@ -10161,6 +10492,7 @@
 	[common]
 	{
 		description = "Removes a summoned creature from the physical plane. Mana cost dependent on power of the Target.";
+	  b is_pcontent_allowed = false;
 		[template_triggers]
 		{
 			[*]
@@ -10218,6 +10550,7 @@
 	[common]
 	{
 		description = "Raises the corpse of a Party Member. Mana cost dependent on the power of the Target";
+	  b is_pcontent_allowed = false;
 		[template_triggers]
 		{
 			[*]
@@ -10269,6 +10602,7 @@
 	[common]
 	{
 		description = "Raises the corpse of a Party Member along with some health. Mana cost dependent on the power of the Target.";
+	  b is_pcontent_allowed = false;
 		[template_triggers]
 		{
 			[*]
@@ -10321,6 +10655,7 @@
 	[common]
 	{
 		description = "Tears <alter_mana> Mana from the Enemy and gives it to the Caster.";
+	  b is_pcontent_allowed = false;
 		[template_triggers]
 		{
 			[*]
@@ -10386,6 +10721,10 @@
 		damage_max = 270;
 		damage_min = 230;
 	}
+	[common]
+	{
+	  b is_pcontent_allowed = false;
+	}
 	[magic]
 	{
 		cast_range = 17;
@@ -10412,6 +10751,10 @@
 	{
 		damage_max = 260;
 		damage_min = 210;
+	}
+	[common]
+	{
+	  b is_pcontent_allowed = false;
 	}
 	[magic]
 	{
@@ -10443,6 +10786,10 @@
 		damage_max = 280;
 		damage_min = 210;
 		area_damage_radius = 2;
+	}
+	[common]
+	{
+	  b is_pcontent_allowed = false;
 	}
 	[gui]
 	{
@@ -10481,6 +10828,10 @@
 		damage_min = 180;
 		area_damage_radius = 3;
 	}
+	[common]
+	{
+	  b is_pcontent_allowed = false;
+	}
 	[gui]
 	{
 		active_icon = b_gui_ig_i_ic_w_mag_dark;
@@ -10514,6 +10865,10 @@
 		damage_min = 63;
 		area_damage_radius = 3;
 	}
+	[common]
+	{
+	  b is_pcontent_allowed = false;
+	}
 	[magic]
 	{
 		cast_range = 10;
@@ -10542,6 +10897,10 @@
 		damage_max = 255;
 		damage_min = 225;
 		area_damage_radius = 3;
+	}
+	[common]
+	{
+	  b is_pcontent_allowed = false;
 	}
 	[magic]
 	{
@@ -10572,6 +10931,10 @@
 		damage_min = 190;
 		area_damage_radius = 3;
 	}
+	[common]
+	{
+	  b is_pcontent_allowed = false;
+	}
 	[magic]
 	{
 		cast_range = 12;
@@ -10599,6 +10962,10 @@
 	{
 		damage_max = 152;
 		damage_min = 132;
+	}
+	[common]
+	{
+	  b is_pcontent_allowed = false;
 	}
 	[magic]
 	{
@@ -10629,6 +10996,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		[template_triggers]
 		{
 			[*]
@@ -10664,6 +11032,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		[template_triggers]
 		{
 			[*]
@@ -10699,6 +11068,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		[template_triggers]
 		{
 			[*]
@@ -10734,6 +11104,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		[template_triggers]
 		{
 			[*]
@@ -10775,6 +11146,7 @@
 	[common]
 	{
 		description = "Extends a ring of electricity around the Caster, damaging nearby Targets.";
+	  b is_pcontent_allowed = false;
 		screen_name = "Shock";
 		[template_triggers]
 		{
@@ -10829,6 +11201,7 @@
 	[common]
 	{
 		description = "Envelops the Target in a cloak of electricity, adding <alter_armor> to Armor and causing electrical damage to attackers.";
+	  b is_pcontent_allowed = false;
 		screen_name = "Shock armor";
 		[template_triggers]
 		{
@@ -10904,6 +11277,7 @@
 	[common]
 	{
 		description = "Encompasses the Target with a wave of distorted energy, damaging nearby Enemies.";
+	  b is_pcontent_allowed = false;
 		screen_name = "Shock Wave";
 		[template_triggers]
 		{
@@ -10965,6 +11339,10 @@
 		damage_min = 4;
 		ammo_appears_jit = true;
 	}
+	[common]
+	{
+	  b is_pcontent_allowed = false;
+	}
 	[magic]
 	{
 		cast_range = 10;
@@ -10996,6 +11374,10 @@
 		damage_max = 6;
 		damage_min = 3;
 		ammo_appears_jit = true;
+	}
+	[common]
+	{
+	  b is_pcontent_allowed = false;
 	}
 	[magic]
 	{
@@ -11029,6 +11411,10 @@
 		damage_min = 28;
 		ammo_appears_jit = true;
 	}
+	[common]
+	{
+	  b is_pcontent_allowed = false;
+	}
 	[magic]
 	{
 		cast_range = 10;
@@ -11057,6 +11443,10 @@
 	{
 		damage_max = 130;
 		damage_min = 110;
+	}
+	[common]
+	{
+	  b is_pcontent_allowed = false;
 	}
 	[magic]
 	{
@@ -11093,6 +11483,7 @@
 	[common]
 	{
 		description = "Releases two globes of electricity that will track the Enemy.";
+	  b is_pcontent_allowed = false;
 		screen_name = "Spark";
 		[template_triggers]
 		{
@@ -11154,6 +11545,7 @@
 	[common]
 	{
 		description = "Releases multiple globes of electricity that track the Enemy.";
+	  b is_pcontent_allowed = false;
 		screen_name = "Multi-Spark";
 		[template_triggers]
 		{
@@ -11209,6 +11601,10 @@
 		use_aiming_error = true;
 		ammo_appears_jit = true;
 	}
+	[common]
+	{
+	  b is_pcontent_allowed = false;
+	}
 	[magic]
 	{
 		cast_range = 10;
@@ -11244,6 +11640,10 @@
 		use_aiming_error = true;
 		ammo_appears_jit = true;
 	}
+	[common]
+	{
+	  b is_pcontent_allowed = false;
+	}
 	[magic]
 	{
 		cast_range = 12;
@@ -11275,6 +11675,7 @@
 	[common]
 	{
 		description = "Surrounds the Target with a shifting spectral aura, adding <alter_armor> to Armor.";
+	  b is_pcontent_allowed = false;
 		screen_name = "Spirit Armor";
 		[template_triggers]
 		{
@@ -11339,6 +11740,10 @@
 		damage_max = 155;
 		damage_min = 135;
 	}
+	[common]
+	{
+	  b is_pcontent_allowed = false;
+	}
 	[magic]
 	{
 		cast_range = 10;
@@ -11370,6 +11775,10 @@
 		ammo_template = spike_maljin;
 		damage_max = 155;
 		damage_min = 135;
+	}
+	[common]
+	{
+	  b is_pcontent_allowed = false;
 	}
 	[magic]
 	{
@@ -11403,6 +11812,10 @@
 		damage_max = 155;
 		damage_min = 135;
 	}
+	[common]
+	{
+	  b is_pcontent_allowed = false;
+	}
 	[magic]
 	{
 		cast_range = 10;
@@ -11435,6 +11848,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		[template_triggers]
 		{
 			[*]
@@ -11476,6 +11890,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		[template_triggers]
 		{
 			[*]
@@ -11519,6 +11934,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		[template_triggers]
 		{
 			[*]
@@ -11560,6 +11976,7 @@
 	[common]
 	{
 		description = "Greatly enhances the capabilities of the entire Party, adding <alter_strength> to Strength, <alter_dexterity> to Dexterity and <alter_intelligence> to Intelligence.";
+	  b is_pcontent_allowed = false;
 		screen_name = "Merik's Windfall";
 		[template_triggers]
 		{
@@ -11645,6 +12062,7 @@
 	[common]
 	{
 		description = "Raises the entire Party's chance to hit in Melee combat by <alter_chance_to_hit_melee>% and chance to hit in Ranged Combat by <alter_chance_to_hit_ranged>%.";
+	  b is_pcontent_allowed = false;
 		screen_name = "Mystic Aid";
 		[template_triggers]
 		{
@@ -11730,6 +12148,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		[template_triggers]
 		{
 			[*]
@@ -11783,6 +12202,7 @@
 	[common]
 	{
 		description = "Lowers the Enemy's chance to hit in Melee combat. Mana cost dependent on the power of the Target.";
+	  b is_pcontent_allowed = false;
 		screen_name = "Stumble";
 		[template_triggers]
 		{
@@ -11853,6 +12273,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		[template_triggers]
 		{
 			[*]
@@ -11974,6 +12395,7 @@
 	[common]
 	{
 		description = "Summons a Cave Giant to guard the Caster.";
+	  b is_pcontent_allowed = false;
 		screen_name = "Summon Cave Giant";
 		[template_triggers]
 		{
@@ -12101,6 +12523,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		[template_triggers]
 		{
 			[*]
@@ -12226,6 +12649,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		[template_triggers]
 		{
 			[*]
@@ -12365,6 +12789,7 @@
 	[common]
 	{
 		description = "Summons a Green Drake to guard the Caster.";
+	  b is_pcontent_allowed = false;
 		screen_name = "Summon Green Drake";
 		[template_triggers]
 		{
@@ -12506,6 +12931,7 @@
 	[common]
 	{
 		description = "Summons a Fire Elemental to guard the Caster.";
+	  b is_pcontent_allowed = false;
 		screen_name = "Summon Fire Elemental";
 		[template_triggers]
 		{
@@ -12628,6 +13054,7 @@
 	[common]
 	{
 		description = "Summons a Forest Klaw to guard the Caster.";
+	  b is_pcontent_allowed = false;
 		screen_name = "Summon Forest Klaw";
 		[template_triggers]
 		{
@@ -12751,6 +13178,7 @@
 	[common]
 	{
 		description = "Summons a Furok to guard the Caster.";
+	  b is_pcontent_allowed = false;
 		screen_name = "Summon Furok";
 		[template_triggers]
 		{
@@ -12878,6 +13306,7 @@
 	[common]
 	{
 		description = "Summons a Jade Gargoyle to guard the Caster.";
+	  b is_pcontent_allowed = false;
 		[template_triggers]
 		{
 			[*]
@@ -13000,6 +13429,7 @@
 	[common]
 	{
 		description = "Summons a Frost Golem to guard the Caster.";
+	  b is_pcontent_allowed = false;
 		screen_name = "Summon Frost Golem";
 		[template_triggers]
 		{
@@ -13123,6 +13553,7 @@
 	[common]
 	{
 		description = "Summons a Hell Boar to guard the Caster.";
+	  b is_pcontent_allowed = false;
 		screen_name = "Summon Hell Boar";
 		[template_triggers]
 		{
@@ -13245,6 +13676,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		screen_name = "Summon Helper";
 		description = "Summons a companion to gather treasure from the battlefield.";
 		[template_triggers]
@@ -13306,6 +13738,7 @@
 	[common]
 	{
 		description = "Summons a companion to gather treasure from the battlefield.";
+	  b is_pcontent_allowed = false;
 		[template_triggers]
 		{
 			[*]
@@ -13359,6 +13792,7 @@
 	[common]
 	{
 		description = "Summons an Impaler to guard the Caster.";
+	  b is_pcontent_allowed = false;
 		screen_name = "Summon Impaler";
 		[template_triggers]
 		{
@@ -13480,6 +13914,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		screen_name = "Summon Killer Gremal";
 		description = "Summons a Killer Gremal to guard the Caster.";
 		[template_triggers]
@@ -13608,6 +14043,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		[template_triggers]
 		{
 			[*]
@@ -13729,6 +14165,7 @@
 	[common]
 	{
 		description = "Summons a Larch to guard the Caster.";
+	  b is_pcontent_allowed = false;
 		screen_name = "Summon Larch";
 		[template_triggers]
 		{
@@ -13856,6 +14293,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		[template_triggers]
 		{
 			[*]
@@ -13977,6 +14415,7 @@
 	[common]
 	{
 		description = "Summons a Molten Golem to guard the Caster.";
+	  b is_pcontent_allowed = false;
 		screen_name = "Summon Slag";
 		[template_triggers]
 		{
@@ -14104,6 +14543,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		[template_triggers]
 		{
 			[*]
@@ -14229,6 +14669,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		[template_triggers]
 		{
 			[*]
@@ -14354,6 +14795,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		[template_triggers]
 		{
 			[*]
@@ -14479,6 +14921,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		[template_triggers]
 		{
 			[*]
@@ -14601,6 +15044,7 @@
 	[common]
 	{
 		description = "Summons a Rock Beast to guard the Caster.";
+	  b is_pcontent_allowed = false;
 		screen_name = "Summon Rock Beast";
 		[template_triggers]
 		{
@@ -14724,6 +15168,7 @@
 	[common]
 	{
 		description = "Summons a Scorpion to guard the Caster.";
+	  b is_pcontent_allowed = false;
 		screen_name = "Summon Scorpion";
 		[template_triggers]
 		{
@@ -14851,6 +15296,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		[template_triggers]
 		{
 			[*]
@@ -14976,6 +15422,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		[template_triggers]
 		{
 			[*]
@@ -15097,6 +15544,7 @@
 	[common]
 	{
 		description = "Summons a Spiked Dweller to guard the Caster.";
+	  b is_pcontent_allowed = false;
 		screen_name = "Summon Spiked Dweller";
 		[template_triggers]
 		{
@@ -15224,6 +15672,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		[template_triggers]
 		{
 			[*]
@@ -15345,6 +15794,7 @@
 	[common]
 	{
 		description = "Summons a Black Wolf to guard the Caster.";
+	  b is_pcontent_allowed = false;
 		screen_name = "Summon Black Wolf";
 		[template_triggers]
 		{
@@ -15472,6 +15922,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		[template_triggers]
 		{
 			[*]
@@ -15597,6 +16048,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		[template_triggers]
 		{
 			[*]
@@ -15722,6 +16174,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		[template_triggers]
 		{
 			[*]
@@ -15838,6 +16291,7 @@
 	specializes = base_spell_monster;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		[template_triggers]
 		{
 			[*]
@@ -15897,6 +16351,7 @@
 	specializes = base_spell_monster;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		[template_triggers]
 		{
 			[*]
@@ -15956,6 +16411,7 @@
 	specializes = base_spell_monster;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		[template_triggers]
 		{
 			[*]
@@ -16013,6 +16469,10 @@
 	category_name = "magic";
 	doc = "spell_swamp_witch_summon";
 	specializes = base_spell_monster;
+	[common]
+	{
+	  b is_pcontent_allowed = false;
+	}
 	[inventory]
 	{
 		[delayed_pcontent]
@@ -16061,6 +16521,10 @@
 	category_name = "magic";
 	doc = "2w spell_swamp_witch_summon";
 	specializes = base_spell_monster;
+	[common]
+	{
+	  b is_pcontent_allowed = false;
+	}
 	[inventory]
 	{
 		[delayed_pcontent]
@@ -16109,6 +16573,10 @@
 	category_name = "magic";
 	doc = "3w spell_swamp_witch_summon";
 	specializes = base_spell_monster;
+	[common]
+	{
+	  b is_pcontent_allowed = false;
+	}
 	[inventory]
 	{
 		[delayed_pcontent]
@@ -16159,6 +16627,7 @@
 	specializes = base_spell_monster;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		[template_triggers]
 		{
 			[*]
@@ -16218,6 +16687,7 @@
 	specializes = base_spell_monster;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		[template_triggers]
 		{
 			[*]
@@ -16277,6 +16747,7 @@
 	specializes = base_spell_monster;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		[template_triggers]
 		{
 			[*]
@@ -16346,6 +16817,7 @@
 	[common]
 	{
 		description = "Focuses a piercing shaft of light that incinerates the Target.";
+	  b is_pcontent_allowed = false;
 		screen_name = "Sun Ray";
 		[template_triggers]
 		{
@@ -16406,6 +16878,7 @@
 	[common]
 	{
 		description = "Unleashes the raw explosive power of the sun at the Target.";
+	  b is_pcontent_allowed = false;
 		screen_name = "Nova Strike";
 		[template_triggers]
 		{
@@ -16461,6 +16934,10 @@
 		damage_min = 65;
 		use_aiming_error = true;
 	}
+	[common]
+	{
+	  b is_pcontent_allowed = false;
+	}
 	[magic]
 	{
 		cast_range = 12;
@@ -16492,6 +16969,7 @@
 	[common]
 	{
 		description = "Reflects <alter_reflect_damage>% of damage back to the attacker.";
+	  b is_pcontent_allowed = false;
 		screen_name = "Shared Pain";
 		[template_triggers]
 		{
@@ -16562,6 +17040,10 @@
 		damage_min = 79;
 		area_damage_radius = 3;
 	}
+	[common]
+	{
+	  b is_pcontent_allowed = false;
+	}
 	[magic]
 	{
 		cast_range = 10;
@@ -16592,6 +17074,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		[template_triggers]
 		{
 			[*]
@@ -16627,6 +17110,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		[template_triggers]
 		{
 			[*]
@@ -16666,6 +17150,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		[template_triggers]
 		{
 			[*]
@@ -16717,6 +17202,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		[template_triggers]
 		{
 			[*]
@@ -16774,6 +17260,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		[template_triggers]
 		{
 			[*]
@@ -16834,6 +17321,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		[template_triggers]
 		{
 			[*]
@@ -16888,6 +17376,7 @@
 	[common]
 	{
 		description = "Rots the muscles of the Enemy, reducing Minimum Melee Damage by <alter_melee_damage_min> and Maximum Melee Damage by <alter_melee_damage_max>. Mana cost dependent on the power of the Target.";
+	  b is_pcontent_allowed = false;
 		screen_name = "Weaken";
 		[template_triggers]
 		{
@@ -16960,6 +17449,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		[template_triggers]
 		{
 			[*]
@@ -16995,6 +17485,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		[template_triggers]
 		{
 			[*]
@@ -17036,6 +17527,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		[template_triggers]
 		{
 			[*]
@@ -17082,6 +17574,7 @@
 	[common]
 	{
 		description = "Releases a small bolt of electricity at the Target.";
+	  b is_pcontent_allowed = false;
 		screen_name = "Zap";
 		[template_triggers]
 		{
@@ -17131,6 +17624,10 @@
 	{
 		damage_max = 0;
 		damage_min = 0;
+	}
+	[common]
+	{
+	  b is_pcontent_allowed = false;
 	}
 	[magic]
 	{

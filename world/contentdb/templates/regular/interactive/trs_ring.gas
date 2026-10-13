@@ -2,6 +2,10 @@
 {
 	doc = "Template common to all rings";
 	specializes = ring;
+	[common]
+	{
+	  b is_pcontent_allowed = false;
+	}
 	[pcontent]
 	{
 		[b_c_avg]
@@ -279,6 +283,7 @@
 	specializes = ring;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = rare, unique;
 	}
 	[pcontent]
