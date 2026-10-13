@@ -29,6 +29,7 @@
 	[common]
 	{
 	  b allow_modifiers = false;
+	  b is_pcontent_allowed = false;
 		screen_name = "Rigid Leather";
 	}
 	[defend]
@@ -81,6 +82,7 @@
 	[common]
 	{
 	  b allow_modifiers = false;
+	  b is_pcontent_allowed = false;
 		screen_name = "Worn Rigid Leather";
 	}
 	[defend]
@@ -104,6 +106,7 @@
 	[common]
 	{
 	  b allow_modifiers = false;
+	  b is_pcontent_allowed = false;
 		screen_name = "Cracked Rigid Leather";
 	}
 	[defend]
@@ -127,6 +130,7 @@
 	[common]
 	{
 	  b allow_modifiers = false;
+	  b is_pcontent_allowed = false;
 		screen_name = "Waxed Leather";
 	}
 	[defend]
@@ -176,6 +180,7 @@
 	[common]
 	{
 	  b allow_modifiers = false;
+	  b is_pcontent_allowed = false;
 		screen_name = "Boiled Leather";
 	}
 	[defend]
@@ -218,6 +223,7 @@
 	[common]
 	{
 	  b allow_modifiers = false;
+	  b is_pcontent_allowed = false;
 		screen_name = "Thick Leather";
 	}
 	[defend]
@@ -269,6 +275,7 @@
 	[common]
 	{
 	  b allow_modifiers = false;
+	  b is_pcontent_allowed = false;
 		screen_name = "Crude Leather";
 	}
 	[defend]
@@ -291,6 +298,7 @@
 	[common]
 	{
 	  b allow_modifiers = false;
+	  b is_pcontent_allowed = false;
 		screen_name = "Worn Leather";
 	}
 	[defend]
@@ -313,6 +321,7 @@
 	[common]
 	{
 	  b allow_modifiers = false;
+	  b is_pcontent_allowed = false;
 		screen_name = "Mage Leather";
 	}
 	[defend]
@@ -372,6 +381,7 @@
 	[common]
 	{
 	  b allow_modifiers = false;
+	  b is_pcontent_allowed = false;
 		screen_name = "Leather Armor";
 	}
 	[defend]
@@ -413,6 +423,7 @@
 	[common]
 	{
 		allow_modifiers = false;
+	  b is_pcontent_allowed = false;
 		screen_name = "Tattered Leather";
 	}
 	[defend]
@@ -434,6 +445,7 @@
 	specializes = base_body_armor_leather;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = rare, unique;
 		screen_name = "Rock Pelt";
 	}
@@ -475,6 +487,7 @@
 	specializes = base_body_armor_leather;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = rare, unique;
 		screen_name = "Night Leather";
 	}
@@ -514,6 +527,7 @@
 	specializes = base_body_armor_leather;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = rare, unique;
 		screen_name = "Stellar Leather";
 	}
@@ -545,6 +559,7 @@
 	specializes = base_body_armor_leather;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = rare, unique;
 		screen_name = "Fused Leather";
 	}
@@ -576,6 +591,7 @@
 	specializes = base_body_armor_leather;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = rare, unique;
 		screen_name = "Dream Leather";
 	}
@@ -606,6 +622,7 @@
 	specializes = base_body_armor_leather;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = rare, unique;
 		screen_name = "Noble Leather";
 	}
@@ -637,6 +654,7 @@
 	specializes = base_body_armor_leather;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = rare, unique;
 		screen_name = "Classic Leather";
 	}
@@ -705,6 +723,7 @@
 	specializes = base_body_armor_leather;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = rare, unique;
 		screen_name = "Marshal Leather";
 	}
@@ -755,6 +774,7 @@
 	[common]
 	{
 	  b allow_modifiers = false;
+	  b is_pcontent_allowed = false;
 		screen_name = "Cleated Leather";
 	}
 	[defend]
@@ -809,6 +829,7 @@
 	[common]
 	{
 	  b allow_modifiers = false;
+	  b is_pcontent_allowed = false;
 		screen_name = "Torn Leather";
 	}
 	[defend]
@@ -831,6 +852,7 @@
 	[common]
 	{
 	  b allow_modifiers = false;
+	  b is_pcontent_allowed = false;
 		screen_name = "Riveted Leather";
 	}
 	[defend]
@@ -921,6 +943,7 @@
 	[common]
 	{
 	  b allow_modifiers = false;
+	  b is_pcontent_allowed = false;
 		screen_name = "Weathered Leather";
 	}
 	[defend]
@@ -943,6 +966,7 @@
 	[common]
 	{
 	  b allow_modifiers = false;
+	  b is_pcontent_allowed = false;
 		screen_name = "Studded Leather";
 	}
 	[defend]
@@ -1081,6 +1105,7 @@
 	specializes = base_body_armor_leather;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = unique;
 		screen_name = "Lord Hovart's Blood Armor";
 	}
@@ -1112,6 +1137,7 @@
 	specializes = base_body_armor_leather;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = unique;
 		screen_name = "Woodland Leather";
 	}
@@ -1189,6 +1215,7 @@
 	specializes = base_body_armor_leather;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = unique;
 		screen_name = "Olaf's Studded Leather";
 	}

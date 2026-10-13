@@ -24,6 +24,7 @@
 	[common]
 	{
 	  b allow_modifiers = false;
+	  b is_pcontent_allowed = false;
 		screen_name = "Brigandine Boots";
 	}
 	[defend]
@@ -124,6 +125,7 @@
 	specializes = base_boot;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		screen_name = "Chain Boots";
 	}
 	[defend]
@@ -225,6 +227,7 @@
 	[common]
 	{
 	  b allow_modifiers = false;
+	  b is_pcontent_allowed = false;
 		screen_name = "Leather Boots";
 	}
 	[defend]
@@ -446,6 +449,7 @@
 	[common]
 	{
 	  b allow_modifiers = false;
+	  b is_pcontent_allowed = false;
 		screen_name = "Scale Boots";
 	}
 	[defend]
@@ -547,6 +551,7 @@
 	[common]
 	{
 	  b allow_modifiers = false;
+	  b is_pcontent_allowed = false;
 		screen_name = "Studded Leather Boots";
 	}
 	[defend]
@@ -648,6 +653,7 @@
 	[common]
 	{
 	  b allow_modifiers = false;
+	  b is_pcontent_allowed = false;
 		screen_name = "Banded Greaves";
 	}
 	[defend]
@@ -749,6 +755,7 @@
 	[common]
 	{
 	  b allow_modifiers = false;
+	  b is_pcontent_allowed = false;
 		screen_name = "Boiled Leather Greaves";
 	}
 	[defend]
@@ -849,6 +856,7 @@
 	specializes = base_boot;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		screen_name = "Full Plate Greaves";
 	}
 	[defend]
@@ -949,6 +957,7 @@
 	specializes = base_boot;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = rare, unique;
 		screen_name = "Sporting Boots";
 	}
@@ -1000,6 +1009,7 @@
 	specializes = base_boot;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = rare, unique;
 		screen_name = "Kicker Boots";
 	}
@@ -1061,6 +1071,7 @@
 	specializes = base_boot;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = rare, unique;
 		screen_name = "Ready Boots";
 	}
@@ -1101,6 +1112,7 @@
 	specializes = base_boot;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = rare, unique;
 		screen_name = "Blade Boots";
 	}
@@ -1152,6 +1164,7 @@
 	specializes = base_boot;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = rare, unique;
 		screen_name = "Rock Pelt Boots";
 	}
@@ -1203,6 +1216,7 @@
 	specializes = base_boot;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = rare, unique;
 		screen_name = "Pain Greaves";
 	}
@@ -1254,6 +1268,7 @@
 	specializes = base_boot;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = rare, unique;
 		screen_name = "Hunter Greaves";
 	}
@@ -1315,6 +1330,7 @@
 	specializes = base_boot;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = rare, unique;
 		screen_name = "Steel Greaves";
 	}
@@ -1376,6 +1392,7 @@
 	specializes = base_boot;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = unique;
 		screen_name = "Bone Boots";
 	}
@@ -1407,6 +1424,7 @@
 	specializes = base_boot;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = unique;
 		screen_name = "Black Widow Greaves";
 	}
@@ -1438,6 +1456,7 @@
 	specializes = base_boot;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = unique;
 		screen_name = "Woodland Boots";
 	}
@@ -1469,6 +1488,7 @@
 	specializes = base_boot;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = unique;
 		screen_name = "Crystal Boots";
 	}
@@ -1500,6 +1520,7 @@
 	specializes = base_boot;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = unique;
 		screen_name = "Molten Boots";
 	}
@@ -1531,6 +1552,7 @@
 	specializes = base_boot;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = unique;
 		screen_name = "Serpentine Boots";
 	}
@@ -1562,6 +1584,7 @@
 	specializes = base_boot;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = unique;
 		screen_name = "Olaf's Boots";
 	}

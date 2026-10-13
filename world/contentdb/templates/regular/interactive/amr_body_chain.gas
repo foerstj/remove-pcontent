@@ -29,6 +29,7 @@
 	[common]
 	{
 	  b allow_modifiers = false;
+	  b is_pcontent_allowed = false;
 		screen_name = "Thick Chain";
 	}
 	[defend]
@@ -95,6 +96,7 @@
 	[common]
 	{
 	  b allow_modifiers = false;
+	  b is_pcontent_allowed = false;
 		screen_name = "Rusty Chain";
 	}
 	[defend]
@@ -126,6 +128,7 @@
 	[common]
 	{
 	  b allow_modifiers = false;
+	  b is_pcontent_allowed = false;
 		screen_name = "Stiff Chain";
 	}
 	[defend]
@@ -156,6 +159,7 @@
 	specializes = base_body_armor_chain;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		screen_name = "Thin Chain";
 	}
 	[defend]
@@ -260,6 +264,7 @@
 	specializes = base_body_armor_chain;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		screen_name = "Chain Mail";
 	}
 	[defend]
@@ -367,6 +372,7 @@
 	[common]
 	{
 	  b allow_modifiers = false;
+	  b is_pcontent_allowed = false;
 		screen_name = "Tarnished Chain Mail";
 	}
 	[defend]
@@ -397,6 +403,7 @@
 	specializes = base_body_armor_chain;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = rare;
 		screen_name = "Solar Chain";
 	}
@@ -448,6 +455,7 @@
 	specializes = base_body_armor_chain;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = rare, unique;
 		screen_name = "Dragon Weave";
 	}
@@ -499,6 +507,7 @@
 	specializes = base_body_armor_chain;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = rare, unique;
 		screen_name = "Blood Scale";
 	}
@@ -530,6 +539,7 @@
 	specializes = base_body_armor_chain;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = rare, unique;
 		screen_name = "Shadow Scale";
 	}
@@ -582,6 +592,7 @@
 	specializes = base_body_armor_chain;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = rare, unique;
 		screen_name = "Noble Scale";
 	}
@@ -624,6 +635,7 @@
 	[common]
 	{
 	  b allow_modifiers = false;
+	  b is_pcontent_allowed = false;
 		screen_name = "Thick Scale";
 	}
 	[defend]
@@ -698,6 +710,7 @@
 	[common]
 	{
 	  b allow_modifiers = false;
+	  b is_pcontent_allowed = false;
 		screen_name = "Pitted Scale";
 	}
 	[defend]
@@ -729,6 +742,7 @@
 	[common]
 	{
 	  b allow_modifiers = false;
+	  b is_pcontent_allowed = false;
 		screen_name = "Bulky Scale";
 	}
 	[defend]
@@ -760,6 +774,7 @@
 	[common]
 	{
 	  b allow_modifiers = false;
+	  b is_pcontent_allowed = false;
 		screen_name = "Thin Scale";
 	}
 	[defend]
@@ -823,6 +838,7 @@
 	[common]
 	{
 	  b allow_modifiers = false;
+	  b is_pcontent_allowed = false;
 		screen_name = "Flexible Scale";
 	}
 	[defend]
@@ -886,6 +902,7 @@
 	specializes = base_body_armor_chain;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = unique;
 		screen_name = "Green Chain Mail";
 	}
@@ -917,6 +934,7 @@
 	specializes = base_body_armor_chain;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = unique;
 		screen_name = "Serpentine Scale";
 	}
@@ -948,6 +966,7 @@
 	specializes = base_body_armor_chain;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		screen_name = "Dark Scale";
 	}
 	[defend]

@@ -53,6 +53,7 @@
 	[common]
 	{
 	  b allow_modifiers = false;
+	  b is_pcontent_allowed = false;
 		screen_name = "Dagger";
 	}
 	[gui]
@@ -118,6 +119,7 @@
 	[common]
 	{
 	  b allow_modifiers = false;
+	  b is_pcontent_allowed = false;
 		screen_name = "Blunt Dagger";
 	}
 	[gui]
@@ -145,6 +147,7 @@
 	[common]
 	{
 		allow_modifiers = false;
+	  b is_pcontent_allowed = false;
 		screen_name = "Rusty Dagger";
 	}
 	[gui]

@@ -42,6 +42,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		screen_name = "Hammer";
 	}
 	[gui]
@@ -146,6 +147,7 @@
 	[common]
 	{
 	  b allow_modifiers = false;
+	  b is_pcontent_allowed = false;
 		screen_name = "Common Hammer";
 	}
 	[gui]
@@ -172,6 +174,7 @@
 	[common]
 	{
 	  b allow_modifiers = false;
+	  b is_pcontent_allowed = false;
 		screen_name = "Worn Hammer";
 	}
 	[gui]
@@ -198,6 +201,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		screen_name = "Mallet";
 	}
 	[gui]
@@ -305,6 +309,7 @@
 	[common]
 	{
 	  b allow_modifiers = false;
+	  b is_pcontent_allowed = false;
 		screen_name = "Damaged Mallet";
 	}
 	[gui]
@@ -334,6 +339,7 @@
 	[common]
 	{
 	  b allow_modifiers = false;
+	  b is_pcontent_allowed = false;
 		screen_name = "Crude Mallet";
 	}
 	[gui]
@@ -362,6 +368,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		screen_name = "Maul";
 	}
 	[gui]
@@ -449,6 +456,7 @@
 	[common]
 	{
 	  b allow_modifiers = false;
+	  b is_pcontent_allowed = false;
 		screen_name = "Sledgehammer";
 	}
 	[gui]
@@ -476,6 +484,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = rare, unique;
 		screen_name = "Head Hammer";
 	}
@@ -542,6 +551,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = rare, unique;
 		screen_name = "Wound Mallet";
 	}
@@ -609,6 +619,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = rare, unique;
 		screen_name = "Head Ram";
 	}

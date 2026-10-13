@@ -26,6 +26,7 @@
 	[common]
 	{
 	  b allow_modifiers = false;
+	  b is_pcontent_allowed = false;
 		screen_name = "Leather Cap";
 	}
 	[defend]
@@ -54,6 +55,7 @@
 	[common]
 	{
 	  b allow_modifiers = false;
+	  b is_pcontent_allowed = false;
 		screen_name = "Steel Cap";
 	}
 	[defend]
@@ -82,6 +84,7 @@
 	specializes = base_helm;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		screen_name = "Iron Helm";
 	}
 	[defend]
@@ -110,6 +113,7 @@
 	specializes = base_helm;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		screen_name = "Onyx Helm";
 	}
 	[defend]
@@ -139,6 +143,7 @@
 	[common]
 	{
 	  b allow_modifiers = false;
+	  b is_pcontent_allowed = false;
 		screen_name = "Plate Cap";
 	}
 	[defend]
@@ -168,6 +173,7 @@
 	[common]
 	{
 	  b allow_modifiers = false;
+	  b is_pcontent_allowed = false;
 		screen_name = "Earthen Helm";
 	}
 	[defend]
@@ -196,6 +202,7 @@
 	specializes = base_helm;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		screen_name = "Dome Cap";
 	}
 	[defend]
@@ -224,6 +231,7 @@
 	specializes = base_helm;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		screen_name = "Ridge Helm";
 	}
 	[defend]
@@ -252,6 +260,7 @@
 	specializes = base_helm;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		screen_name = "Brow Cap";
 	}
 	[defend]
@@ -280,6 +289,7 @@
 	specializes = base_helm;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		screen_name = "Solar Cap";
 	}
 	[defend]
@@ -308,6 +318,7 @@
 	specializes = base_helm;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		screen_name = "Felt Cap";
 	}
 	[defend]
@@ -335,6 +346,7 @@
 	specializes = base_helm;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		screen_name = "Felt Cap";
 	}
 	[defend]
@@ -363,6 +375,7 @@
 	[common]
 	{
 	  b allow_modifiers = false;
+	  b is_pcontent_allowed = false;
 		screen_name = "Felt Cap";
 	}
 	[defend]
@@ -390,6 +403,7 @@
 	specializes = base_helm;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		screen_name = "Felt Cap";
 	}
 	[defend]
@@ -418,6 +432,7 @@
 	specializes = base_helm;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		screen_name = "Flat Cap";
 	}
 	[defend]
@@ -446,6 +461,7 @@
 	specializes = base_helm;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		screen_name = "Flat Cap";
 	}
 	[defend]
@@ -474,6 +490,7 @@
 	specializes = base_helm;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		screen_name = "Flat Cap";
 	}
 	[defend]
@@ -502,6 +519,7 @@
 	specializes = base_helm;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		screen_name = "Flat Cap";
 	}
 	[defend]
@@ -530,6 +548,7 @@
 	specializes = base_helm;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		screen_name = "Gem Cap";
 	}
 	[defend]
@@ -557,6 +576,7 @@
 	specializes = base_helm;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		screen_name = "Fabric Cap";
 	}
 	[defend]
@@ -584,6 +604,7 @@
 	specializes = base_helm;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		screen_name = "Peak Cap";
 	}
 	[defend]
@@ -611,6 +632,7 @@
 	specializes = base_helm;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		screen_name = "Peak Cap";
 	}
 	[defend]
@@ -639,6 +661,7 @@
 	[common]
 	{
 	  b allow_modifiers = false;
+	  b is_pcontent_allowed = false;
 		screen_name = "Peak Cap";
 	}
 	[defend]
@@ -666,6 +689,7 @@
 	specializes = base_helm;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		screen_name = "Peak Cap";
 	}
 	[defend]
@@ -694,6 +718,7 @@
 	specializes = base_helm;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		screen_name = "Thin Cap";
 	}
 	[defend]
@@ -722,6 +747,7 @@
 	specializes = base_helm;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		screen_name = "Thin Cap";
 	}
 	[defend]
@@ -749,6 +775,7 @@
 	specializes = base_helm;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		screen_name = "Thin Cap";
 	}
 	[defend]
@@ -777,6 +804,7 @@
 	[common]
 	{
 	  b allow_modifiers = false;
+	  b is_pcontent_allowed = false;
 		screen_name = "Thin Cap";
 	}
 	[defend]
@@ -804,6 +832,7 @@
 	specializes = base_helm;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		screen_name = "Coiled Cap";
 	}
 	[defend]
@@ -832,6 +861,7 @@
 	specializes = base_helm;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		screen_name = "Coiled Cap";
 	}
 	[defend]
@@ -860,6 +890,7 @@
 	specializes = base_helm;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		screen_name = "Coiled Cap";
 	}
 	[defend]
@@ -888,6 +919,7 @@
 	specializes = base_helm;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		screen_name = "Coiled Cap";
 	}
 	[defend]
@@ -916,6 +948,7 @@
 	specializes = base_helm;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		screen_name = "Wizard Cap";
 	}
 	[defend]
@@ -944,6 +977,7 @@
 	specializes = base_helm;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		screen_name = "Wizard Cap";
 	}
 	[defend]
@@ -972,6 +1006,7 @@
 	specializes = base_helm;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		screen_name = "Wizard Cap";
 	}
 	[defend]
@@ -1000,6 +1035,7 @@
 	specializes = base_helm;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		screen_name = "Wizard Cap";
 	}
 	[defend]
@@ -1028,6 +1064,7 @@
 	specializes = base_helm;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		screen_name = "Wizard Cap";
 	}
 	[defend]
@@ -1056,6 +1093,7 @@
 	specializes = base_helm;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		screen_name = "Wizard Cap";
 	}
 	[defend]
@@ -1084,6 +1122,7 @@
 	specializes = base_helm;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		screen_name = "Wizard Cap";
 	}
 	[defend]
@@ -1113,6 +1152,7 @@
 	[common]
 	{
 	  b allow_modifiers = false;
+	  b is_pcontent_allowed = false;
 		screen_name = "Wooly Cap";
 	}
 	[defend]
@@ -1140,6 +1180,7 @@
 	specializes = base_helm;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		screen_name = "Wooly Cap";
 	}
 	[defend]
@@ -1167,6 +1208,7 @@
 	specializes = base_helm;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		screen_name = "Wooly Cap";
 	}
 	[defend]
@@ -1195,6 +1237,7 @@
 	specializes = base_helm;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		screen_name = "Wooly Cap";
 	}
 	[defend]
@@ -1223,6 +1266,7 @@
 	specializes = base_helm;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		screen_name = "Thicket Helm";
 	}
 	[defend]
@@ -1251,6 +1295,7 @@
 	specializes = base_helm;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		screen_name = "Woven Cap";
 	}
 	[defend]
@@ -1279,6 +1324,7 @@
 	specializes = base_helm;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		screen_name = "Woven Cap";
 	}
 	[defend]
@@ -1307,6 +1353,7 @@
 	specializes = base_helm;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		screen_name = "Woven Cap";
 	}
 	[defend]
@@ -1336,6 +1383,7 @@
 	[common]
 	{
 	  b allow_modifiers = false;
+	  b is_pcontent_allowed = false;
 		screen_name = "Studded Cap";
 	}
 	[defend]
@@ -1364,6 +1412,7 @@
 	specializes = base_helm;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		screen_name = "Bronze Helm";
 	}
 	[defend]
@@ -1392,6 +1441,7 @@
 	specializes = base_helm;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		screen_name = "Centaur Helm";
 	}
 	[defend]
@@ -1420,6 +1470,7 @@
 	specializes = base_helm;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		screen_name = "Desert Helm";
 	}
 	[defend]
@@ -1448,6 +1499,7 @@
 	specializes = base_helm;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		screen_name = "Slotted Helm";
 	}
 	[defend]
@@ -1476,6 +1528,7 @@
 	specializes = base_helm;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		screen_name = "Horned Helm";
 	}
 	[defend]
@@ -1504,6 +1557,7 @@
 	specializes = base_helm;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		screen_name = "Bull Helm";
 	}
 	[defend]
@@ -1532,6 +1586,7 @@
 	specializes = base_helm;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		screen_name = "Brute Helm";
 	}
 	[defend]
@@ -1560,6 +1615,7 @@
 	specializes = base_helm;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		screen_name = "Black Helm";
 	}
 	[defend]
@@ -1588,6 +1644,7 @@
 	specializes = base_helm;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		screen_name = "Regal Helm";
 	}
 	[defend]
@@ -1616,6 +1673,7 @@
 	specializes = base_helm;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		screen_name = "Raven Helm";
 	}
 	[defend]
@@ -1644,6 +1702,7 @@
 	specializes = base_helm;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		screen_name = "Great Helm";
 	}
 	[defend]
@@ -1672,6 +1731,7 @@
 	specializes = base_helm;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		screen_name = "Blaster Helm";
 	}
 	[defend]
@@ -1700,6 +1760,7 @@
 	specializes = base_helm;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		screen_name = "Knight Helm";
 	}
 	[defend]
@@ -1728,6 +1789,7 @@
 	specializes = base_helm;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		screen_name = "Karlat's Magic Helm";
 	}
 	[defend]
@@ -1785,6 +1847,7 @@
 	specializes = base_helm;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		screen_name = "War Helm";
 	}
 	[defend]
@@ -1813,6 +1876,7 @@
 	specializes = base_helm;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		screen_name = "Bluster Helm";
 	}
 	[defend]
@@ -1841,6 +1905,7 @@
 	specializes = base_helm;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		screen_name = "Hawk Helm";
 	}
 	[defend]
@@ -1869,6 +1934,7 @@
 	specializes = base_helm;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		screen_name = "Guardian Helm";
 	}
 	[defend]
@@ -1969,6 +2035,7 @@
 	specializes = base_helm;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		screen_name = "Spiked Helm";
 	}
 	[defend]
@@ -1997,6 +2064,7 @@
 	specializes = base_helm;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		screen_name = "Heavy Helm";
 	}
 	[defend]
@@ -2025,6 +2093,7 @@
 	specializes = base_helm;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		screen_name = "Soaring Helm";
 	}
 	[defend]
@@ -2053,6 +2122,7 @@
 	specializes = base_helm;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		screen_name = "Winged Helm";
 	}
 	[defend]
@@ -2082,6 +2152,7 @@
 	[common]
 	{
 	  b allow_modifiers = false;
+	  b is_pcontent_allowed = false;
 		screen_name = "Sentry Helm";
 	}
 	[defend]
@@ -2110,6 +2181,7 @@
 	specializes = base_helm;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		screen_name = "Tusk Helm";
 	}
 	[defend]
@@ -2138,6 +2210,7 @@
 	specializes = base_helm;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		screen_name = "Face Helm";
 	}
 	[defend]
@@ -2166,6 +2239,7 @@
 	specializes = base_helm;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		screen_name = "Parade Helm";
 	}
 	[defend]
@@ -2194,6 +2268,7 @@
 	specializes = base_helm;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		screen_name = "Sovereign Helm";
 	}
 	[defend]
@@ -2222,6 +2297,7 @@
 	specializes = base_helm;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		screen_name = "Crimson Helm";
 	}
 	[defend]
@@ -2250,6 +2326,7 @@
 	specializes = base_helm;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		screen_name = "Dashing Helm";
 	}
 	[defend]
@@ -2278,6 +2355,7 @@
 	specializes = base_helm;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = rare, unique;
 		screen_name = "Pauper Cap";
 	}
@@ -2306,6 +2384,7 @@
 	specializes = base_helm;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = rare, unique;
 		screen_name = "Snug Cap";
 	}
@@ -2335,6 +2414,7 @@
 	specializes = base_helm;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = rare, unique;
 		screen_name = "Wanderer Cap";
 	}
@@ -2364,6 +2444,7 @@
 	specializes = base_helm;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = rare, unique;
 		screen_name = "Sheen Cap";
 	}
@@ -2393,6 +2474,7 @@
 	specializes = base_helm;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = rare, unique;
 		screen_name = "Rustic Cap";
 	}
@@ -2422,6 +2504,7 @@
 	specializes = base_helm;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = rare, unique;
 		screen_name = "Pressed Cap";
 	}
@@ -2451,6 +2534,7 @@
 	specializes = base_helm;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = rare, unique;
 		screen_name = "Cerebral Cap";
 	}
@@ -2480,6 +2564,7 @@
 	specializes = base_helm;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = rare, unique;
 		screen_name = "Scratchy Cap";
 	}
@@ -2508,6 +2593,7 @@
 	specializes = base_helm;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = rare, unique;
 		screen_name = "Knowledge Cap";
 	}
@@ -2537,6 +2623,7 @@
 	specializes = base_helm;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = rare, unique;
 		screen_name = "Knowledge Cap";
 	}
@@ -2565,6 +2652,7 @@
 	specializes = base_helm;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = rare, unique;
 		screen_name = "Knowledge Cap";
 	}
@@ -2594,6 +2682,7 @@
 	specializes = base_helm;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = rare, unique;
 		screen_name = "Warmth Cap";
 	}
@@ -2623,6 +2712,7 @@
 	specializes = base_helm;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = rare, unique;
 		screen_name = "Warmth Cap";
 	}
@@ -2652,6 +2742,7 @@
 	specializes = base_helm;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = rare, unique;
 		screen_name = "Loom Cap";
 	}
@@ -2681,6 +2772,7 @@
 	specializes = base_helm;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = rare, unique;
 		screen_name = "Traveling Cap";
 	}
@@ -2710,6 +2802,7 @@
 	specializes = base_helm;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = rare, unique;
 		screen_name = "Seething Helm";
 	}
@@ -2739,6 +2832,7 @@
 	specializes = base_helm;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = rare, unique;
 		screen_name = "Gore Helm";
 	}
@@ -2768,6 +2862,7 @@
 	specializes = base_helm;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = rare, unique;
 		screen_name = "Conqueror Helm";
 	}
@@ -2797,6 +2892,7 @@
 	specializes = base_helm;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = rare, unique;
 		screen_name = "Echo Helm";
 	}
@@ -2826,6 +2922,7 @@
 	specializes = base_helm;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = rare, unique;
 		screen_name = "Bloody Helm";
 	}
@@ -2855,6 +2952,7 @@
 	specializes = base_helm;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = rare, unique;
 		screen_name = "Bloody Helm";
 	}
@@ -2884,6 +2982,7 @@
 	specializes = base_helm;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = rare, unique;
 		screen_name = "Menacing Helm";
 	}
@@ -2913,6 +3012,7 @@
 	specializes = base_helm;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = rare, unique;
 		screen_name = "Prickly Helm";
 	}
@@ -2942,6 +3042,7 @@
 	specializes = base_helm;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = rare, unique;
 		screen_name = "Bolted Helm";
 	}
@@ -2971,6 +3072,7 @@
 	specializes = base_helm;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = rare, unique;
 		screen_name = "Spirited Helm";
 	}
@@ -3000,6 +3102,7 @@
 	specializes = base_helm;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = rare, unique;
 		screen_name = "Jaw Helm";
 	}
@@ -3029,6 +3132,7 @@
 	specializes = base_helm;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = rare, unique;
 		screen_name = "Stature Helm";
 	}
@@ -3058,6 +3162,7 @@
 	specializes = base_helm;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = rare, unique;
 		screen_name = "Whiplash Helm";
 	}
@@ -3087,6 +3192,7 @@
 	specializes = base_helm;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = rare, unique;
 		screen_name = "Disturbed Helm";
 	}
@@ -3116,6 +3222,7 @@
 	specializes = base_helm;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = rare, unique;
 		screen_name = "Burdened Helm";
 	}
@@ -3145,6 +3252,7 @@
 	specializes = base_helm;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		screen_name = "Olaf's Helmet";
 	}
 	[defend]
@@ -3173,6 +3281,7 @@
 	specializes = base_helm;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = rare, unique;
 		screen_name = "Bovine Helm";
 	}
@@ -3202,6 +3311,7 @@
 	specializes = base_helm;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = rare, unique;
 		screen_name = "Brimmed Hat";
 	}
@@ -3231,6 +3341,7 @@
 	specializes = base_helm;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = rare, unique;
 		screen_name = "Luna Cap";
 	}
@@ -3289,6 +3400,7 @@
 	specializes = base_helm;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		screen_name = "Warlock Hat";
 	}
 	[defend]
@@ -3316,6 +3428,7 @@
 	specializes = base_helm;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = rare, unique;
 		screen_name = "Imperial Helm";
 	}
@@ -3345,6 +3458,7 @@
 	specializes = base_helm;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = rare, unique;
 		screen_name = "Crystal Helm";
 	}
@@ -3374,6 +3488,7 @@
 	specializes = base_helm;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = rare, unique;
 		screen_name = "Eye Helm";
 	}
@@ -3403,6 +3518,7 @@
 	specializes = base_helm;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = rare, unique;
 		screen_name = "Fish Helm";
 	}
@@ -3432,6 +3548,7 @@
 	specializes = base_helm;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = rare, unique;
 		screen_name = "Dragonfly Helm";
 	}
@@ -3461,6 +3578,7 @@
 	specializes = base_helm;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = rare, unique;
 		screen_name = "Carnage Helm";
 	}
@@ -3490,6 +3608,7 @@
 	specializes = base_helm;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = rare, unique;
 		screen_name = "Bone Helm";
 	}
@@ -3577,6 +3696,7 @@
 	specializes = base_helm;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = unique;
 		screen_name = "Black Widow Helmet";
 	}
@@ -3606,6 +3726,7 @@
 	specializes = base_helm;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = unique;
 		screen_name = "Serpentine Helmet";
 	}
@@ -3635,6 +3756,7 @@
 	specializes = base_helm;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = rare, unique;
 		screen_name = "Challenger Helm";
 	}
@@ -3664,6 +3786,7 @@
 	specializes = base_helm;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		screen_name = "Knight Helm";
 	}
 	[defend]

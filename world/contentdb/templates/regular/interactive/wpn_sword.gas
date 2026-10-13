@@ -50,6 +50,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		screen_name = "Full Blade";
 	}
 	[gui]
@@ -122,6 +123,7 @@
 	[common]
 	{
 	  b allow_modifiers = false;
+	  b is_pcontent_allowed = false;
 		screen_name = "Cracked Full Blade";
 	}
 	[gui]
@@ -148,6 +150,7 @@
 	[common]
 	{
 	  b allow_modifiers = false;
+	  b is_pcontent_allowed = false;
 		screen_name = "Falchion";
 	}
 	[gui]
@@ -212,6 +215,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		screen_name = "Full Gladius";
 	}
 	[gui]
@@ -272,6 +276,7 @@
 	[common]
 	{
 	  b allow_modifiers = false;
+	  b is_pcontent_allowed = false;
 		screen_name = "Blunt Full Gladius";
 	}
 	[gui]
@@ -298,6 +303,7 @@
 	[common]
 	{
 	  b allow_modifiers = false;
+	  b is_pcontent_allowed = false;
 		screen_name = "Scimitar";
 	}
 	[gui]
@@ -363,6 +369,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		screen_name = "Long Sword";
 	}
 	[gui]
@@ -446,6 +453,7 @@
 	[common]
 	{
 	  b allow_modifiers = false;
+	  b is_pcontent_allowed = false;
 		screen_name = "Pitted Long Sword";
 	}
 	[gui]
@@ -472,6 +480,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		screen_name = "Great Sword";
 	}
 	[gui]
@@ -557,6 +566,7 @@
 	[common]
 	{
 	  b allow_modifiers = false;
+	  b is_pcontent_allowed = false;
 		screen_name = "Damaged Great Sword";
 	}
 	[gui]
@@ -585,6 +595,7 @@
 	[common]
 	{
 		allow_modifiers = false;
+	  b is_pcontent_allowed = false;
 		screen_name = "Trog Great Sword";
 	}
 	[gui]
@@ -621,6 +632,7 @@
 	[common]
 	{
 	  b allow_modifiers = false;
+	  b is_pcontent_allowed = false;
 		screen_name = "Dented Great Sword";
 	}
 	[gui]
@@ -647,6 +659,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		screen_name = "Steel";
 	}
 	[gui]
@@ -770,6 +783,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		screen_name = "Great Steel";
 	}
 	[gui]
@@ -894,6 +908,7 @@
 	[common]
 	{
 	  b allow_modifiers = false;
+	  b is_pcontent_allowed = false;
 		screen_name = "Worn Great Steel";
 	}
 	[gui]
@@ -920,6 +935,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = rare;
 		screen_name = "Cruel Blade";
 	}
@@ -954,6 +970,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = rare;
 		screen_name = "Bone Cutter";
 	}
@@ -1012,6 +1029,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = rare;
 		screen_name = "Gut Masher";
 	}
@@ -1072,6 +1090,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = rare, unique;
 		screen_name = "Lethal Sword";
 	}
@@ -1131,6 +1150,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = rare, unique;
 		screen_name = "Vicious Blade";
 	}
@@ -1165,6 +1185,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = rare, unique;
 		screen_name = "Finger Chopper";
 	}
@@ -1199,6 +1220,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = rare, unique;
 		screen_name = "Head Splitter";
 	}
@@ -1307,6 +1329,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = rare, unique;
 		screen_name = "Steel Death";
 	}
@@ -1368,6 +1391,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = rare, unique;
 		screen_name = "Leg Cleaver";
 	}
@@ -1441,6 +1465,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = unique;
 		screen_name = "Jagged Sword";
 	}
@@ -1476,6 +1501,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = unique;
 		screen_name = "Massive Sword";
 	}
@@ -1511,6 +1537,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = unique;
 		screen_name = "Sword Breaker";
 	}
@@ -1546,6 +1573,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = unique;
 		screen_name = "Sickle Sword";
 	}
@@ -1581,6 +1609,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = unique;
 		screen_name = "Cascade Sword";
 	}
@@ -1616,6 +1645,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = unique;
 		screen_name = "Starburst Sword";
 	}
@@ -1652,6 +1682,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = unique;
 		screen_name = "Barbed Sword";
 	}
@@ -1688,6 +1719,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = unique;
 		screen_name = "Serrated Sword";
 	}
@@ -1724,6 +1756,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = unique;
 		screen_name = "Onyx Sword";
 	}
@@ -1760,6 +1793,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = unique;
 		screen_name = "Snake Sword";
 	}
@@ -1796,6 +1830,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = unique;
 		screen_name = "Split Sword";
 	}
@@ -1858,6 +1893,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = unique;
 		screen_name = "Edged Sword";
 	}
@@ -1893,6 +1929,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = unique;
 		screen_name = "Phoenix Sword";
 	}
@@ -1928,6 +1965,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = unique;
 		screen_name = "Twisted Sword";
 	}
@@ -1963,6 +2001,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = unique;
 		screen_name = "Dragon Wing";
 	}
@@ -1999,6 +2038,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = unique;
 		screen_name = "Elegant Sword";
 	}
@@ -2035,6 +2075,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = unique;
 		screen_name = "Union Sword";
 	}
@@ -2071,6 +2112,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = unique;
 		screen_name = "Diamond Sword";
 	}
@@ -2106,6 +2148,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = unique;
 		screen_name = "Jewel Sword";
 	}
@@ -2226,6 +2269,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		screen_name = "Blade";
 	}
 	[gui]
@@ -2273,6 +2317,7 @@
 	[common]
 	{
 	  b allow_modifiers = false;
+	  b is_pcontent_allowed = false;
 		screen_name = "Dull Blade";
 	}
 	[gui]
@@ -2299,6 +2344,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		screen_name = "Gladius";
 	}
 	[gui]
@@ -2346,6 +2392,7 @@
 	[common]
 	{
 		allow_modifiers = false;
+	  b is_pcontent_allowed = false;
 		screen_name = "Tarnished Gladius";
 	}
 	[gui]
@@ -2372,6 +2419,7 @@
 	[common]
 	{
 	  b allow_modifiers = false;
+	  b is_pcontent_allowed = false;
 		screen_name = "Crusted Gladius";
 	}
 	[gui]
@@ -2398,6 +2446,7 @@
 	[common]
 	{
 	  b allow_modifiers = false;
+	  b is_pcontent_allowed = false;
 		screen_name = "Short Sword";
 	}
 	[gui]
@@ -2493,6 +2542,7 @@
 	[common]
 	{
 	  b allow_modifiers = false;
+	  b is_pcontent_allowed = false;
 		screen_name = "Short Steel";
 	}
 	[gui]
@@ -2564,6 +2614,7 @@
 	[common]
 	{
 	  b allow_modifiers = false;
+	  b is_pcontent_allowed = false;
 		screen_name = "Pitted Short Steel";
 	}
 	[gui]
@@ -2590,6 +2641,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = rare, unique;
 		screen_name = "Pain Gladius";
 	}
@@ -2625,6 +2677,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = rare, unique;
 		screen_name = "Short Impaler";
 	}
@@ -2684,6 +2737,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = rare, unique;
 		screen_name = "Masher";
 	}

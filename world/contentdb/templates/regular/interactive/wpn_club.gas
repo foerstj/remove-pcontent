@@ -42,6 +42,7 @@
 	[common]
 	{
 		allow_modifiers = false;
+	  b is_pcontent_allowed = false;
 		screen_name = "Cudgel";
 	}
 	[gui]
@@ -108,6 +109,7 @@
 	[common]
 	{
 		allow_modifiers = false;
+	  b is_pcontent_allowed = false;
 		screen_name = "Rock Club";
 	}
 	[gui]
@@ -133,6 +135,7 @@
 	[common]
 	{
 		allow_modifiers = false;
+	  b is_pcontent_allowed = false;
 		screen_name = "Bone Club";
 	}
 	[gui]
@@ -158,6 +161,7 @@
 	[common]
 	{
 		allow_modifiers = false;
+	  b is_pcontent_allowed = false;
 		screen_name = "Spiked Club";
 	}
 	[gui]
@@ -183,6 +187,7 @@
 	[common]
 	{
 		allow_modifiers = false;
+	  b is_pcontent_allowed = false;
 		screen_name = "Chair Leg";
 	}
 	[gui]
@@ -208,6 +213,7 @@
 	[common]
 	{
 		allow_modifiers = false;
+	  b is_pcontent_allowed = false;
 		screen_name = "Branch";
 	}
 	[gui]

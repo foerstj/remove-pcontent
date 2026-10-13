@@ -104,6 +104,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		screen_name = "Chicken";
 		[template_triggers]
 		{
@@ -188,6 +189,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		screen_name = "Long Crossbow";
 	}
 	[gui]
@@ -314,6 +316,7 @@
 	[common]
 	{
 	  b allow_modifiers = false;
+	  b is_pcontent_allowed = false;
 		screen_name = "Medium Crossbow";
 	}
 	[gui]
@@ -439,6 +442,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = rare, unique;
 		screen_name = "Punisher Crossbow";
 	}
@@ -532,6 +536,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = rare;
 		screen_name = "Slayer Crossbow";
 	}
@@ -564,6 +569,10 @@
 	{
 		skill_class = ranged;
 	}
+	[common]
+	{
+	  b is_pcontent_allowed = false;
+	}
 }
 [t:template,n:grenade_magic]
 {
@@ -573,6 +582,10 @@
 	{
 		skill_class = "Combat Magic";
 	}
+	[common]
+	{
+	  b is_pcontent_allowed = false;
+	}
 }
 [t:template,n:grenade_magic_small]
 {
@@ -581,6 +594,10 @@
 	[attack]
 	{
 		skill_class = "Combat Magic";
+	}
+	[common]
+	{
+	  b is_pcontent_allowed = false;
 	}
 	[physics]
 	{

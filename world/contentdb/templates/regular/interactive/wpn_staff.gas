@@ -198,6 +198,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		screen_name = "Bladed Staff";
 	}
 	[gui]
@@ -307,6 +308,7 @@
 	[common]
 	{
 	  b allow_modifiers = false;
+	  b is_pcontent_allowed = false;
 		screen_name = "Gnarled Staff";
 	}
 	[gui]
@@ -334,6 +336,7 @@
 	[common]
 	{
 	  b allow_modifiers = false;
+	  b is_pcontent_allowed = false;
 		screen_name = "Notched Staff";
 	}
 	[gui]
@@ -360,6 +363,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		screen_name = "Staff";
 	}
 	[gui]
@@ -468,6 +472,7 @@
 	[common]
 	{
 	  b allow_modifiers = false;
+	  b is_pcontent_allowed = false;
 		screen_name = "Crooked Staff";
 	}
 	[gui]
@@ -494,6 +499,7 @@
 	[common]
 	{
 	  b allow_modifiers = false;
+	  b is_pcontent_allowed = false;
 		screen_name = "Splintered Staff";
 	}
 	[gui]
@@ -520,6 +526,7 @@
 	[common]
 	{
 	  b allow_modifiers = false;
+	  b is_pcontent_allowed = false;
 		screen_name = "Steel Staff";
 	}
 	[gui]
@@ -629,6 +636,7 @@
 	[common]
 	{
 	  b allow_modifiers = false;
+	  b is_pcontent_allowed = false;
 		screen_name = "Bent Staff";
 	}
 	[gui]
@@ -656,6 +664,7 @@
 	[common]
 	{
 	  b allow_modifiers = false;
+	  b is_pcontent_allowed = false;
 		screen_name = "Warped Staff";
 	}
 	[gui]
@@ -683,6 +692,7 @@
 	[common]
 	{
 		allow_modifiers = false;
+	  b is_pcontent_allowed = false;
 		screen_name = "Walking Stick";
 	}
 	[gui]
@@ -709,6 +719,7 @@
 	[common]
 	{
 	  b allow_modifiers = false;
+	  b is_pcontent_allowed = false;
 		screen_name = "Knife Staff";
 	}
 	[gui]
@@ -736,6 +747,7 @@
 	[common]
 	{
 	  b allow_modifiers = false;
+	  b is_pcontent_allowed = false;
 		screen_name = "Edge Staff";
 	}
 	[gui]
@@ -763,6 +775,7 @@
 	[common]
 	{
 	  b allow_modifiers = false;
+	  b is_pcontent_allowed = false;
 		screen_name = "Yearling Staff";
 	}
 	[gui]
@@ -790,6 +803,7 @@
 	[common]
 	{
 	  b allow_modifiers = false;
+	  b is_pcontent_allowed = false;
 		screen_name = "Weathered Staff";
 	}
 	[gui]
@@ -817,6 +831,7 @@
 	[common]
 	{
 	  b allow_modifiers = false;
+	  b is_pcontent_allowed = false;
 		screen_name = "Eastern Staff";
 	}
 	[gui]
@@ -844,6 +859,7 @@
 	[common]
 	{
 	  b allow_modifiers = false;
+	  b is_pcontent_allowed = false;
 		screen_name = "Charred Staff";
 	}
 	[gui]
@@ -870,6 +886,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = rare, unique;
 		screen_name = "Destroyer";
 	}
@@ -969,6 +986,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = rare, unique;
 		screen_name = "Leg Breaker";
 	}
@@ -1068,6 +1086,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = rare, unique;
 		screen_name = "Cruel Staff";
 	}
@@ -1206,6 +1225,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = unique;
 		screen_name = "Axe Staff";
 	}
@@ -1241,6 +1261,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = unique;
 		screen_name = "Bladed Staff";
 	}
@@ -1276,6 +1297,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = unique;
 		screen_name = "Hooked Staff";
 	}
@@ -1311,6 +1333,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = unique;
 		screen_name = "Wing Staff";
 	}
@@ -1346,6 +1369,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = unique;
 		screen_name = "Hand Staff";
 	}
@@ -1416,6 +1440,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = unique;
 		screen_name = "Mace Staff";
 	}
@@ -1586,6 +1611,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = unique;
 		screen_name = "Sharp Staff";
 	}
@@ -1621,6 +1647,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = unique;
 		screen_name = "Pudgel Staff";
 	}
@@ -1737,6 +1764,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = unique;
 		screen_name = "Skull Staff";
 	}
@@ -1772,6 +1800,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = unique;
 		screen_name = "Tiger Staff";
 	}
@@ -1807,6 +1836,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = unique;
 		screen_name = "Pointed Staff";
 	}
@@ -1869,6 +1899,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = unique;
 		screen_name = "Twirled Staff";
 	}

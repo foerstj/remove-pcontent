@@ -28,6 +28,7 @@
 	specializes = base_body_armor_cloth;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = rare, unique;
 		screen_name = "Ash Burlap";
 	}
@@ -59,6 +60,7 @@
 	specializes = base_body_armor_cloth;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = rare, unique;
 		screen_name = "Ash Burlap";
 	}
@@ -90,6 +92,7 @@
 	specializes = base_body_armor_cloth;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = rare, unique;
 		screen_name = "Night Garment";
 	}
@@ -121,6 +124,7 @@
 	specializes = base_body_armor_cloth;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = rare, unique;
 		screen_name = "Blood Coat";
 	}
@@ -152,6 +156,7 @@
 	specializes = base_body_armor_cloth;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = rare, unique;
 		screen_name = "Blood Coat";
 	}
@@ -183,6 +188,7 @@
 	specializes = base_body_armor_cloth;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = rare, unique;
 		screen_name = "Dream Robe";
 	}
@@ -214,6 +220,7 @@
 	specializes = base_body_armor_cloth;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = rare, unique;
 		screen_name = "Clay Tatters";
 	}
@@ -245,6 +252,7 @@
 	specializes = base_body_armor_cloth;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = rare, unique;
 		screen_name = "Dirt Rags";
 	}
@@ -276,6 +284,7 @@
 	specializes = base_body_armor_cloth;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = rare, unique;
 		screen_name = "Solar Cloth";
 	}
@@ -307,6 +316,7 @@
 	specializes = base_body_armor_cloth;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = rare, unique;
 		screen_name = "Gossamer Linen";
 	}
@@ -338,6 +348,7 @@
 	specializes = base_body_armor_cloth;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = rare, unique;
 		screen_name = "Night Garment";
 	}
@@ -369,6 +380,7 @@
 	specializes = base_body_armor_cloth;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = rare, unique;
 		screen_name = "Night Garment";
 	}
@@ -400,6 +412,7 @@
 	specializes = base_body_armor_cloth;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = rare, unique;
 		screen_name = "Night Garment";
 	}
@@ -431,6 +444,7 @@
 	specializes = base_body_armor_cloth;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = rare, unique;
 		screen_name = "Night Garment";
 	}
@@ -462,6 +476,7 @@
 	specializes = base_body_armor_cloth;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = rare, unique;
 		screen_name = "Astral Cloak";
 	}
@@ -493,6 +508,7 @@
 	specializes = base_body_armor_cloth;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = rare, unique;
 		screen_name = "Astral Cloak";
 	}
@@ -524,6 +540,7 @@
 	specializes = base_body_armor_cloth;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = rare, unique;
 		screen_name = "Astral Cloak";
 	}
@@ -555,6 +572,7 @@
 	specializes = base_body_armor_cloth;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = rare, unique;
 		screen_name = "Astral Cloak";
 	}
@@ -586,6 +604,7 @@
 	specializes = base_body_armor_cloth;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = rare, unique;
 		screen_name = "Astral Cloak";
 	}
@@ -617,6 +636,7 @@
 	specializes = base_body_armor_cloth;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = rare, unique;
 		screen_name = "Astral Cloak";
 	}
@@ -648,6 +668,7 @@
 	specializes = base_body_armor_cloth;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = rare, unique;
 		screen_name = "Astral Cloak";
 	}
@@ -679,6 +700,7 @@
 	specializes = base_body_armor_cloth;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = rare, unique;
 		screen_name = "Blood Coat";
 	}
@@ -710,6 +732,7 @@
 	specializes = base_body_armor_cloth;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = rare, unique;
 		screen_name = "Blood Coat";
 	}
@@ -741,6 +764,7 @@
 	specializes = base_body_armor_cloth;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = rare, unique;
 		screen_name = "Blood Coat";
 	}
@@ -772,6 +796,7 @@
 	specializes = base_body_armor_cloth;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = rare, unique;
 		screen_name = "Blood Coat";
 	}
@@ -803,6 +828,7 @@
 	specializes = base_body_armor_cloth;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = rare, unique;
 		screen_name = "Blood Coat";
 	}
@@ -834,6 +860,7 @@
 	specializes = base_body_armor_cloth;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = rare, unique;
 		screen_name = "Dream Robe";
 	}
@@ -865,6 +892,7 @@
 	specializes = base_body_armor_cloth;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = rare, unique;
 		screen_name = "Dream Robe";
 	}
@@ -896,6 +924,7 @@
 	specializes = base_body_armor_cloth;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = rare, unique;
 		screen_name = "Dream Robe";
 	}
@@ -927,6 +956,7 @@
 	specializes = base_body_armor_cloth;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = rare, unique;
 		screen_name = "Dream Robe";
 	}
@@ -958,6 +988,7 @@
 	specializes = base_body_armor_cloth;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = rare, unique;
 		screen_name = "Dream Robe";
 	}
@@ -989,6 +1020,7 @@
 	specializes = base_body_armor_cloth;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = rare, unique;
 		screen_name = "Dream Robe";
 	}
@@ -1020,6 +1052,7 @@
 	specializes = base_body_armor_cloth;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = rare, unique;
 		screen_name = "Radiant Gown";
 	}
@@ -1051,6 +1084,7 @@
 	specializes = base_body_armor_cloth;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = rare, unique;
 		screen_name = "Radiant Gown";
 	}
@@ -1082,6 +1116,7 @@
 	specializes = base_body_armor_cloth;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = rare, unique;
 		screen_name = "Radiant Gown";
 	}
@@ -1113,6 +1148,7 @@
 	specializes = base_body_armor_cloth;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = rare, unique;
 		screen_name = "Shadow Finery";
 	}
@@ -1144,6 +1180,7 @@
 	specializes = base_body_armor_cloth;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = rare, unique;
 		screen_name = "Shadow Finery";
 	}
@@ -1175,6 +1212,7 @@
 	specializes = base_body_armor_cloth;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = rare, unique;
 		screen_name = "Noble Vesture";
 	}
@@ -1207,6 +1245,7 @@
 	[common]
 	{
 		allow_modifiers = false;
+	  b is_pcontent_allowed = false;
 		screen_name = "Burlap";
 	}
 	[defend]
@@ -1236,6 +1275,7 @@
 	specializes = base_body_armor_cloth;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		screen_name = "Burlap";
 	}
 	[defend]
@@ -1265,6 +1305,7 @@
 	specializes = base_body_armor_cloth;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		screen_name = "Garment";
 	}
 	[defend]
@@ -1295,6 +1336,7 @@
 	specializes = base_body_armor_cloth;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		screen_name = "Coat";
 	}
 	[defend]
@@ -1325,6 +1367,7 @@
 	specializes = base_body_armor_cloth;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		screen_name = "Coat";
 	}
 	[defend]
@@ -1355,6 +1398,7 @@
 	specializes = base_body_armor_cloth;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		screen_name = "Robe";
 	}
 	[defend]
@@ -1386,6 +1430,7 @@
 	[common]
 	{
 	  b allow_modifiers = false;
+	  b is_pcontent_allowed = false;
 		screen_name = "Tatters";
 	}
 	[defend]
@@ -1416,6 +1461,7 @@
 	[common]
 	{
 	  b allow_modifiers = false;
+	  b is_pcontent_allowed = false;
 		screen_name = "Rags";
 	}
 	[defend]
@@ -1445,6 +1491,7 @@
 	specializes = base_body_armor_cloth;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		screen_name = "Cloth";
 	}
 	[defend]
@@ -1475,6 +1522,7 @@
 	specializes = base_body_armor_cloth;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		screen_name = "Linen";
 	}
 	[defend]
@@ -1506,6 +1554,7 @@
 	[common]
 	{
 	  b allow_modifiers = false;
+	  b is_pcontent_allowed = false;
 		screen_name = "Garment";
 	}
 	[defend]
@@ -1536,6 +1585,7 @@
 	specializes = base_body_armor_cloth;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		screen_name = "Garment";
 	}
 	[defend]
@@ -1566,6 +1616,7 @@
 	specializes = base_body_armor_cloth;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		screen_name = "Garment";
 	}
 	[defend]
@@ -1596,6 +1647,7 @@
 	specializes = base_body_armor_cloth;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		screen_name = "Garment";
 	}
 	[defend]
@@ -1626,6 +1678,7 @@
 	specializes = base_body_armor_cloth;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		screen_name = "Cloak";
 	}
 	[defend]
@@ -1656,6 +1709,7 @@
 	specializes = base_body_armor_cloth;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		screen_name = "Cloak";
 	}
 	[defend]
@@ -1686,6 +1740,7 @@
 	specializes = base_body_armor_cloth;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		screen_name = "Cloak";
 	}
 	[defend]
@@ -1716,6 +1771,7 @@
 	specializes = base_body_armor_cloth;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		screen_name = "Cloak";
 	}
 	[defend]
@@ -1746,6 +1802,7 @@
 	specializes = base_body_armor_cloth;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		screen_name = "Cloak";
 	}
 	[defend]
@@ -1776,6 +1833,7 @@
 	specializes = base_body_armor_cloth;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		screen_name = "Cloak";
 	}
 	[defend]
@@ -1806,6 +1864,7 @@
 	specializes = base_body_armor_cloth;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		screen_name = "Cloak";
 	}
 	[defend]
@@ -1836,6 +1895,7 @@
 	specializes = base_body_armor_cloth;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		screen_name = "Cloak";
 	}
 	[defend]
@@ -1866,6 +1926,7 @@
 	specializes = base_body_armor_cloth;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		screen_name = "Coat";
 	}
 	[defend]
@@ -1896,6 +1957,7 @@
 	specializes = base_body_armor_cloth;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		screen_name = "Coat";
 	}
 	[defend]
@@ -1926,6 +1988,7 @@
 	specializes = base_body_armor_cloth;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		screen_name = "Coat";
 	}
 	[defend]
@@ -1956,6 +2019,7 @@
 	specializes = base_body_armor_cloth;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		screen_name = "Coat";
 	}
 	[defend]
@@ -1986,6 +2050,7 @@
 	specializes = base_body_armor_cloth;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		screen_name = "Coat";
 	}
 	[defend]
@@ -2016,6 +2081,7 @@
 	specializes = base_body_armor_cloth;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		screen_name = "Coat";
 	}
 	[defend]
@@ -2045,6 +2111,7 @@
 	specializes = base_body_armor_cloth;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		screen_name = "Robe";
 	}
 	[defend]
@@ -2075,6 +2142,7 @@
 	specializes = base_body_armor_cloth;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		screen_name = "Robe";
 	}
 	[defend]
@@ -2105,6 +2173,7 @@
 	specializes = base_body_armor_cloth;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		screen_name = "Robe";
 	}
 	[defend]
@@ -2135,6 +2204,7 @@
 	specializes = base_body_armor_cloth;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		screen_name = "Robe";
 	}
 	[defend]
@@ -2165,6 +2235,7 @@
 	specializes = base_body_armor_cloth;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		screen_name = "Robe";
 	}
 	[defend]
@@ -2195,6 +2266,7 @@
 	specializes = base_body_armor_cloth;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		screen_name = "Robe";
 	}
 	[defend]
@@ -2225,6 +2297,7 @@
 	specializes = base_body_armor_cloth;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		screen_name = "Robe";
 	}
 	[defend]
@@ -2255,6 +2328,7 @@
 	specializes = base_body_armor_cloth;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		screen_name = "Robe";
 	}
 	[defend]
@@ -2285,6 +2359,7 @@
 	specializes = base_body_armor_cloth;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		screen_name = "Gown";
 	}
 	[defend]
@@ -2315,6 +2390,7 @@
 	specializes = base_body_armor_cloth;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		screen_name = "Gown";
 	}
 	[defend]
@@ -2345,6 +2421,7 @@
 	specializes = base_body_armor_cloth;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		screen_name = "Gown";
 	}
 	[defend]
@@ -2375,6 +2452,7 @@
 	specializes = base_body_armor_cloth;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		screen_name = "Finery";
 	}
 	[defend]
@@ -2405,6 +2483,7 @@
 	specializes = base_body_armor_cloth;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		screen_name = "Finery";
 	}
 	[defend]
@@ -2435,6 +2514,7 @@
 	specializes = base_body_armor_cloth;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		screen_name = "Vesture";
 	}
 	[defend]

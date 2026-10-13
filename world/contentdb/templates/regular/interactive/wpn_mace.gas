@@ -42,6 +42,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		screen_name = "Wing Mace";
 	}
 	[gui]
@@ -77,6 +78,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		screen_name = "Horned Mace";
 	}
 	[gui]
@@ -112,6 +114,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		screen_name = "Flanged Mace";
 	}
 	[gui]
@@ -222,6 +225,7 @@
 	[common]
 	{
 	  b allow_modifiers = false;
+	  b is_pcontent_allowed = false;
 		screen_name = "Worn Flanged Mace";
 	}
 	[gui]
@@ -250,6 +254,7 @@
 	[common]
 	{
 	  b allow_modifiers = false;
+	  b is_pcontent_allowed = false;
 		screen_name = "Bent Flanged Mace";
 	}
 	[gui]
@@ -277,6 +282,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		screen_name = "Mace";
 	}
 	[gui]
@@ -386,6 +392,7 @@
 	[common]
 	{
 	  b allow_modifiers = false;
+	  b is_pcontent_allowed = false;
 		screen_name = "Dented Mace";
 	}
 	[gui]
@@ -413,6 +420,7 @@
 	[common]
 	{
 	  b allow_modifiers = false;
+	  b is_pcontent_allowed = false;
 		screen_name = "Chipped Mace";
 	}
 	[gui]
@@ -439,6 +447,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		screen_name = "Spiked Mace";
 	}
 	[gui]
@@ -549,6 +558,7 @@
 	[common]
 	{
 	  b allow_modifiers = false;
+	  b is_pcontent_allowed = false;
 		screen_name = "Rusted Spiked Mace";
 	}
 	[gui]
@@ -577,6 +587,7 @@
 	[common]
 	{
 	  b allow_modifiers = false;
+	  b is_pcontent_allowed = false;
 		screen_name = "Dull Spiked Mace";
 	}
 	[gui]
@@ -604,6 +615,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = rare, unique;
 		screen_name = "Mincemeat";
 	}
@@ -694,6 +706,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = rare, unique;
 		screen_name = "Squasher";
 	}
@@ -783,6 +796,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = rare, unique;
 		screen_name = "Slaughter Rod";
 	}
@@ -873,6 +887,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = unique;
 		screen_name = "Icicle Mace";
 	}
@@ -909,6 +924,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = unique;
 		screen_name = "Regalia Scepter";
 	}
@@ -945,6 +961,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = unique;
 		screen_name = "Lion Scepter";
 	}
@@ -981,6 +998,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = unique;
 		screen_name = "Crystal Scepter";
 	}
@@ -1017,6 +1035,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = unique;
 		screen_name = "Dragon Scepter";
 	}
@@ -1053,6 +1072,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = unique;
 		screen_name = "Regal Scepter";
 	}
@@ -1089,6 +1109,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = unique;
 		screen_name = "Eye Scepter";
 	}
@@ -1125,6 +1146,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = unique;
 		screen_name = "Crown Scepter";
 	}
@@ -1161,6 +1183,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = unique;
 		screen_name = "Bell Scepter";
 	}
@@ -1197,6 +1220,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = unique;
 		screen_name = "Water Scepter";
 	}
@@ -1233,6 +1257,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = unique;
 		screen_name = "Cane Scepter";
 	}
@@ -1269,6 +1294,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = unique;
 		screen_name = "Iron Scepter";
 	}
@@ -1305,6 +1331,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = unique;
 		screen_name = "Tangled Scepter";
 	}
@@ -1341,6 +1368,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = unique;
 		screen_name = "Masked Scepter";
 	}
@@ -1377,6 +1405,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = unique;
 		screen_name = "Web Scepter";
 	}

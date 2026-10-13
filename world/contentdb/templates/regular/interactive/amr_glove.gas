@@ -26,6 +26,7 @@
 	[common]
 	{
 	  b allow_modifiers = false;
+	  b is_pcontent_allowed = false;
 		screen_name = "Banded Gauntlets";
 	}
 	[defend]
@@ -127,6 +128,7 @@
 	[common]
 	{
 	  b allow_modifiers = false;
+	  b is_pcontent_allowed = false;
 		screen_name = "Boiled Leather Gauntlets";
 	}
 	[defend]
@@ -228,6 +230,7 @@
 	[common]
 	{
 	  b allow_modifiers = false;
+	  b is_pcontent_allowed = false;
 		screen_name = "Brigandine Gauntlets";
 	}
 	[defend]
@@ -328,6 +331,7 @@
 	specializes = base_glove;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		screen_name = "Full Plate Gauntlets";
 	}
 	[defend]
@@ -429,6 +433,7 @@
 	[common]
 	{
 	  b allow_modifiers = false;
+	  b is_pcontent_allowed = false;
 		screen_name = "Scale Gauntlets";
 	}
 	[defend]
@@ -530,6 +535,7 @@
 	[common]
 	{
 	  b allow_modifiers = false;
+	  b is_pcontent_allowed = false;
 		screen_name = "Boiled Leather Gloves";
 	}
 	[defend]
@@ -631,6 +637,7 @@
 	[common]
 	{
 	  b allow_modifiers = false;
+	  b is_pcontent_allowed = false;
 		screen_name = "Brigandine Gloves";
 	}
 	[defend]
@@ -731,6 +738,7 @@
 	specializes = base_glove;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		screen_name = "Chain Gloves";
 	}
 	[defend]
@@ -832,6 +840,7 @@
 	[common]
 	{
 	  b allow_modifiers = false;
+	  b is_pcontent_allowed = false;
 		screen_name = "Leather Gloves";
 	}
 	[defend]
@@ -932,6 +941,7 @@
 	[common]
 	{
 	  b allow_modifiers = false;
+	  b is_pcontent_allowed = false;
 		screen_name = "Scale Gloves";
 	}
 	[defend]
@@ -1033,6 +1043,7 @@
 	[common]
 	{
 	  b allow_modifiers = false;
+	  b is_pcontent_allowed = false;
 		screen_name = "Studded Leather Gloves";
 	}
 	[defend]
@@ -1133,6 +1144,7 @@
 	specializes = base_glove;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = rare, unique;
 		screen_name = "Solar Gauntlets";
 	}
@@ -1204,6 +1216,7 @@
 	specializes = base_glove;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = rare, unique;
 		screen_name = "Zenith Gauntlets";
 	}
@@ -1245,6 +1258,7 @@
 	specializes = base_glove;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = rare, unique;
 		screen_name = "Spectral Gauntlets";
 	}
@@ -1296,6 +1310,7 @@
 	specializes = base_glove;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = rare, unique;
 		screen_name = "Chief Gauntlets";
 	}
@@ -1367,6 +1382,7 @@
 	specializes = base_glove;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = rare, unique;
 		screen_name = "Terrestrial Gauntlets";
 	}
@@ -1408,6 +1424,7 @@
 	specializes = base_glove;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = rare, unique;
 		screen_name = "Marshal Gloves";
 	}
@@ -1449,6 +1466,7 @@
 	specializes = base_glove;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = rare, unique;
 		screen_name = "Lunar Gloves";
 	}
@@ -1510,6 +1528,7 @@
 	specializes = base_glove;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = rare, unique;
 		screen_name = "Sultan Gloves";
 	}
@@ -1581,6 +1600,7 @@
 	specializes = base_glove;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = rare, unique;
 		screen_name = "Punisher Gloves";
 	}
@@ -1622,6 +1642,7 @@
 	specializes = base_glove;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = rare, unique;
 		screen_name = "Rock Scale Gloves";
 	}
@@ -1673,6 +1694,7 @@
 	specializes = base_glove;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = rare, unique;
 		screen_name = "Secure Gloves";
 	}
@@ -1714,6 +1736,7 @@
 	specializes = base_glove;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = unique;
 		screen_name = "Black Widow Gauntlets";
 	}
@@ -1745,6 +1768,7 @@
 	specializes = base_glove;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = unique;
 		screen_name = "Woodland Gloves";
 	}
@@ -1776,6 +1800,7 @@
 	specializes = base_glove;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = unique;
 		screen_name = "Crystal Gauntlets";
 	}
@@ -1807,6 +1832,7 @@
 	specializes = base_glove;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = unique;
 		screen_name = "Molten Gloves";
 	}
@@ -1838,6 +1864,7 @@
 	specializes = base_glove;
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = unique;
 		screen_name = "Serpentine Gauntlets";
 	}

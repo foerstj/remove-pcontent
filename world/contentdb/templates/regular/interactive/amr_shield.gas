@@ -62,6 +62,7 @@
 	[common]
 	{
 	  b allow_modifiers = false;
+	  b is_pcontent_allowed = false;
 		screen_name = "Metal Buckler";
 	}
 	[defend]
@@ -181,6 +182,7 @@
 	[common]
 	{
 		allow_modifiers = false;
+	  b is_pcontent_allowed = false;
 		screen_name = "Rusted Metal Buckler";
 	}
 	[defend]
@@ -234,6 +236,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = rare,unique;
 		screen_name = "Practice Shield";
 	}
@@ -297,6 +300,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = rare,unique;
 		screen_name = "Practice Kite Shield";
 	}
@@ -360,6 +364,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = rare,unique;
 		screen_name = "Stamp Shield";
 	}
@@ -423,6 +428,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = rare,unique;
 		screen_name = "Decrepit Shield";
 	}
@@ -485,6 +491,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = rare,unique;
 		screen_name = "Rivet Buckler";
 	}
@@ -548,6 +555,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = rare,unique;
 		screen_name = "Serrated Shield";
 	}
@@ -611,6 +619,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = rare,unique;
 		screen_name = "Strapped Shield";
 	}
@@ -674,6 +683,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = rare,unique;
 		screen_name = "Wreath Shield";
 	}
@@ -738,6 +748,7 @@
 	[common]
 	{
 	  b allow_modifiers = false;
+	  b is_pcontent_allowed = false;
 		screen_name = "Tortoise Shield";
 	}
 	[defend]
@@ -805,6 +816,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = rare,unique;
 		screen_name = "Spine Shield";
 	}
@@ -868,6 +880,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = rare,unique;
 		screen_name = "Crimson Shield";
 	}
@@ -931,6 +944,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = rare,unique;
 		screen_name = "Disc Shield";
 	}
@@ -994,6 +1008,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = rare,unique;
 		screen_name = "Frost Shield";
 	}
@@ -1057,6 +1072,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = rare,unique;
 		screen_name = "Quad Shield";
 	}
@@ -1120,6 +1136,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = rare,unique;
 		screen_name = "Shell Shield";
 	}
@@ -1183,6 +1200,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = rare,unique;
 		screen_name = "Etched Shield";
 	}
@@ -1246,6 +1264,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = rare,unique;
 		screen_name = "Strike Shield";
 	}
@@ -1309,6 +1328,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = rare,unique;
 		screen_name = "Braced Shield";
 	}
@@ -1372,6 +1392,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = rare,unique;
 		screen_name = "Pelt Shield";
 	}
@@ -1434,6 +1455,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = rare,unique;
 		screen_name = "Ordained Shield";
 	}
@@ -1491,6 +1513,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = rare,unique;
 		screen_name = "Forged Shield";
 	}
@@ -1584,6 +1607,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = rare,unique;
 		screen_name = "Clobber Shield";
 	}
@@ -1687,6 +1711,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = rare,unique;
 		screen_name = "Forthright Shield";
 	}
@@ -1754,6 +1779,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = rare,unique;
 		screen_name = "Impact Shield";
 	}
@@ -1829,6 +1855,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = rare,unique;
 		screen_name = "Clipper Shield";
 	}
@@ -1892,6 +1919,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = rare,unique;
 		screen_name = "Savior Shield";
 	}
@@ -2005,6 +2033,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = rare,unique;
 		screen_name = "Haze Shield";
 	}
@@ -2132,6 +2161,7 @@
 	[common]
 	{
 	  b allow_modifiers = false;
+	  b is_pcontent_allowed = false;
 		screen_name = "Slat Shield";
 	}
 	[defend]
@@ -2187,6 +2217,7 @@
 	[common]
 	{
 	  b allow_modifiers = false;
+	  b is_pcontent_allowed = false;
 		screen_name = "Stock Shield";
 	}
 	[defend]
@@ -2241,6 +2272,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = unique;
 		screen_name = "Ice Shield";
 	}
@@ -2304,6 +2336,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = unique;
 		screen_name = "Mold Shield";
 	}
@@ -2367,6 +2400,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = unique;
 		screen_name = "Parade Shield";
 	}
@@ -2430,6 +2464,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = unique;
 		screen_name = "Vesicle Shield";
 	}
@@ -2493,6 +2528,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = unique;
 		screen_name = "Horn Shield";
 	}
@@ -2556,6 +2592,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = unique;
 		screen_name = "Ram Shield";
 	}
@@ -2682,6 +2719,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = unique;
 		screen_name = "Guardian Shield";
 	}
@@ -2745,6 +2783,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = unique;
 		screen_name = "Maw Shield";
 	}
@@ -2808,6 +2847,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = unique;
 		screen_name = "Subioum Shield";
 	}
@@ -2871,6 +2911,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = unique;
 		screen_name = "Aurora Shield";
 	}
@@ -2934,6 +2975,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = unique;
 		screen_name = "Canker Shield";
 	}
@@ -2997,6 +3039,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = unique;
 		screen_name = "Chitin Shield";
 	}
@@ -3060,6 +3103,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = unique;
 		screen_name = "Fury Shield";
 	}
@@ -3123,6 +3167,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = unique;
 		screen_name = "Spirit Shield";
 	}
@@ -3186,6 +3231,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = unique;
 		screen_name = "Turtle Shield";
 	}
@@ -3249,6 +3295,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = unique;
 		screen_name = "Beast Shield";
 	}
@@ -3312,6 +3359,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = unique;
 		screen_name = "Crown Shield";
 	}
@@ -3376,6 +3424,7 @@
 	[common]
 	{
 	  b allow_modifiers = false;
+	  b is_pcontent_allowed = false;
 		screen_name = "Heater Shield";
 	}
 	[defend]
@@ -3462,6 +3511,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		screen_name = "Large Kite Shield";
 	}
 	[defend]
@@ -3565,6 +3615,7 @@
 	[common]
 	{
 	  b allow_modifiers = false;
+	  b is_pcontent_allowed = false;
 		screen_name = "Kite Shield";
 	}
 	[defend]
@@ -3688,6 +3739,7 @@
 	[common]
 	{
 	  b allow_modifiers = false;
+	  b is_pcontent_allowed = false;
 		screen_name = "Wooden Shield";
 	}
 	[defend]
@@ -3785,6 +3837,7 @@
 	[common]
 	{
 		allow_modifiers = false;
+	  b is_pcontent_allowed = false;
 		screen_name = "Page Shield";
 	}
 	[defend]
@@ -3813,6 +3866,7 @@
 	[common]
 	{
 	  b allow_modifiers = false;
+	  b is_pcontent_allowed = false;
 		screen_name = "Wooden Buckler";
 	}
 	[defend]
@@ -3940,6 +3994,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = rare,unique;
 		screen_name = "Elm Buckler";
 	}
@@ -4004,6 +4059,7 @@
 	[common]
 	{
 		allow_modifiers = false;
+	  b is_pcontent_allowed = false;
 		screen_name = "Small Shield";
 	}
 	[defend]
@@ -4131,6 +4187,7 @@
 	[common]
 	{
 		allow_modifiers = false;
+	  b is_pcontent_allowed = false;
 		screen_name = "Old Wooden Shield";
 	}
 	[defend]
@@ -4160,6 +4217,7 @@
 	[common]
 	{
 	  b allow_modifiers = false;
+	  b is_pcontent_allowed = false;
 		screen_name = "Painted Shield";
 	}
 	[defend]

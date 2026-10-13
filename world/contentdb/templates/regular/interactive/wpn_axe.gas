@@ -44,6 +44,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = unique;
 		screen_name = "Axe of Kill Kill Carnage";
 	}
@@ -81,6 +82,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		screen_name = "Hack";
 	}
 	[gui]
@@ -119,6 +121,7 @@
 	[common]
 	{
 	  b allow_modifiers = false;
+	  b is_pcontent_allowed = false;
 		screen_name = "Tofk Axe";
 	}
 	[gui]
@@ -156,6 +159,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		screen_name = "Cleft Axe";
 	}
 	[gui]
@@ -192,6 +196,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		screen_name = "Chuck";
 	}
 	[gui]
@@ -220,6 +225,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		screen_name = "Cutter";
 	}
 	[gui]
@@ -257,6 +263,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		screen_name = "Drive Axe";
 	}
 	[gui]
@@ -293,6 +300,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		screen_name = "Splitter";
 	}
 	[gui]
@@ -329,6 +337,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		screen_name = "Heft Axe";
 	}
 	[gui]
@@ -365,6 +374,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		screen_name = "Swing Axe";
 	}
 	[gui]
@@ -401,6 +411,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		screen_name = "Wedge Axe";
 	}
 	[gui]
@@ -516,6 +527,7 @@
 	[common]
 	{
 	  b allow_modifiers = false;
+	  b is_pcontent_allowed = false;
 		screen_name = "Dull Wedge Axe";
 	}
 	[gui]
@@ -545,6 +557,7 @@
 	[common]
 	{
 	  b allow_modifiers = false;
+	  b is_pcontent_allowed = false;
 		screen_name = "Rusted Wedge Axe";
 	}
 	[gui]
@@ -573,6 +586,7 @@
 	[common]
 	{
 	  b allow_modifiers = false;
+	  b is_pcontent_allowed = false;
 		screen_name = "Full Axe";
 	}
 	[gui]
@@ -688,6 +702,7 @@
 	[common]
 	{
 	  b allow_modifiers = false;
+	  b is_pcontent_allowed = false;
 		screen_name = "Blunt Full Axe";
 	}
 	[gui]
@@ -717,6 +732,7 @@
 	[common]
 	{
 	  b allow_modifiers = false;
+	  b is_pcontent_allowed = false;
 		screen_name = "Worn Full Axe";
 	}
 	[gui]
@@ -746,6 +762,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		screen_name = "Field Axe";
 	}
 	[gui]
@@ -858,6 +875,7 @@
 	[common]
 	{
 	  b allow_modifiers = false;
+	  b is_pcontent_allowed = false;
 		screen_name = "Blunt Field Axe";
 	}
 	[gui]
@@ -888,6 +906,7 @@
 	[common]
 	{
 	  b allow_modifiers = false;
+	  b is_pcontent_allowed = false;
 		screen_name = "Worn Field Axe";
 	}
 	[gui]
@@ -917,6 +936,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		screen_name = "Assault Axe";
 	}
 	[gui]
@@ -1029,6 +1049,7 @@
 	[common]
 	{
 	  b allow_modifiers = false;
+	  b is_pcontent_allowed = false;
 		screen_name = "Blunt Assault Axe";
 	}
 	[gui]
@@ -1059,6 +1080,7 @@
 	[common]
 	{
 	  b allow_modifiers = false;
+	  b is_pcontent_allowed = false;
 		screen_name = "Rusted Assault Axe";
 	}
 	[gui]
@@ -1087,6 +1109,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		screen_name = "Hatchet";
 	}
 	[gui]
@@ -1115,6 +1138,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		screen_name = "Timber Axe";
 	}
 	[gui]
@@ -1143,6 +1167,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		screen_name = "Forest Axe";
 	}
 	[gui]
@@ -1171,6 +1196,7 @@
 	[common]
 	{
 	  b allow_modifiers = false;
+	  b is_pcontent_allowed = false;
 		screen_name = "Grimy Wedge Axe";
 	}
 	[gui]
@@ -1245,6 +1271,7 @@
 	[common]
 	{
 	  b allow_modifiers = false;
+	  b is_pcontent_allowed = false;
 		screen_name = "Dull Full Axe";
 	}
 	[gui]
@@ -1274,6 +1301,7 @@
 	[common]
 	{
 	  b allow_modifiers = false;
+	  b is_pcontent_allowed = false;
 		screen_name = "Nicked Full Axe";
 	}
 	[gui]
@@ -1304,6 +1332,7 @@
 	[common]
 	{
 	  b allow_modifiers = false;
+	  b is_pcontent_allowed = false;
 		screen_name = "Marred Field Axe";
 	}
 	[gui]
@@ -1334,6 +1363,7 @@
 	[common]
 	{
 	  b allow_modifiers = false;
+	  b is_pcontent_allowed = false;
 		screen_name = "Dull Field Axe";
 	}
 	[gui]
@@ -1364,6 +1394,7 @@
 	[common]
 	{
 	  b allow_modifiers = false;
+	  b is_pcontent_allowed = false;
 		screen_name = "Warped Assault Axe";
 	}
 	[gui]
@@ -1394,6 +1425,7 @@
 	[common]
 	{
 	  b allow_modifiers = false;
+	  b is_pcontent_allowed = false;
 		screen_name = "Battered Assault Axe";
 	}
 	[gui]
@@ -1422,6 +1454,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = rare, unique;
 		screen_name = "Pain Bringer";
 	}
@@ -1494,6 +1527,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = rare, unique;
 		screen_name = "Gore Axe";
 	}
@@ -1578,6 +1612,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = rare, unique;
 		screen_name = "Gut Masher";
 	}
@@ -1648,6 +1683,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = rare, unique;
 		screen_name = "Flesh Splitter";
 	}
@@ -1767,6 +1803,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = unique;
 		screen_name = "Strike Axe";
 	}
@@ -1804,6 +1841,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = unique;
 		screen_name = "Chip Axe";
 	}
@@ -1842,6 +1880,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		pcontent_special_type = unique;
 		screen_name = "Lug Axe";
 	}
@@ -1907,6 +1946,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		screen_name = "Scythe";
 	}
 	[gui]
@@ -1968,6 +2008,7 @@
 	}
 	[common]
 	{
+	  b is_pcontent_allowed = false;
 		screen_name = "Sweeping Scythe";
 	}
 	[gui]
