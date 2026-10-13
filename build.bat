@@ -37,6 +37,11 @@ rmdir /S /Q "%tmp%\Bits"
 robocopy "%bits%\world\contentdb\templates" "%tmp%\Bits\world\contentdb\templates" /S dsx_set_*.gas
 "%tc%\RTC.exe" -source "%tmp%\Bits" -out "%ds%\DSLOA\%mod_cs% - equipments - set items.dsres" -copyright "%copyright%" -title "%title%" -author "%author%"
 if %errorlevel% neq 0 pause
+:: vanilla equipments
+rmdir /S /Q "%tmp%\Bits"
+robocopy "%bits%\world\contentdb\templates" "%tmp%\Bits\world\contentdb\templates" /S /xf dsx_*.gas
+"%tc%\RTC.exe" -source "%tmp%\Bits" -out "%ds%\DSLOA\%mod_cs% - Vanilla equipments.dsres" -copyright "%copyright%" -title "%title%" -author "%author%"
+if %errorlevel% neq 0 pause
 
 :: Cleanup
 rmdir /S /Q "%tmp%\Bits"
