@@ -1,5 +1,5 @@
 :: name of mod, case-sensitive
-set mod_cs=Unmod LoA
+set mod_cs=Remove PContent
 
 :: path of DS installation
 set ds=%DungeonSiege%
