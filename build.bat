@@ -15,7 +15,10 @@ set title=%mod_cs%
 
 :: build resource file - enchantments
 rmdir /S /Q "%tmp%\Bits"
-robocopy "%bits%\world\contentdb" "%tmp%\Bits\world\contentdb" /S pcontent.gas
+robocopy "%bits%\world\contentdb" "%tmp%\Bits\world\contentdb" /S pcontent-loa.gas
+pushd "%tmp%\Bits\world\contentdb"
+ren pcontent-loa.gas pcontent.gas
+popd
 "%tc%\RTC.exe" -source "%tmp%\Bits" -out "%ds%\DSLOA\%mod_cs% - LoA enchantments.dsres" -copyright "%copyright%" -title "%title%" -author "%author%"
 if %errorlevel% neq 0 pause
 
