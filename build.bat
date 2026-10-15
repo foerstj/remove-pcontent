@@ -18,36 +18,14 @@ set mode=%1
 echo %mode%
 
 :: build resource files - enchantments
-:: loa enchantments
-rmdir /S /Q "%tmp%\Bits"
-robocopy "%bits%\world\contentdb" "%tmp%\Bits\world\contentdb" /S pcontent-loa.gas
-pushd "%tmp%\Bits\world\contentdb"
-ren pcontent-loa.gas pcontent.gas
-popd
-"%tc%\RTC.exe" -source "%tmp%\Bits" -out "%ds%\DSLOA\%mod_cs% - LoA enchantments.dsres" -copyright "%copyright%" -title "%title%" -author "%author%"
-if %errorlevel% neq 0 pause
-:: vanilla enchantments
+:: standard
+call :build_enchantments loa LoA
+:: release
 setlocal EnableDelayedExpansion
 if "%mode%"=="release" (
-  rmdir /S /Q "%tmp%\Bits"
-  robocopy "%bits%\world\contentdb" "%tmp%\Bits\world\contentdb" /S pcontent-vanilla.gas
-  pushd "%tmp%\Bits\world\contentdb"
-  ren pcontent-vanilla.gas pcontent.gas
-  popd
-  "%tc%\RTC.exe" -source "%tmp%\Bits" -out "%ds%\DSLOA\%mod_cs% - Vanilla enchantments.dsres" -copyright "%copyright%" -title "%title%" -author "%author%"
-  if !errorlevel! neq 0 pause
-)
-endlocal
-:: all enchantments
-setlocal EnableDelayedExpansion
-if "%mode%"=="release" (
-  rmdir /S /Q "%tmp%\Bits"
-  robocopy "%bits%\world\contentdb" "%tmp%\Bits\world\contentdb" /S pcontent-all.gas
-  pushd "%tmp%\Bits\world\contentdb"
-  ren pcontent-all.gas pcontent.gas
-  popd
-  "%tc%\RTC.exe" -source "%tmp%\Bits" -out "%ds%\DSLOA\%mod_cs% - All enchantments.dsres" -copyright "%copyright%" -title "%title%" -author "%author%"
-  if !errorlevel! neq 0 pause
+  call :build_enchantments loa LoA
+  call :build_enchantments vanilla Vanilla
+  call :build_enchantments all All
 )
 endlocal
 
@@ -77,3 +55,22 @@ if %errorlevel% neq 0 pause
 
 :: Cleanup
 rmdir /S /Q "%tmp%\Bits"
+
+exit /b %errorlevel%
+
+
+:: Subroutines
+
+:: build enchantments file
+:build_enchantments
+  set infix=%~1
+  set name=%~2
+  echo build_enchantments %infix% %name%
+  rmdir /S /Q "%tmp%\Bits"
+  robocopy "%bits%\world\contentdb" "%tmp%\Bits\world\contentdb" /S pcontent-%infix%.gas
+  pushd "%tmp%\Bits\world\contentdb"
+  ren pcontent-%infix%.gas pcontent.gas
+  popd
+  "%tc%\RTC.exe" -source "%tmp%\Bits" -out "%ds%\DSLOA\%mod_cs% - %name% enchantments.dsres" -copyright "%copyright%" -title "%title%" -author "%author%"
+  if %errorlevel% neq 0 pause
+exit /b 0
