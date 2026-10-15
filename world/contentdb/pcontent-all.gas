@@ -1,0 +1,49 @@
+//////////////////////////////////////////////////////////////////////////////
+//
+// File	 :  world\contentdb\pcontent.gas
+// Author(s):  Scott Bilas
+//
+// Summary  :  Contains a big happy fun pile of rules for building
+//			 parameterized content.
+//
+// Copyright © 2000 Gas Powered Games, Inc.  All rights reserved.
+//----------------------------------------------------------------------------
+//  $Revision:: $			  $Date:$
+//----------------------------------------------------------------------------
+//////////////////////////////////////////////////////////////////////////////
+
+//////////////////////////////////////////////////////////////////////////////
+
+[formulas]
+{
+	// these blocks define the "infinite power" weapons - these will always be
+	// able to go up to any power level by feedback into the modifiers.
+
+	[infinite_melee_weapons]
+	{
+		* = sword;
+		* = axe;
+		* = staff;
+	}
+
+	[infinite_ranged_weapons]
+	{
+		* = bow;
+	}
+}
+
+//////////////////////////////////////////////////////////////////////////////
+
+[macros]
+{
+	supersword = sword/500;
+}
+
+//////////////////////////////////////////////////////////////////////////////
+
+[modifiers]
+{
+	// POOF ALL GONE!
+}
+
+//////////////////////////////////////////////////////////////////////////////

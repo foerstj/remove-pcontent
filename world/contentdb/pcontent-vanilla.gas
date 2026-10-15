@@ -1,0 +1,4173 @@
+//////////////////////////////////////////////////////////////////////////////
+//
+// File	 :  world\contentdb\pcontent.gas
+// Author(s):  Scott Bilas
+//
+// Summary  :  Contains a big happy fun pile of rules for building
+//			 parameterized content.
+//
+// Copyright © 2000 Gas Powered Games, Inc.  All rights reserved.
+//----------------------------------------------------------------------------
+//  $Revision:: $			  $Date:$
+//----------------------------------------------------------------------------
+//////////////////////////////////////////////////////////////////////////////
+
+//////////////////////////////////////////////////////////////////////////////
+
+[formulas]
+{
+	// these blocks define the "infinite power" weapons - these will always be
+	// able to go up to any power level by feedback into the modifiers.
+
+	[infinite_melee_weapons]
+	{
+		* = sword;
+		* = axe;
+		* = staff;
+	}
+
+	[infinite_ranged_weapons]
+	{
+		* = bow;
+	}
+}
+
+//////////////////////////////////////////////////////////////////////////////
+
+[macros]
+{
+	supersword = sword/500;
+}
+
+//////////////////////////////////////////////////////////////////////////////
+
+[modifiers]
+{
+	//////////////////////////////////////////////////////////
+	// END DS1 Modifiers
+
+	//// IMBUED ITEMS ////
+
+	[ofmagicarmor]
+	{
+		special_type	= rare;
+		type = suffix;
+		object_types = armor;
+		screen_name = "Of Magic Armor";
+		power = 1;
+
+		tooltip_weight  = 2;
+		tooltip_color   = "imbued";
+
+		[*]
+		{
+			state_name = armor;
+			state_desc = "Armored";
+			is_imbued = true;
+			description = "Surrounds the character with a shell of magical energy, adding <alter_armor> to Armor.";
+			alteration = alter_armor;
+			//			value = 1.3 + (#uberlevel*0.7);
+			value = 1.3 + (#uberlevel*0.7);
+			max_level = 15;
+			min_level = 1;
+			//			min_level = 3;
+			duration = #infinite;
+			is_permanent = true;
+			is_single_instance = false;
+			effect_script_equip = magic_armor;
+		}
+	}
+
+	[ofspiritarmor]
+	{
+		special_type	= rare;
+		type = suffix;
+		object_types = armor;
+		screen_name = "Of Spirit Armor";
+		power = 6;
+
+		tooltip_weight  = 2;
+		tooltip_color   = "imbued";
+
+		[*]
+		{
+			state_name = armor;
+			state_desc = "Armored";
+			is_imbued = true;
+			description = "Adds <alter_armor> to armor.";
+			alteration = alter_armor;
+			duration = #infinite;
+			is_permanent = true;
+			is_single_instance = false;
+			//			min_level = 25;
+			min_level = 1;
+			max_level = 45;
+			value = 1.3 + ( #uberlevel * 0.7 ); 
+			effect_script_equip = spirit_armor;
+		}
+	}
+
+	[ofpersonalstoneskin]
+	{
+		special_type	= rare;
+		type = suffix;
+		object_types = armor;
+		screen_name = "Of Personal Stone Skin";
+		power = 12;
+
+		tooltip_weight  = 2;
+		tooltip_color   = "imbued";
+
+		[*]
+		{
+			state_name = armor;
+			state_desc = "Armored";
+			is_imbued = true;
+			description = "Surrounds the character with a shell of magical energy, adding <alter_armor> to Armor.";
+			alteration = alter_armor;
+			max_level = 120;
+			min_level = 1;
+			//			min_level = 28;
+			//			value = ((#uberlevel-26)*0.6)+11.6;
+			value = 1.3 + ( #uberlevel * 0.7 ); 
+			duration = #infinite;
+			is_permanent = true;
+			is_single_instance = false;
+			effect_script_equip = magic_armor;
+		}
+	}
+
+	[oflifeforce]
+	{
+		special_type	= rare;
+		type = suffix;
+		object_types = weapon;
+		screen_name = "Of Life Force";
+		power = 2;
+
+		tooltip_weight  = 2;
+		tooltip_color   = "imbued";
+
+		[*]
+		{
+			state_name = Lifeforce;
+			state_desc = "Lifeforce";
+			is_imbued = true;
+			description = "Increases wielders melee damage versus Undead by +<alter_damage_bonus_to_undead> points.";
+			alteration = alter_damage_bonus_to_undead;
+
+			value = 1.4+(#uberlevel*.6);
+
+			max_level = 39;
+			min_level = 1;
+			//			min_level = 14;
+			duration = #infinite;
+			is_permanent = true;
+			is_single_instance = false;
+			effect_script_equip = lifeforce;
+			effect_script_hit = hit_spark_10_lre;
+		}
+	}
+
+	[ofpersonalmysticaid]
+	{
+		special_type	= rare;
+		type = suffix;
+		object_types = armor,ring,amulet;
+		screen_name = "Of Personal Mystic Aid";
+		power = 6;
+
+		tooltip_weight  = 2;
+		tooltip_color   = "imbued";
+
+		[*]
+		{
+			state_name = boosts;
+			state_desc = "Mystic Aid";
+			is_imbued = true;
+			description = "Raises the character's chance to hit in Melee combat by <alter_chance_to_hit_melee>% and";
+			alteration = alter_chance_to_hit_melee;
+			//strictly better than the original mystic aid, but necessary for the low level
+			value = (#uberlevel*0.1157)+1; //-4;
+			min_level = 1;
+			//			min_level = 84;
+			max_level = 108;
+			duration = #infinite;
+			is_permanent = true;
+			is_single_instance = false;
+		}
+		[*]
+		{
+			state_name = boosts;
+			state_desc = "Mystic Aid";
+			is_imbued = true;
+			description = " chance to hit in Ranged Combat by <alter_chance_to_hit_ranged>%.";
+			alteration = alter_chance_to_hit_ranged;
+			value = (#uberlevel*0.1157)+1; //see above
+			min_level = 1;
+			//			min_level = 84;
+			max_level = 104;
+			duration = #infinite;
+			is_permanent = true;
+			is_single_instance = false;
+			effect_script_equip = stats_boost;
+		}
+	}
+
+	[ofchargedfist]
+	{
+		special_type	= rare;
+		type = suffix;
+		object_types = gloves;
+		screen_name = "Of Charged Fist";
+		power = 1;
+
+		tooltip_weight  = 2;
+		tooltip_color   = "imbued";
+
+		[*]
+		{
+			state_name = Charge;
+			state_desc = "Charged";
+			is_imbued = true;
+			description = "Raises the Max Melee damage of the character by <alter_melee_damage_max>.";
+			alteration = alter_melee_damage_max;
+			duration = #infinite;
+			is_permanent = true;
+			is_single_instance = false;
+			min_level = 1;
+			max_level = 15;
+			value = 1.1+(#uberlevel*.6);
+			//			value = ((#uberlevel+1)*4.2-.7);
+			effect_script_equip = charged_fist;
+		}
+	}
+
+	[ofogresmight]
+	{
+		special_type	= rare;
+		type = suffix;
+		object_types = armor,ring,amulet;
+		screen_name = "Of Ogres Might";
+		power = 5;
+
+		tooltip_weight  = 2;
+		tooltip_color   = "imbued";
+
+		[*]
+		{
+			state_name = might;
+			state_desc = "Ogre's Might";
+			is_imbued = true;
+			description = "Boosts the character's physical power, adding <alter_strength> to Strength.";
+			alteration = alter_strength;
+			value = 1 + (#uberlevel*0.05);
+			max_level = 80;
+			min_level = 1;
+			//			min_level = 34;
+			duration = #infinite;
+			is_permanent = true;
+			is_single_instance = false;
+			effect_script_equip = ogres_might;
+		}
+	}
+
+	[ofcleanstrike]
+	{
+		special_type	= rare;
+		type = suffix;
+		object_types = melee;
+		screen_name = "Of Clean Strike";
+		power = 13;
+
+		tooltip_weight  = 2;
+		tooltip_color   = "imbued";
+
+		[*]
+		{
+			state_name = cleanst;
+			state_desc = "Clean Strike";
+			is_imbued = true;
+			description = "Raises the character's chance to hit in Melee combat by <alter_chance_to_hit_melee>%.";
+			alteration = alter_chance_to_hit_melee;
+
+			value = ((#uberlevel*0.1)+1);
+
+			max_level = 80;
+			min_level = 1;
+			//			min_level = 44;
+			duration = #infinite;
+			is_permanent = true;
+			is_single_instance = false;
+			effect_script_equip = clean_strike;
+			effect_script_hit = hit_spark_10_lpu;
+		}
+	}
+
+	[ofpersonalbattlecry]
+	{
+		special_type	= rare;
+		type = suffix;
+		object_types = weapon;
+		screen_name = "Of Personal Battle Rally";
+		power = 20;
+
+		tooltip_weight  = 2;
+		tooltip_color   = "imbued";
+
+		[*]
+		{
+			state_name = cleanst;
+			state_desc = "Melee Enhanced";
+			is_imbued = true;
+			description = "Raises the character's chance to hit in Melee combat by <alter_chance_to_hit_melee>%.";
+			alteration = alter_chance_to_hit_melee;
+			value = (#uberlevel*0.1)+2;
+			max_level = 80;
+			min_level = 1;
+			//			min_level = 60;
+			duration = #infinite;
+			is_permanent = true;
+			is_single_instance = false;
+			effect_script_equip = clean_strike;
+			effect_script_hit = hit_swirl_10_lgr;
+		}
+	}
+
+	[ofanchoredshot]
+	{
+		special_type	= rare;
+		type = suffix;
+		object_types = ranged, gloves, ring;
+		screen_name = "Of Anchored Shot";
+		power = 1;
+
+		tooltip_weight  = 2;
+		tooltip_color   = "imbued";
+
+		[*]
+		{
+			state_desc = "Accuracy";
+			state_name = intervention;
+			is_imbued = true;
+			description = "Raises the character's chance to hit in Ranged combat by <alter_chance_to_hit_ranged>%.";
+			alteration = alter_chance_to_hit_ranged;
+			value = (#uberlevel*.45)+1;
+			max_level = 35;
+			//			min_level = 20;
+			min_level = 1;
+			duration = #infinite;
+			is_permanent = true;
+			is_single_instance = false;
+			effect_script_equip = divine_intervention;
+			effect_script_hit = hit_spark_10_lbl;
+		}
+	}
+
+	[ofrangeboost]
+	{
+		special_type	= rare;
+		type = suffix;
+		object_types = ranged;
+		screen_name = "Of Range Boost";
+		power = 8;
+
+		tooltip_weight  = 2;
+		tooltip_color   = "imbued";
+
+		[*]
+		{
+			state_name = rangeboost;
+			state_desc = "Range Boost";
+			is_imbued = true;
+			description = "Increases the range of this weapon by <alter_ranged_range>.";
+			alteration = alter_ranged_range;
+			value = 1 + 4 * ( #uberlevel / 99 );
+			min_level = 1;
+			//			min_level = 23;
+			max_level = 99;
+			duration = #infinite;
+			is_permanent = true;
+			is_single_instance = false;
+			effect_script_equip = rangeboost;
+			effect_script_hit = hit_swirl_10_lor;
+		}
+	}
+
+	[ofeagleeye]
+	{
+		special_type	= rare;
+		type = suffix;
+		object_types = ranged, helm, gloves;
+		screen_name = "Of Eagle Eye";
+		power = 18;
+
+		tooltip_weight  = 2;
+		tooltip_color   = "imbued";
+
+		[*]
+		{
+			state_name = dexterity;
+			state_desc = "Eagle Eye";
+			is_imbued = true;
+			description = "Raises the Ranged Skill of the character by <alter_ranged>.";
+			alteration = alter_ranged;
+			value = 1 + 9 * (#uberlevel / 150); //was from 5-6, but too high for level 0
+			max_level = 150;
+			min_level = 1;
+			//			min_level = 55;
+			duration = #infinite;
+			is_permanent = true;
+			is_single_instance = false;
+			effect_script_equip = dexterity;
+			effect_script_hit = hit_glow_10_lye;
+		}
+	}
+
+
+	//// END IMBUED ITEMS ////
+
+
+	//// START PREFIXES ////
+	//--FEAR / BLUSTERING PREFIX
+	[blustering]
+	{
+		object_types = melee;
+		screen_name = "Blustering";
+		type = prefix;
+		power = 5;
+
+		[custom_chance]
+		{
+			description = "+10% Chance To Flee And";
+			alteration = alter_custom_damage_chance_melee;
+			custom_damage = flee;
+			value = 10;
+			duration = #infinite;
+			is_permanent = true;
+			is_single_instance = false;
+		}
+		[custom_damage]
+		{
+			description = " Adds 10 to 20 Fear Damage";
+			alteration = alter_custom_damage_melee;
+			max_value = 20;
+			value = 10;
+			custom_damage = flee;
+			duration = #infinite;
+			is_permanent = true;
+			is_single_instance = false;
+			custom_damage_skrit = world\global\skrits\weapon_flee.skrit;
+			effect_script_equip = dsx_modifier_blustering_melee;
+			effect_script_hit = dsx_modifier_blustering_hit;
+		}
+	}
+
+	[bullying]
+	{
+		screen_name = "Bullying";
+		specializes = blustering;
+		power = 10;
+
+		[custom_chance]
+		{
+			description = "+15% Chance To Flee And";
+			value = 15;
+		}
+		[custom_damage]
+		{
+			description = " Adds 10 to 20 Fear Damage";
+			max_value = 20;
+			value = 10;
+		}
+	}
+
+	[intimidating]
+	{
+		screen_name = "Intimidating";
+		specializes = blustering;
+		power = 25;
+
+		[custom_chance]
+		{
+			description = "+15% Chance To Flee And";
+			value = 15;
+		}
+		[custom_damage]
+		{
+			description = " Adds 15 to 25 Fear Damage";
+			max_value = 25;
+			value = 15;
+		}
+	}
+
+	[frightening]
+	{
+		screen_name = "Frightening";
+		specializes = blustering;
+		power = 50;
+
+		[custom_chance]
+		{
+			description = "+20% Chance To Flee And";
+			value = 20;
+		}
+		[custom_damage]
+		{
+			description = " Adds 15 to 25 Fear Damage";
+			max_value = 25;
+			value = 15;
+		}
+	}
+
+	[terrifying]
+	{
+		screen_name = "Terrifying";
+		specializes = blustering;
+		power = 75;
+
+		[custom_chance]
+		{
+			description = "+20% Chance To Flee And";
+			value = 20;
+		}
+		[custom_damage]
+		{
+			description = " Adds 20 to 30 Fear Damage";
+			max_value = 30;
+			value = 20;
+		}
+	}
+
+	//-- PIERCING / MASSIVE / TREMENDOUS
+	[massive]
+	{
+		object_types = melee;
+		screen_name = "Massive";
+		type = prefix;
+		power = 10;
+		[damage_min]
+		{
+			alteration			= alter_melee_damage_min;
+			value				= 2;
+			duration			= #infinite;
+			is_permanent		= true;
+			is_single_instance	= false;
+			effect_script_equip	= dsx_modifier_massive_melee;
+			effect_script_hit	= dsx_modifier_massive_hit;
+		}
+		[damage_max]
+		{
+			alteration			= alter_melee_damage_max;
+			value				= 3;
+			description			= "Adds 2 to 3 Melee Damage";
+			duration			= #infinite;
+			is_permanent		= true;
+			is_single_instance	= false;
+		}
+		[melee]
+		{
+			description = "Adds 1 to Melee Skill";
+			alteration = alter_melee;
+			value = 1;
+			duration = #infinite;
+			is_permanent = true;
+			is_single_instance = false;
+		}
+	}
+
+	[enormous]
+	{
+		screen_name = "Enormous";
+		specializes = massive;
+		power = 30;
+
+		[melee]
+		{
+			description = "Adds 2 to Melee Skill";
+			value = 2;
+		}
+		[damage_min]
+		{
+			alteration			= alter_melee_damage_min;
+			value				= 8;
+			duration			= #infinite;
+			is_permanent		= true;
+			is_single_instance	= false;
+		}
+		[damage_max]
+		{
+			alteration			= alter_melee_damage_max;
+			value				= 13;
+			description			= "Adds 8 to 13 Melee Damage";
+			duration			= #infinite;
+			is_permanent		= true;
+			is_single_instance	= false;
+		}
+	}
+
+	[tremendous]
+	{
+		screen_name = "Tremendous";
+		specializes = massive;
+		power = 50;
+
+		[melee]
+		{
+			description = "Adds 4 to Melee Skill";
+			value = 4;
+		}
+		[damage_min]
+		{
+			alteration			= alter_melee_damage_min;
+			value				= 12;
+			duration			= #infinite;
+			is_permanent		= true;
+			is_single_instance	= false;
+		}
+		[damage_max]
+		{
+			alteration			= alter_melee_damage_max;
+			value				= 20;
+			description			= "Adds 12 to 20 Melee Damage";
+			duration			= #infinite;
+			is_permanent		= true;
+			is_single_instance	= false;
+		}
+	}
+
+	[colossal]
+	{
+		screen_name = "Colossal";
+		specializes = massive;
+		power = 90;
+
+		[melee]
+		{
+			description = "Adds 5 to Melee Skill";
+			value = 5;
+		}
+		[damage_min]
+		{
+			alteration			= alter_melee_damage_min;
+			value				= 23;
+			duration			= #infinite;
+			is_permanent		= true;
+			is_single_instance	= false;
+		}
+		[damage_max]
+		{
+			alteration			= alter_melee_damage_max;
+			value				= 33;
+			description			= "Adds 23 to 33 Melee Damage";
+			duration			= #infinite;
+			is_permanent		= true;
+			is_single_instance	= false;
+		}
+	}
+
+	[monumental]
+	{
+		screen_name = "Monumental";
+		specializes = massive;
+		power = 115;
+
+		[melee]
+		{
+			description = "Adds 7 to Melee Skill";
+			value = 7;
+		}
+		[damage_min]
+		{
+			alteration			= alter_melee_damage_min;
+			value				= 27;
+			duration			= #infinite;
+			is_permanent		= true;
+			is_single_instance	= false;
+		}
+		[damage_max]
+		{
+			alteration			= alter_melee_damage_max;
+			value				= 48;
+			description			= "Adds 27 to 48 Melee Damage";
+			duration			= #infinite;
+			is_permanent		= true;
+			is_single_instance	= false;
+		}
+	}
+
+	//-- RANGED SKILL + DAMAGE // CAPABLE / WICKED
+	[capable]
+	{
+		screen_name = "Capable";
+		power = 10;
+		object_types = ranged;
+		type = prefix;
+
+		[ranged]
+		{
+			alteration			= alter_RANGED;
+			value				= 1;
+			description			= "Adds 1 to Ranged Skill";
+			duration			= #infinite;
+			is_permanent		= true;
+			is_single_instance	= false;
+			effect_script_hit	= dsx_modifier_capable;
+		}
+		[damage_min]
+		{
+			alteration			= alter_ranged_damage_min;
+			value				= 1;
+			duration			= #infinite;
+			is_permanent		= true;
+			is_single_instance	= false;
+		}
+
+		[damage_max]
+		{
+			alteration			= alter_ranged_damage_max;
+			value				= 4;
+			description			= "Adds 1 to 4 Damage";
+			duration			= #infinite;
+			is_permanent		= true;
+			is_single_instance	= false;
+		}
+
+
+	}
+
+	[clever]
+	{
+		screen_name = "Clever";
+		specializes = capable;
+		power = 30;
+
+		[ranged]
+		{
+			value				= 2;
+			description			= "Adds 2 to Ranged Skill";
+		}
+		[damage_min]
+		{
+			value				= 2;
+		}
+		[damage_max]
+		{
+			value				= 6;
+			description			= "Adds 2 to 6 Damage";
+		}
+	}
+
+	[adroit]
+	{
+		screen_name = "Adroit";
+		specializes = capable;
+		power = 50;
+
+		[ranged]
+		{
+			value				= 4;
+			description			= "Adds 4 to Ranged Skill";
+		}
+		[damage_min]
+		{
+			value				= 5;
+		}
+		[damage_max]
+		{
+			value				= 11;
+			description			= "Adds 5 to 11 Damage";
+		}
+	}
+
+	[vicious]
+	{
+		screen_name = "Vicious";
+		specializes = capable;
+		power = 90;
+
+		[ranged]
+		{
+			value				= 5;
+			description			= "Adds 5 to Ranged Skill";
+		}
+		[damage_min]
+		{
+			value				= 9;
+		}
+		[damage_max]
+		{
+			value				= 21;
+			description			= "Adds 9 to 21 Damage";
+		}
+	}
+
+	[wicked]
+	{
+		screen_name = "Wicked";
+		specializes = capable;
+		power = 115;
+
+		[ranged]
+		{
+			value				= 7;
+			description			= "Adds 7 to Ranged Skill";
+		}
+		[damage_min]
+		{
+			value				= 15;
+		}
+		[damage_max]
+		{
+			value				= 35;
+			description			= "Adds 15 to 35 Damage";
+		}
+	}
+
+	//-- POISON / VIRULENT PREFIX :: MELEE
+	[poisonous_melee]
+	{
+		object_types = melee; 
+		screen_name = "Poisonous";
+		type = prefix;
+		power = 10;
+
+		[custom_chance]
+		{
+			description = "+10% Chance To Poison And";
+			alteration = alter_custom_damage_chance_melee;
+			custom_damage = poison;
+			value = 10;
+			duration = #infinite;
+			is_permanent = true;
+			is_single_instance = false;
+		}
+		[custom_damage]
+		{
+			description = " Adds 5 to 10 Poison Damage";
+			alteration = alter_custom_damage_melee;
+			max_value = 10;
+			value = 5;
+			custom_damage = poison;
+			duration = #infinite;
+			is_permanent = true;
+			is_single_instance = false;
+			custom_damage_skrit = world\global\skrits\weapon_poison.skrit?duration=4;
+			effect_script_equip = dsx_modifier_poisonous_melee;
+			effect_script_hit = dsx_modifier_poisonous_hit;
+		}
+	}
+
+	[diseased_melee]
+	{
+		screen_name = "Diseased";
+		specializes = poisonous_melee;
+		power = 30;
+
+		[custom_chance]
+		{
+			description = "+10% Chance To Poison And";
+			value = 10;
+		}
+		[custom_damage]
+		{
+			description = " Adds 10 to 20 Poison Damage";
+			max_value = 20;
+			value = 10;
+			custom_damage_skrit = world\global\skrits\weapon_poison.skrit?duration=4;
+		}
+	}
+
+	[toxic_melee]
+	{
+		screen_name = "Toxic";
+		specializes = poisonous_melee;
+		power = 45;
+
+		[custom_chance]
+		{
+			description = "+15% Chance To Poison And";
+			value = 15;
+		}
+		[custom_damage]
+		{
+			description = " Adds 10 to 20 Poison Damage";
+			max_value = 20;
+			value = 10;
+			custom_damage_skrit = world\global\skrits\weapon_poison.skrit?duration=4;
+		}
+	}
+
+	[mephitic_melee]
+	{
+		screen_name = "Mephitic";
+		specializes = poisonous_melee;
+		power = 60;
+
+		[custom_chance]
+		{
+			description = "+15% Chance To Poison And";
+			value = 15;
+		}
+		[custom_damage]
+		{
+			description = " Adds 20 to 30 Poison Damage";
+			max_value = 30;
+			value = 20;
+			custom_damage_skrit = world\global\skrits\weapon_poison.skrit?duration=4;
+		}
+	}
+
+	[virulent_melee]
+	{
+		screen_name = "Virulent";
+		specializes = poisonous_melee;
+		power = 90;
+
+		[custom_chance]
+		{
+			description = "+20% Chance To Poison And";
+			value = 20;
+		}
+		[custom_damage]
+		{
+			description = " Adds 20 to 30 Poison Damage";
+			max_value = 30;
+			value = 20;
+			custom_damage_skrit = world\global\skrits\weapon_poison.skrit?duration=4;
+		}
+	}
+
+	//-- POISON / VIRULENT PREFIX :: RANGED
+	[poisonous_ranged]
+	{
+		object_types = ranged; 
+		screen_name = "Poisonous";
+		type = prefix;
+		power = 10;
+
+		[custom_chance]
+		{
+			description = "+10% Chance To Poison And";
+			alteration = alter_custom_damage_chance_ranged;
+			custom_damage = poison;
+			value = 10;
+			duration = #infinite;
+			is_permanent = true;
+			is_single_instance = false;
+		}
+		[custom_damage]
+		{
+			description = " Adds 5 to 10 Poison Damage";
+			alteration = alter_custom_damage_ranged;
+			max_value = 10;
+			value = 5;
+			custom_damage = poison;
+			duration = #infinite;
+			is_permanent = true;
+			is_single_instance = false;
+			custom_damage_skrit = world\global\skrits\weapon_poison.skrit?duration=4;
+			effect_script_hit = dsx_modifier_poisonous_ranged;
+		}
+	}
+
+	[diseased_ranged]
+	{
+		screen_name = "Diseased";
+		specializes = poisonous_ranged;
+		power = 30;
+
+		[custom_chance]
+		{
+			description = "+10% Chance To Poison And";
+			value = 10;
+		}
+		[custom_damage]
+		{
+			description = " Adds 10 to 20 Poison Damage";
+			max_value = 20;
+			value = 10;
+			custom_damage_skrit = world\global\skrits\weapon_poison.skrit?duration=4;
+		}
+	}
+
+	[toxic_ranged]
+	{
+		screen_name = "Toxic";
+		specializes = poisonous_ranged;
+		power = 45;
+
+		[custom_chance]
+		{
+			description = "+15% Chance To Poison And";
+			value = 15;
+		}
+		[custom_damage]
+		{
+			description = " Adds 10 to 20 Poison Damage";
+			max_value = 20;
+			value = 10;
+			custom_damage_skrit = world\global\skrits\weapon_poison.skrit?duration=4;
+		}
+	}
+
+	[mephitic_ranged]
+	{
+		screen_name = "Mephitic";
+		specializes = poisonous_ranged;
+		power = 60;
+
+		[custom_chance]
+		{
+			description = "+15% Chance To Poison And";
+			value = 15;
+		}
+		[custom_damage]
+		{
+			description = " Adds 20 to 30 Poison Damage";
+			max_value = 30;
+			value = 20;
+			custom_damage_skrit = world\global\skrits\weapon_poison.skrit?duration=4;
+		}
+	}
+
+	[virulent_ranged]
+	{
+		screen_name = "Virulent";
+		specializes = poisonous_ranged;
+		power = 90;
+
+		[custom_chance]
+		{
+			description = "+20% Chance To Poison And";
+			value = 20;
+		}
+		[custom_damage]
+		{
+			description = " Adds 20 to 30 Poison Damage";
+			max_value = 30;
+			value = 20;
+			custom_damage_skrit = world\global\skrits\weapon_poison.skrit?duration=4;
+		}
+	}
+
+	//-- SAILING
+	[sailing]
+	{
+		object_types = ranged;
+		screen_name = "Sailing";
+		type = prefix;
+		power = 2;
+
+		[ranged_range]
+		{
+			description = "Adds 1 to Range";
+			alteration = alter_ranged_range;
+			value = 1;
+			duration = #infinite;
+			is_permanent = true;
+			is_single_instance = false;
+			effect_script_hit = dsx_modifier_sailing;
+		}
+	}
+
+	[shooting]
+	{
+		screen_name = "Shooting";
+		specializes = sailing;
+		power = 15;
+
+		[ranged_range]
+		{
+			description = "Adds 2 to Range";
+			value = 2;
+		}
+	}
+
+	[flying]
+	{
+		screen_name = "Flying";
+		specializes = sailing;
+		power = 25;
+
+		[ranged_range]
+		{
+			description = "Adds 3 to Range";
+			value = 3;
+		}
+	}
+
+	//-- ACID / MISTING :: MELEE
+	[misting_melee]
+	{
+		object_types = melee;
+		screen_name = "Misting";
+		type = prefix;
+		power = 8;
+
+		[custom_chance]
+		{
+			description = "+10% Chance To Acidify And";
+			alteration = alter_custom_damage_chance_melee;
+			custom_damage = acid;
+			value = 10;
+			duration = #infinite;
+			is_permanent = true;
+			is_single_instance = false;
+		}
+		[custom_damage]
+		{
+			description = " Adds 5 to 10 Acid Damage";
+			alteration = alter_custom_damage_melee;
+			max_value = 10;
+			value = 5;
+			custom_damage = acid;
+			duration = #infinite;
+			is_permanent = true;
+			is_single_instance = false;
+			custom_damage_skrit = world\global\skrits\weapon_poison.skrit?duration=4&manager_template="dsx_base_acid_manager";
+			effect_script_equip = dsx_modifier_misting_melee;
+			effect_script_hit = dsx_modifier_misting_hit;
+		}
+	}
+	[spraying_melee]
+	{
+		screen_name = "Spraying";
+		power = 25;
+		specializes = misting_melee;
+
+		[custom_chance]
+		{
+			description = "+15% Chance To Acidify And";
+			value = 15;
+		}
+		[custom_damage]
+		{
+			description = " Adds 5 to 10 Acid Damage";
+			max_value = 10;
+			value = 5;
+			custom_damage_skrit = world\global\skrits\weapon_poison.skrit?duration=4&manager_template="dsx_base_acid_manager";
+		}
+	}
+	[vaporizing_melee]
+	{
+		screen_name = "Vaporizing";
+		power = 40;
+		specializes = misting_melee;
+
+		[custom_chance]
+		{
+			description = "+15% Chance To Acidify And";
+			value = 15;
+		}
+		[custom_damage]
+		{
+			description = " Adds 10 to 20 Acid Damage";
+			max_value = 20;
+			value = 10;
+			custom_damage_skrit = world\global\skrits\weapon_poison.skrit?duration=4&manager_template="dsx_base_acid_manager";
+		}
+	}
+	[dissolving_melee]
+	{
+		screen_name = "Dissolving";
+		power = 55;
+		specializes = misting_melee;
+
+		[custom_chance]
+		{
+			description = "+20% Chance To Acidify And";
+			value = 20;
+		}
+		[custom_damage]
+		{
+			description = " Adds 10 to 20 Acid Damage";
+			max_value = 20;
+			value = 10;
+			custom_damage_skrit = world\global\skrits\weapon_poison.skrit?duration=4&manager_template="dsx_base_acid_manager";
+		}
+	}
+	[gaseous_melee]
+	{
+		screen_name = "Gaseous";
+		power = 75;
+		specializes = misting_melee;
+
+		[custom_chance]
+		{
+			description = "+20% Chance To Acidify And";
+			value = 20;
+		}
+		[custom_damage]
+		{
+			description = " Adds 20 to 30 Acid Damage";
+			max_value = 30;
+			value = 20;
+			custom_damage_skrit = world\global\skrits\weapon_poison.skrit?duration=4&manager_template="dsx_base_acid_manager";
+		}
+	}
+
+	//-- ACID / MISTING :: RANGED
+	[misting_ranged]
+	{
+		object_types = ranged;
+		screen_name = "Misting";
+		type = prefix;
+		power = 8;
+
+		[custom_chance]
+		{
+			description = "+10% Chance To Acidify And";
+			alteration = alter_custom_damage_chance_ranged;
+			custom_damage = acid;
+			value = 10;
+			duration = #infinite;
+			is_permanent = true;
+			is_single_instance = false;
+		}
+		[custom_damage]
+		{
+			description = " Adds 5 to 10 Acid Damage";
+			alteration = alter_custom_damage_ranged;
+			max_value = 10;
+			value = 5;
+			custom_damage = acid;
+			duration = #infinite;
+			is_permanent = true;
+			is_single_instance = false;
+			custom_damage_skrit = world\global\skrits\weapon_poison.skrit?duration=4&manager_template="dsx_base_acid_manager";
+			effect_script_hit = dsx_modifier_misting_ranged;
+		}
+	}
+	[spraying_ranged]
+	{
+		screen_name = "Spraying";
+		power = 25;
+		specializes = misting_ranged;
+
+		[custom_chance]
+		{
+			description = "+15% Chance To Acidify And";
+			value = 15;
+		}
+		[custom_damage]
+		{
+			description = " Adds 5 to 10 Acid Damage";
+			max_value = 10;
+			value = 5;
+			custom_damage_skrit = world\global\skrits\weapon_poison.skrit?duration=4&manager_template="dsx_base_acid_manager";
+		}
+	}
+	[vaporizing_ranged]
+	{
+		screen_name = "Vaporizing";
+		power = 40;
+		specializes = misting_ranged;
+
+		[custom_chance]
+		{
+			description = "+15% Chance To Acidify And";
+			value = 15;
+		}
+		[custom_damage]
+		{
+			description = " Adds 10 to 20 Acid Damage";
+			max_value = 20;
+			value = 10;
+			custom_damage_skrit = world\global\skrits\weapon_poison.skrit?duration=4&manager_template="dsx_base_acid_manager";
+		}
+	}
+	[dissolving_ranged]
+	{
+		screen_name = "Dissolving";
+		power = 55;
+		specializes = misting_ranged;
+
+		[custom_chance]
+		{
+			description = "+20% Chance To Acidify And";
+			value = 20;
+		}
+		[custom_damage]
+		{
+			description = " Adds 10 to 20 Acid Damage";
+			max_value = 20;
+			value = 10;
+			custom_damage_skrit = world\global\skrits\weapon_poison.skrit?duration=4&manager_template="dsx_base_acid_manager";
+		}
+	}
+	[gaseous_ranged]
+	{
+		screen_name = "Gaseous";
+		power = 75;
+		specializes = misting_ranged;
+
+		[custom_chance]
+		{
+			description = "+20% Chance To Acidify And";
+			value = 20;
+		}
+		[custom_damage]
+		{
+			description = " Adds 20 to 30 Acid Damage";
+			max_value = 30;
+			value = 20;
+			custom_damage_skrit = world\global\skrits\weapon_poison.skrit?duration=4&manager_template="dsx_base_acid_manager";
+		}
+	}
+
+	//-- PROFOUND
+	[profound]
+	{
+		object_types = spellbook;
+		screen_name = "Profound";
+		type = prefix;
+		power = 2;
+
+		[armor]
+		{
+			description = "Adds 6 to Armor";
+			alteration = alter_armor;
+			value = 6;
+			duration = #infinite;
+			is_permanent = true;
+			is_single_instance = false;
+		}
+	}
+
+	[spiritual]
+	{
+		screen_name = "Incorporeal";
+		specializes = profound;
+		power = 4;
+
+		[armor]
+		{
+			description = "Adds 10 to Armor";
+			value = 10;
+		}
+	}
+
+	[holy]
+	{
+		screen_name = "Ethereal";
+		specializes = profound;
+		power = 9;
+
+		[armor]
+		{
+			description = "Adds 15 to Armor";
+			value = 15;
+		}
+	}
+
+	[mystical]
+	{
+		screen_name = "Mystical";
+		specializes = profound;
+		power = 16;
+
+		[armor]
+		{
+			description = "Adds 25 to Armor";
+			value = 25;
+		}
+	}
+
+	[supernatural]
+	{
+		screen_name = "Supernatural";
+		specializes = profound;
+		power = 31;
+
+		[armor]
+		{
+			description = "Adds 40 to Armor";
+			value = 40;
+		}
+	}
+
+	// CAMPESTRAL
+	[campestral]
+	{
+		screen_name = "Campestral";
+		power = 4;
+		object_types = spellbook;
+		type = prefix;
+
+		[nature_magic]
+		{
+			description = "Adds 1 to Nature Magic Skill";
+			alteration = alter_nature_magic;
+			value = 1;
+			duration = #infinite;
+			is_permanent = true;
+			is_single_instance = false;
+		}
+	}
+
+	[pastoral]
+	{
+		screen_name = "Pastoral";
+		specializes = campestral;
+		power = 12;
+
+		[nature_magic]
+		{
+			description = "Adds 2 to Nature Magic Skill";
+			value = 2;
+		}
+	}
+
+	[rustic]
+	{
+		screen_name = "Rustic";
+		specializes = campestral;
+		power = 19;
+
+		[nature_magic]
+		{
+			description = "Adds 3 to Nature Magic Skill";
+			value = 3;
+		}
+	}
+
+	[idyllic]
+	{
+		screen_name = "Idyllic";
+		specializes = campestral;
+		power = 38;
+
+		[nature_magic]
+		{
+			description = "Adds 4 to Nature Magic Skill";
+			value = 4;
+		}
+	}
+
+	[natural]
+	{
+		screen_name = "Natural";
+		specializes = campestral;
+		power = 54;
+
+		[nature_magic]
+		{
+			description = "Adds 6 to Nature Magic Skill";
+			value = 6;
+		}
+	}
+
+	//-- FABRICATED
+	[fabricated]
+	{
+		screen_name = "Fabricated";
+		power = 4;
+		object_types = spellbook;
+		type = prefix;
+
+		[combat_magic]
+		{
+			description = "Adds 1 to Combat Magic Skill";
+			alteration = alter_combat_magic;
+			value = 1;
+			duration = #infinite;
+			is_permanent = true;
+			is_single_instance = false;
+		}
+	}
+
+	[molded]
+	{
+		screen_name = "Molded";
+		specializes = fabricated;
+		power = 11;
+
+		[combat_magic]
+		{
+			description = "Adds 2 to Combat Magic Skill";
+			value = 2;
+		}
+	}
+
+	[shaped]
+	{
+		screen_name = "Shaped";
+		specializes = fabricated;
+		power = 22;
+
+		[combat_magic]
+		{
+			description = "Adds 3 to Combat Magic Skill";
+			value = 3;
+		}
+	}
+
+	[forged]
+	{
+		screen_name = "Forged";
+		specializes = fabricated;
+		power = 36;
+
+		[combat_magic]
+		{
+			description = "Adds 4 to Combat Magic Skill";
+			value = 4;
+		}
+	}
+
+	[manufactured]
+	{
+		screen_name = "Manufactured";
+		specializes = fabricated;
+		power = 54;
+
+		[combat_magic]
+		{
+			description = "Adds 6 to Combat Magic Skill";
+			value = 6;
+		}
+	}
+
+	//-- HIDEBOUND
+	[hidebound]
+	{
+		screen_name = "Hide Bound";
+		power = 6;
+		object_types = spellbook;
+		type = prefix;
+
+		[strength]
+		{
+			description = "Adds 1 to Strength";
+			alteration = alter_strength;
+			value = 1;
+			duration = #infinite;
+			is_permanent = true;
+			is_single_instance = false;
+		}
+	}
+
+	[leatherbound]
+	{
+		screen_name = "Leather Bound";
+		specializes = hidebound;
+		power = 13;
+
+		[strength]
+		{
+			description = "Adds 2 to Strength";
+			value = 2;
+		}
+	}
+
+	[oakbound]
+	{
+		screen_name = "Oak Bound";
+		specializes = hidebound;
+		power = 25;
+
+		[strength]
+		{
+			description = "Adds 3 to Strength";
+			value = 3;
+		}
+	}
+
+	[ironbound]
+	{
+		screen_name = "Iron Bound";
+		specializes = hidebound;
+		power = 39;
+
+		[strength]
+		{
+			description = "Adds 4 to Strength";
+			value = 4;
+		}
+	}
+
+	[steelbound]
+	{
+		screen_name = "Steel Bound";
+		specializes = hidebound;
+		power = 55;
+
+		[strength]
+		{
+			description = "Adds 6 to Strength";
+			value = 6;
+		}
+	}
+
+	//-- STRONGER COLD SPELLS PREFIX
+	[cold]
+	{
+		screen_name = "Cold";
+		type = prefix;
+		power = 5;
+		object_types = spellbook;
+		tooltip_color   = "imbued";
+
+		[spell_cost]
+		{
+			description = "Increase the damage of Cold spells in this spellbook by 5%";
+			alteration = alter_spell_damage;
+			imbued_spell_group = spells_ice;
+			is_imbued = true;
+			multiply_value = true;
+			value = 5;
+			duration = #infinite;
+			is_permanent = true;
+			is_single_instance = false;
+		}
+	}
+	[frozen]
+	{
+		screen_name = "Arctic";
+		specializes = cold;
+		tooltip_color   = "imbued";
+		power = 15;
+
+		[spell_cost]
+		{
+			description = "Increase the damage of Cold spells in this spellbook by 10%";
+			value = 10;
+		}
+	}
+	[icy]
+	{
+		screen_name = "icy";
+		specializes = cold;
+		tooltip_color   = "imbued";
+		power = 25;
+		[spell_cost]
+		{
+			description = "Increase the damage of Cold spells in this spellbook by 15%";
+			value = 15;
+		}
+	}
+	[wintry]
+	{
+		screen_name = "Wintry";
+		specializes = cold;
+		tooltip_color   = "imbued";
+		power = 40;
+		[spell_cost]
+		{
+			description = "Increase the damage of Cold spells in this spellbook by 20%";
+			value = 20;
+		}
+	}
+	[glacial]
+	{
+		screen_name = "glacial";
+		specializes = cold;
+		tooltip_color   = "imbued";
+		power = 60;
+		[spell_cost]
+		{
+			description = "Increase the damage of Cold spells in this spellbook by 25%";
+			value = 25;
+		}
+	}
+
+	//-- STRONGER FIERY SPELLS PREFIX
+	[fiery]
+	{
+		screen_name = "Fiery";
+		type = prefix;
+		power = 5;
+		object_types = spellbook;
+
+		tooltip_color   = "imbued";
+
+		[spell_cost]
+		{
+			description = "Increase the damage of Fire spells in this spellbook by 5%";
+			alteration = alter_spell_damage;
+			is_imbued = true;
+			imbued_spell_group = spells_fire;
+			multiply_value = true;
+			value = 5;
+			duration = #infinite;
+			is_permanent = true;
+			is_single_instance = false;
+		}
+	}
+	[combusting]
+	{
+		screen_name = "Combusting";
+		specializes = fiery;
+		tooltip_color   = "imbued";
+		power = 15;
+
+		[spell_cost]
+		{
+			description = "Increase the damage of Fire spells in this spellbook by 10%";
+			value = 10;
+		}
+	}
+	[burnt]
+	{
+		screen_name = "burnt";
+		specializes = fiery;
+		tooltip_color   = "imbued";
+		power = 25;
+
+		[spell_cost]
+		{
+			description = "Increase the damage of Fire spells in this spellbook by 15%";
+			value = 15;
+		}
+	}
+	[smoldering]
+	{
+		screen_name = "smoldering";
+		specializes = fiery;
+		tooltip_color   = "imbued";
+		power = 40;
+
+		[spell_cost]
+		{
+			description = "Increase the damage of Fire spells in this spellbook by 20%";
+			value = 20;
+		}
+	}
+	[scorched]
+	{
+		screen_name = "scorched";
+		specializes = fiery;
+		tooltip_color   = "imbued";
+		power = 60;
+
+		[spell_cost]
+		{
+			description = "Increase the damage of Fire spells in this spellbook by 25%";
+			value = 25;
+		}
+	}
+
+	//-- STRONGER SHIMMERING SPELLS PREFIX
+	[shimmering]
+	{
+		screen_name = "Shimmering";
+		type = prefix;
+		power = 5;
+		object_types = spellbook;
+
+		tooltip_color   = "imbued";
+
+		[spell_cost]
+		{
+			description = "Increase the damage of electric spells in this spellbook by 5%";
+			alteration = alter_spell_damage;
+			is_imbued = true;
+			imbued_spell_group = spells_electric;
+			multiply_value = true;
+			value = 5;
+			duration = #infinite;
+			is_permanent = true;
+			is_single_instance = false;
+		}
+	}
+	[zapping]
+	{
+		screen_name = "zapping";
+		specializes = shimmering;
+		tooltip_color   = "imbued";
+		power = 15;
+
+		[spell_cost]
+		{
+			description = "Increase the damage of electric spells in this spellbook by 10%";
+			value = 10;
+		}
+	}
+	[sparking]
+	{
+		screen_name = "sparking";
+		specializes = shimmering;
+		tooltip_color   = "imbued";
+		power = 25;
+
+		[spell_cost]
+		{
+			description = "Increase the damage of electric spells in this spellbook by 15%";
+			value = 15;
+		}
+	}
+	[electric]
+	{
+		screen_name = "electric";
+		specializes = shimmering;
+		tooltip_color   = "imbued";
+		power = 40;
+
+		[spell_cost]
+		{
+			description = "Increase the damage of electric spells in this spellbook by 20%";
+			value = 20;
+		}
+	}
+	[shocking]
+	{
+		screen_name = "shocking";
+		specializes = shimmering;
+		tooltip_color   = "imbued";
+		power = 60;
+
+		[spell_cost]
+		{
+			description = "Increase the damage of electric spells in this spellbook by 25%";
+			value = 25;
+		}
+	}
+
+	//-- STUNNING PREFIX :: MELEE
+	[stunning_melee]
+	{
+		type = prefix;
+		object_types = melee;
+		screen_name = "Stunning";
+		power = 2;
+
+		[custom_chance]
+		{
+			description = "+10% Chance To Stun And";
+			alteration = alter_custom_damage_chance_melee;
+			custom_damage = petrify;
+			value = 10;
+			duration = #infinite;
+			is_permanent = true;
+			is_single_instance = false;
+		}
+		[custom_damage]
+		{
+			description = " Adds 1 to 5 Stun Damage";
+			alteration = alter_custom_damage_melee;
+			max_value = 5;
+			value = 1;
+			custom_damage = petrify;
+			duration = #infinite;
+			is_permanent = true;
+			is_single_instance = false;
+			custom_damage_skrit = world\global\skrits\weapon_hold.skrit?hold_time=4&immunity=immune_freeze;
+			effect_script_equip	= dsx_modifier_stunning_melee;
+			effect_script_hit	= dsx_modifier_stunning_hit;
+		}
+	}
+
+	[stupefying_melee]
+	{
+		screen_name = "Stupefying";
+		specializes = stunning_melee;
+		power = 15;
+
+		[custom_chance]
+		{
+			description = "+15% Chance To Stupify And";
+			value = 15;
+		}
+		[custom_damage]
+		{
+			description = " Adds 1 to 5 Stupefication Damage";
+			max_value = 5;
+			value = 1;
+			custom_damage_skrit = world\global\skrits\weapon_hold.skrit?hold_time=4&immunity=immune_freeze;
+		}
+	}
+
+	[paralyzing_melee]
+	{
+		screen_name = "Paralyzing";
+		specializes = stunning_melee;
+		power = 30;
+
+		[custom_chance]
+		{
+			description = "+15% Chance To Paralyze And";
+			value = 15;
+		}
+		[custom_damage]
+		{
+			description = " Adds 5 to 15 Paralysis Damage";
+			max_value = 15;
+			value = 5;
+			custom_damage_skrit = world\global\skrits\weapon_hold.skrit?hold_time=4&immunity=immune_freeze;
+		}
+	}
+
+	[stoning_melee]
+	{
+		screen_name = "Stoning";
+		specializes = stunning_melee;
+		power = 45;
+
+		[custom_chance]
+		{
+			description = "+20% Chance To Turn to Stone And";
+			value = 20;
+		}
+		[custom_damage]
+		{
+			description = " Adds 5 to 15 Stoning Damage";
+			max_value = 15;
+			value = 5;
+			custom_damage_skrit = world\global\skrits\weapon_hold.skrit?hold_time=4&immunity=immune_freeze;
+		}
+	}
+
+	[petrifying_melee]
+	{
+		screen_name = "Petrifying";
+		specializes = stunning_melee;
+		power = 60;
+
+		[custom_chance]
+		{
+			description = "+20% Chance To Petrify And";
+			value = 20;
+		}
+		[custom_damage]
+		{
+			description = " Adds 15 to 25 Petrification Damage";
+			max_value = 25;
+			value = 15;
+			custom_damage_skrit = world\global\skrits\weapon_hold.skrit?hold_time=4&immunity=immune_freeze;
+		}
+	}
+
+	//-- STUNNING PREFIX :: RANGED
+	[stunning_ranged]
+	{
+		type = prefix;
+		object_types = ranged;
+		screen_name = "Stunning";
+		power = 2;
+
+		[custom_chance]
+		{
+			description = "+10% Chance To Stun And";
+			alteration = alter_custom_damage_chance_ranged;
+			custom_damage = petrify;
+			value = 10;
+			duration = #infinite;
+			is_permanent = true;
+			is_single_instance = false;
+		}
+		[custom_damage]
+		{
+			description = " Adds 1 to 5 Stun Damage";
+			alteration = alter_custom_damage_ranged;
+			max_value = 5;
+			value = 1;
+			custom_damage = petrify;
+			duration = #infinite;
+			is_permanent = true;
+			is_single_instance = false;
+			custom_damage_skrit = world\global\skrits\weapon_hold.skrit?hold_time=4&immunity=immune_freeze;
+			effect_script_hit	= dsx_modifier_stunning_ranged;
+		}
+	}
+
+	[stupefying_ranged]
+	{
+		screen_name = "Stupefying";
+		specializes = stunning_ranged;
+		power = 15;
+
+		[custom_chance]
+		{
+			description = "+15% Chance To Stupify And";
+			value = 15;
+		}
+		[custom_damage]
+		{
+			description = " Adds 1 to 5 Stupefication Damage";
+			max_value = 5;
+			value = 1;
+			custom_damage_skrit = world\global\skrits\weapon_hold.skrit?hold_time=4&immunity=immune_freeze;
+		}
+	}
+
+	[paralyzing_ranged]
+	{
+		screen_name = "Paralyzing";
+		specializes = stunning_ranged;
+		power = 30;
+
+		[custom_chance]
+		{
+			description = "+15% Chance To Paralyze And";
+			value = 15;
+		}
+		[custom_damage]
+		{
+			description = " Adds 5 to 15 Paralysis Damage";
+			max_value = 15;
+			value = 5;
+			custom_damage_skrit = world\global\skrits\weapon_hold.skrit?hold_time=4&immunity=immune_freeze;
+		}
+	}
+
+	[stoning_ranged]
+	{
+		screen_name = "Stoning";
+		specializes = stunning_ranged;
+		power = 45;
+
+		[custom_chance]
+		{
+			description = "+20% Chance To Turn to Stone And";
+			value = 20;
+		}
+		[custom_damage]
+		{
+			description = " Adds 5 to 15 Stoning Damage";
+			max_value = 15;
+			value = 5;
+			custom_damage_skrit = world\global\skrits\weapon_hold.skrit?hold_time=4&immunity=immune_freeze;
+		}
+	}
+
+	[petrifying_ranged]
+	{
+		screen_name = "Petrifying";
+		specializes = stunning_ranged;
+		power = 60;
+
+		[custom_chance]
+		{
+			description = "+20% Chance To Petrify And";
+			value = 20;
+		}
+		[custom_damage]
+		{
+			description = " Adds 15 to 25 Petrification Damage";
+			max_value = 25;
+			value = 15;
+			custom_damage_skrit = world\global\skrits\weapon_hold.skrit?hold_time=4&immunity=immune_freeze;
+		}
+	}
+
+	//// END PREFIXES ////
+
+
+	//// BEGIN SUFFIXES ////
+	//-- CHEAPER COLD SUFFIX
+	[ofthechill]
+	{
+		screen_name = "Of The Chill";
+		type = suffix;
+		power = 5;
+		object_types = spellbook;
+
+		tooltip_color   = "imbued";
+
+		[spell_cost]
+		{
+			description = "Reduces the cost of Ice Spells in this spellbook by 5%";
+			alteration = alter_spell_cost;
+			is_imbued = true;
+			imbued_spell_group = spells_ice;
+			multiply_value = true;
+			value = 5;
+			duration = #infinite;
+			is_permanent = true;
+			is_single_instance = false;
+		}
+	}
+
+	[ofthefrost]
+	{
+		screen_name = "Of The Frost";
+		specializes = ofthechill;
+		tooltip_color   = "imbued";
+		power = 15;
+
+		[spell_cost]
+		{
+			description = "Reduces the cost of Ice Spells in this spellbook by 10%";
+			value = 10;
+		}
+	}
+
+	[ofthefrigid]
+	{
+		screen_name = "Of The Frigid";
+		specializes = ofthechill;
+		tooltip_color   = "imbued";
+		power = 25;
+
+		[spell_cost]
+		{
+			description = "Reduces the cost of Ice Spells in this spellbook by 15%";
+			value = 15;
+		}
+	}
+
+	[ofthefrozen]
+	{
+		screen_name = "Of The Frozen";
+		specializes = ofthechill;
+		tooltip_color   = "imbued";
+		power = 40;
+
+		[spell_cost]
+		{
+			description = "Reduces the cost of Ice Spells in this spellbook by 20%";
+			value = 20;
+		}
+	}
+
+	[oftheglacier]
+	{
+		screen_name = "Of The Glacier";
+		specializes = ofthechill;
+		tooltip_color   = "imbued";
+		power = 60;
+
+		[spell_cost]
+		{
+			description = "Reduces the cost of Ice Spells in this spellbook by 25%";
+			value = 25;
+		}
+	}
+
+	//-- CHEAPER FIRE SUFFIXES
+	[oftheflame]
+	{
+		screen_name = "Of The Flame";
+		type = suffix;
+		power = 5;
+		object_types = spellbook;
+
+		tooltip_color   = "imbued";
+
+		[spell_cost]
+		{
+			description = "Reduces the cost of Fire Spells in this spellbook by 5%";
+			alteration = alter_spell_cost;
+			is_imbued = true;
+			imbued_spell_group = spells_fire;
+			multiply_value = true;
+			value = 5;
+			duration = #infinite;
+			is_permanent = true;
+			is_single_instance = false;
+		}
+	}
+
+	[oftheblaze]
+	{
+		screen_name = "Of The Blaze";
+		specializes = oftheflame;
+		tooltip_color   = "imbued";
+		power = 15;
+
+		[spell_cost]
+		{
+			description = "Reduces the cost of Fire Spells in this spellbook by 10%";
+			value = 10;
+		}
+	}
+
+	[ofthefire]
+	{
+		screen_name = "Of The Fire";
+		specializes = oftheflame;
+		tooltip_color   = "imbued";
+		power = 25;
+
+		[spell_cost]
+		{
+			description = "Reduces the cost of Fire Spells in this spellbook by 15%";
+			value = 15;
+		}
+	}
+
+	[oftheconflagration]
+	{
+		screen_name = "Of The Conflagration";
+		specializes = oftheflame;
+		tooltip_color   = "imbued";
+		power = 40;
+
+		[spell_cost]
+		{
+			description = "Reduces the cost of Fire Spells in this spellbook by 20%";
+			value = 20;
+		}
+	}
+
+	[oftheinferno]
+	{
+		screen_name = "Of The Inferno";
+		specializes = oftheflame;
+		tooltip_color   = "imbued";
+		power = 60;
+
+		[spell_cost]
+		{
+			description = "Reduces the cost of Fire Spells in this spellbook by 25%";
+			value = 25;
+		}
+	}
+
+	//-- CHEAPER LIGHTNING / ELECTRICITY SUFFIXES
+	[ofstatic]
+	{
+		screen_name = "Of Static";
+		type = suffix;
+		power = 5;
+		object_types = spellbook;
+
+		tooltip_color   = "imbued";
+
+		[spell_cost]
+		{
+			description = "Reduces the cost of Lightning Spells in this spellbook by 5%";
+			alteration = alter_spell_cost;
+			is_imbued = true;
+			imbued_spell_group = spells_electric;
+			multiply_value = true;
+			value = 5;
+			duration = #infinite;
+			is_permanent = true;
+			is_single_instance = false;
+		}
+	}
+
+	[ofthecharge]
+	{
+		screen_name = "Of The Charge";
+		specializes = ofstatic;
+		tooltip_color   = "imbued";
+		power = 15;
+		[spell_cost]
+		{
+			description = "Reduces the cost of Lightning Spells in this spellbook by 10%";
+			value = 10;
+		}
+	}
+
+	[ofthespark]
+	{
+		screen_name = "Of The Spark";
+		specializes = ofstatic;
+		tooltip_color   = "imbued";
+		power = 25;
+		[spell_cost]
+		{
+			description = "Reduces the cost of Lightning Spells in this spellbook by 15%";
+			value = 15;
+		}
+	}
+
+	[ofelectricity]
+	{
+		screen_name = "Of Electricity";
+		specializes = ofstatic;
+		tooltip_color   = "imbued";
+		power = 40;
+		[spell_cost]
+		{
+			description = "Reduces the cost of Lightning Spells in this spellbook by 20%";
+			value = 20;
+		}
+	}
+
+	[ofthethunderbolt]
+	{
+		screen_name = "Of The Thunderbolt";
+		specializes = ofstatic;
+		tooltip_color   = "imbued";
+		power = 60;
+		[spell_cost]
+		{
+			description = "Reduces the cost of Lightning Spells in this spellbook by 25%";
+			value = 25;
+		}
+	}
+
+	//-- CHEAPER SUMMONING SUFFIXES
+	[ofbidding]
+	{
+		screen_name = "Of Bidding";
+		type = suffix;
+		power = 5;
+		object_types = spellbook;
+
+		tooltip_color   = "imbued";
+
+		[spell_cost]
+		{
+			description = "Reduces the cost of Summoning Spells in this spellbook by 5%";
+			alteration = alter_spell_cost;
+			is_imbued = true;
+			imbued_spell_group = spells_summon;
+			multiply_value = true;
+			value = 5;
+			duration = #infinite;
+			is_permanent = true;
+			is_single_instance = false;
+		}
+	}
+
+	[ofconvening]
+	{
+		screen_name = "Of Convening";
+		specializes = ofbidding;
+		tooltip_color   = "imbued";
+		power = 15;
+
+		[spell_cost]
+		{
+			description = "Reduces the cost of Summoning Spells in this spellbook by 10%";
+			value = 10;
+		}
+	}
+
+	[ofcommanding]
+	{
+		screen_name = "Of Commanding";
+		specializes = ofbidding;
+		tooltip_color   = "imbued";
+		power = 25;
+
+		[spell_cost]
+		{
+			description = "Reduces the cost of Summoning Spells in this spellbook by 15%";
+			value = 15;
+		}
+	}
+
+	[ofconvoking]
+	{
+		screen_name = "Of Convoking";
+		specializes = ofbidding;
+		tooltip_color   = "imbued";
+		power = 40;
+
+		[spell_cost]
+		{
+			description = "Reduces the cost of Summoning Spells in this spellbook by 20%";
+			value = 20;
+		}
+	}
+
+	[ofsummoning]
+	{
+		screen_name = "Of Summoning";
+		specializes = ofbidding;
+		tooltip_color   = "imbued";
+		power = 60;
+
+		[spell_cost]
+		{
+			description = "Reduces the cost of Summoning Spells in this spellbook by 25%";
+			value = 25;
+		}
+	}
+
+	//-- CHEAPER HEALING SUFFIXES
+	[ofcharity]
+	{
+		screen_name = "Of Charity";
+		type = suffix;
+		power = 5;
+		object_types = spellbook;
+
+		tooltip_color   = "imbued";
+
+		[spell_cost]
+		{
+			description = "Reduces the cost of Healing Spells in this spellbook by 5%";
+			alteration = alter_spell_cost;
+			is_imbued = true;
+			imbued_spell_group = spells_healing;
+			multiply_value = true;
+			value = 5;
+			duration = #infinite;
+			is_permanent = true;
+			is_single_instance = false;
+		}
+	}
+
+	[ofclemency]
+	{
+		screen_name = "Of Clemency";
+		specializes = ofcharity;
+		tooltip_color   = "imbued";
+		power = 15;
+
+		[spell_cost]
+		{
+			description = "Reduces the cost of Healing Spells in this spellbook by 10%";
+			value = 10;
+		}
+	}
+
+	[ofmercy]
+	{
+		screen_name = "Of Mercy";
+		specializes = ofcharity;
+		tooltip_color   = "imbued";
+		power = 25;
+
+		[spell_cost]
+		{
+			description = "Reduces the cost of Healing Spells in this spellbook by 15%";
+			value = 15;
+		}
+	}
+
+	[ofcompassion]
+	{
+		screen_name = "Of Compassion";
+		specializes = ofcharity;
+		tooltip_color   = "imbued";
+		power = 40;
+
+		[spell_cost]
+		{
+			description = "Reduces the cost of Healing Spells in this spellbook by 20%";
+			value = 20;
+		}
+	}
+
+	[ofgrace]
+	{
+		screen_name = "Of Grace";
+		specializes = ofcharity;
+		tooltip_color   = "imbued";
+		power = 60;
+
+		[spell_cost]
+		{
+			description = "Reduces the cost of Healing Spells in this spellbook by 25%";
+			value = 25;
+		}
+	}
+
+	//START ATTACKBACK OFFENSE-AS-DEFENSE ARMOR
+
+	//-- ATTACKBACK ZAP
+	[oflesserzap]
+	{
+		type = suffix;
+		object_types = armor;
+		screen_name = "Of Lesser Zap";
+		power = 2;
+
+		[special_defense]
+		{
+			description = "+10% Chance to Cast Zap on Taking Damage";
+			alteration = alter_special_defense;
+			special_defense = zap;
+			value = 10;
+			duration = #infinite;
+			is_permanent = true;
+			is_single_instance = false;
+			special_defense_skrit = world\global\skrits\special_defense.skrit?damage_min=5&damage_max=10&is_lightning=true&effect_script="zap";
+		}
+	}
+
+	[ofminorzap]
+	{
+		screen_name = "Of Minor Zap";
+		specializes = oflesserzap;
+		power = 3;
+
+		[special_defense]
+		{
+			description = "+15% Chance to Cast Zap on Taking Damage";
+			value = 15;
+			special_defense_skrit = world\global\skrits\special_defense.skrit?damage_min=5&damage_max=10&is_lightning=true&effect_script="zap";
+		}
+	}
+
+	[ofzap]
+	{
+		screen_name = "Of Zap";
+		specializes = oflesserzap;
+		power = 5;
+
+		[special_defense]
+		{
+			description = "+20% Chance to Cast Zap on Taking Damage";
+			value = 20;
+			special_defense_skrit = world\global\skrits\special_defense.skrit?damage_min=5&damage_max=10&is_lightning=true&effect_script="zap";
+		}
+	}
+
+	[ofmajorzap]
+	{
+		screen_name = "Of Major Zap";
+		specializes = oflesserzap;
+		power = 6;
+
+		[special_defense]
+		{
+			description = "+25% Chance to Cast Zap on Taking Damage";
+			value = 25;
+			special_defense_skrit = world\global\skrits\special_defense.skrit?damage_min=5&damage_max=10&is_lightning=true&effect_script="zap";
+		}
+	}
+
+	[ofgreaterzap]
+	{
+		screen_name = "Of Greater Zap";
+		specializes = oflesserzap;
+		power = 7;
+
+		[special_defense]
+		{
+			description = "+30% Chance to Cast Zap on Taking Damage";
+			value = 30;
+			special_defense_skrit = world\global\skrits\special_defense.skrit?damage_min=5&damage_max=10&is_lightning=true&effect_script="zap";
+		}
+	}
+
+	//-- ATTACKBACK FIRESHOT
+	[oflesserfireshot]
+	{
+		type = suffix;
+		object_types = armor;
+		screen_name = "Of Lesser Fireshot";
+		power = 4;
+
+		[special_defense]
+		{
+			description = "+10% Chance to Cast Fireshot on Taking Damage";
+			alteration = alter_special_defense;
+			special_defense = fireshot;
+			value = 10;
+			duration = #infinite;
+			is_permanent = true;
+			is_single_instance = false;
+			special_defense_skrit = world\global\skrits\special_defense.skrit?damage_min=10&damage_max=15;
+		}
+	}
+
+	[ofminorfireshot]
+	{
+		screen_name = "Of Minor Fireshot";
+		specializes = oflesserfireshot;
+		power = 6;
+
+		[special_defense]
+		{
+			description = "+15% Chance to Cast Fireshot on Taking Damage";
+			value = 15;
+			special_defense_skrit = world\global\skrits\special_defense.skrit?damage_min=10&damage_max=15;
+		}
+	}
+
+	[offireshot]
+	{
+		screen_name = "Of Fireshot";
+		specializes = oflesserfireshot;
+		power = 8;
+
+		[special_defense]
+		{
+			description = "+20% Chance to Cast Fireshot on Taking Damage";
+			value = 20;
+			special_defense_skrit = world\global\skrits\special_defense.skrit?damage_min=10&damage_max=15;
+
+		}
+	}
+
+	[ofmajorfireshot]
+	{
+		screen_name = "Of Major Fireshot";
+		specializes = oflesserfireshot;
+		power = 9;
+
+		[special_defense]
+		{
+			description = "+25% Chance to Cast Fireshot on Taking Damage";
+			value = 25;
+			special_defense_skrit = world\global\skrits\special_defense.skrit?damage_min=10&damage_max=15;
+
+		}
+	}
+
+	[ofgreaterfireshot]
+	{
+		screen_name = "Of Greater Fireshot";
+		specializes = oflesserfireshot;
+		power = 11;
+
+		[special_defense]
+		{
+			description = "+30% Chance to Cast Fireshot on Taking Damage";
+			value = 30;
+			special_defense_skrit = world\global\skrits\special_defense.skrit?damage_min=10&damage_max=15;
+
+		}
+	}
+
+	//-- ATTACKBACK SPARK
+	[oflesserspark]
+	{
+		type = suffix;
+		object_types = armor;
+		screen_name = "Of Lesser Spark";
+		power = 5;
+
+		[special_defense]
+		{
+			description = "+10% Chance to Cast Spark on Taking Damage";
+			alteration = alter_special_defense;
+			special_defense = spark;
+			value = 10;
+			duration = #infinite;
+			is_permanent = true;
+			is_single_instance = false;
+			special_defense_skrit = world\global\skrits\special_defense.skrit?damage_min=15&damage_max=20&effect_script="spark";
+		}
+	}
+
+	[ofminorspark]
+	{
+		screen_name = "Of Minor Spark";
+		specializes = oflesserspark;
+		power = 8;
+
+		[special_defense]
+		{
+			description = "+15% Chance to Cast Spark on Taking Damage";
+			value = 15;
+			special_defense_skrit = world\global\skrits\special_defense.skrit?damage_min=15&damage_max=20&effect_script="spark";
+		}
+	}
+
+	[ofspark]
+	{
+		screen_name = "Of Spark";
+		specializes = oflesserspark;
+		power = 11;
+
+		[special_defense]
+		{
+			description = "+20% Chance to Cast Spark on Taking Damage";
+			value = 20;
+			special_defense_skrit = world\global\skrits\special_defense.skrit?damage_min=15&damage_max=20&effect_script="spark";
+		}
+	}
+
+	[ofmajorspark]
+	{
+		screen_name = "Of Major Spark";
+		specializes = oflesserspark;
+		power = 13;
+
+		[special_defense]
+		{
+			description = "+25% Chance to Cast Spark on Taking Damage";
+			value = 25;
+			special_defense_skrit = world\global\skrits\special_defense.skrit?damage_min=15&damage_max=20&effect_script="spark";
+		}
+	}
+
+	[ofgreaterspark]
+	{
+		screen_name = "Of Greater Spark";
+		specializes = oflesserspark;
+		power = 16;
+
+		[special_defense]
+		{
+			description = "+30% Chance to Cast Spark on Taking Damage";
+			value = 30;
+			special_defense_skrit = world\global\skrits\special_defense.skrit?damage_min=15&damage_max=20&effect_script="spark";
+		}
+	}
+
+	//-- ATTACKBACK FIRESPRAY
+	[oflesserfirespray]
+	{
+		type = suffix;
+		object_types = armor;
+		screen_name = "Of Lesser Firespray";
+		power = 7;
+
+		[special_defense]
+		{
+			description = "+10% Chance to Cast Firespray on Taking Damage";
+			alteration = alter_special_defense;
+			special_defense = fire_spray;
+			value = 10;
+			duration = #infinite;
+			is_permanent = true;
+			is_single_instance = false;
+			special_defense_skrit = world\global\skrits\special_defense.skrit?damage_min=20&damage_max=25&effect_script="fire_spray";
+		}
+	}
+
+	[ofminorfirespray]
+	{
+		screen_name = "Of Minor Firespray";
+		specializes = oflesserfirespray;
+		power = 10;
+
+		[special_defense]
+		{
+			description = "+15% Chance to Cast Firespray on Taking Damage";
+			value = 15;
+			special_defense_skrit = world\global\skrits\special_defense.skrit?damage_min=20&damage_max=25&effect_script="fire_spray";
+
+		}
+	}
+
+	[offirespray]
+	{
+		screen_name = "Of Firespray";
+		specializes = oflesserfirespray;
+		power = 14;
+
+		[special_defense]
+		{
+			description = "+20% Chance to Cast Firespray on Taking Damage";
+			value = 20;
+			special_defense_skrit = world\global\skrits\special_defense.skrit?damage_min=20&damage_max=25&effect_script="fire_spray";
+
+		}
+	}
+
+	[ofmajorfirespray]
+	{
+		screen_name = "Of Major Firespray";
+		specializes = oflesserfirespray;
+		power = 17;
+
+		[special_defense]
+		{
+			description = "+25% Chance to Cast Firespray on Taking Damage";
+			value = 25;
+			special_defense_skrit = world\global\skrits\special_defense.skrit?damage_min=20&damage_max=25&effect_script="fire_spray";
+
+		}
+	}
+
+	[ofgreaterfirespray]
+	{
+		screen_name = "Of Greater Firespray";
+		specializes = oflesserfirespray;
+		power = 20;
+
+		[special_defense]
+		{
+			description = "+30% Chance to Cast Firespray on Taking Damage";
+			value = 30;
+			special_defense_skrit = world\global\skrits\special_defense.skrit?damage_min=20&damage_max=25&effect_script="fire_spray";
+
+		}
+	}
+
+	//-- ATTACKBACK FIRESKULL
+	[oflesserfireskull]
+	{
+		type = suffix;
+		object_types = armor;
+		screen_name = "Of Lesser Fireskull";
+		power = 8;
+
+		[special_defense]
+		{
+			description = "+10% Chance to Cast Fireskull on Taking Damage";
+			alteration = alter_special_defense;
+			special_defense = fireskull;
+			value = 10;
+			duration = #infinite;
+			is_permanent = true;
+			is_single_instance = false;
+			special_defense_skrit = world\global\skrits\special_defense.skrit?damage_min=25&damage_max=30&effect_script="fireskull";
+		}
+	}
+
+	[ofminorfireskull]
+	{
+		screen_name = "Of Minor Fireskull";
+		specializes = oflesserfireskull;
+		power = 12;
+
+		[special_defense]
+		{
+			description = "+15% Chance to Cast Fireskull on Taking Damage";
+			value = 15;
+			special_defense_skrit = world\global\skrits\special_defense.skrit?damage_min=25&damage_max=30&effect_script="fireskull";
+		}
+	}
+
+	[offireskull]
+	{
+		screen_name = "Of Fireskull";
+		specializes = oflesserfireskull;
+		power = 17;
+
+		[special_defense]
+		{
+			description = "+20% Chance to Cast Fireskull on Taking Damage";
+			value = 20;
+			special_defense_skrit = world\global\skrits\special_defense.skrit?damage_min=25&damage_max=30&effect_script="fireskull";
+		}
+	}
+
+	[ofmajorfireskull]
+	{
+		screen_name = "Of Major Fireskull";
+		specializes = oflesserfireskull;
+		power = 21;
+
+		[special_defense]
+		{
+			description = "+25% Chance to Cast Fireskull on Taking Damage";
+			value = 25;
+			special_defense_skrit = world\global\skrits\special_defense.skrit?damage_min=25&damage_max=30&effect_script="fireskull";
+		}
+	}
+
+	[ofgreaterfireskull]
+	{
+		screen_name = "Of Greater Fireskull";
+		specializes = oflesserfireskull;
+		power = 25;
+
+		[special_defense]
+		{
+			description = "+30% Chance to Cast Fireskull on Taking Damage";
+			value = 30;
+			special_defense_skrit = world\global\skrits\special_defense.skrit?damage_min=25&damage_max=30&effect_script="fireskull";
+		}
+	}
+
+	//-- ATTACKBACK LIGHTNING
+	[oflesserlightning]
+	{
+		type = suffix;
+		object_types = armor;
+		screen_name = "Of Lesser Lightning";
+		power = 10;
+
+		[special_defense]
+		{
+			description = "+10% Chance to Cast Lightning on Taking Damage";
+			alteration = alter_special_defense;
+			special_defense = lightning;
+			value = 10;
+			duration = #infinite;
+			is_permanent = true;
+			is_single_instance = false;
+			special_defense_skrit = world\global\skrits\special_defense.skrit?damage_min=30&damage_max=35&is_lightning=true&effect_script="lightning";
+		}
+	}
+
+	[ofminorlightning]
+	{
+		screen_name = "Of Minor Lightning";
+		specializes = oflesserlightning;
+		power = 15;
+
+		[special_defense]
+		{
+			description = "+15% Chance to Cast Lightning on Taking Damage";
+			value = 15;
+			special_defense_skrit = world\global\skrits\special_defense.skrit?damage_min=30&damage_max=35&is_lightning=true&effect_script="lightning";
+		}
+	}
+
+	// of lightning already exists so we had to give this guy a special name
+	[oflightning_special_defense]
+	{
+		screen_name = "Of Lightning";
+		specializes = oflesserlightning;
+		power = 20;
+
+		[special_defense]
+		{
+			description = "+20% Chance to Cast Lightning on Taking Damage";
+			value = 20;
+			special_defense_skrit = world\global\skrits\special_defense.skrit?damage_min=30&damage_max=35&is_lightning=true&effect_script="lightning";
+		}
+	}
+
+	[ofmajorlightning]
+	{
+		screen_name = "Of Major Lightning";
+		specializes = oflesserlightning;
+		power = 14;
+
+		[special_defense]
+		{
+			description = "+25% Chance to Cast Lightning on Taking Damage";
+			value = 25;
+			special_defense_skrit = world\global\skrits\special_defense.skrit?damage_min=30&damage_max=35&is_lightning=true&effect_script="lightning";
+		}
+	}
+
+	[ofgreaterlightning]
+	{
+		screen_name = "Of Greater Lightning";
+		specializes = oflesserlightning;
+		power = 29;
+
+		[special_defense]
+		{
+			description = "+30% Chance to Cast Lightning on Taking Damage";
+			value = 30;
+			special_defense_skrit = world\global\skrits\special_defense.skrit?damage_min=30&damage_max=35&is_lightning=true&effect_script="lightning";
+		}
+	}
+
+	//-- ATTACKBACK FIREBALL
+	[oflesserfireball]
+	{
+		type = suffix;
+		object_types = armor;
+		screen_name = "Of Lesser Fireball";
+		power = 11;
+
+		[special_defense]
+		{
+			description = "+10% Chance to Cast Fireball on Taking Damage";
+			alteration = alter_special_defense;
+			special_defense = fireball;
+			value = 10;
+			duration = #infinite;
+			is_permanent = true;
+			is_single_instance = false;
+			special_defense_skrit = world\global\skrits\special_defense.skrit?damage_min=35&damage_max=40&effect_script="fireball"&area_damage_radius=3;
+		}
+	}
+
+	[ofminorfireball]
+	{
+		screen_name = "Of Minor Fireball";
+		specializes = oflesserfireball;
+		power = 17;
+
+		[special_defense]
+		{
+			description = "+15% Chance to Cast Fireball on Taking Damage";
+			value = 15;
+			special_defense_skrit = world\global\skrits\special_defense.skrit?damage_min=35&damage_max=40&effect_script="fireball"&area_damage_radius=3;
+		}
+	}
+
+	[offireball]
+	{
+		screen_name = "Of Fireball";
+		specializes = oflesserfireball;
+		power = 23;
+
+		[special_defense]
+		{
+			description = "+20% Chance to Cast Fireball on Taking Damage";
+			value = 20;
+			special_defense_skrit = world\global\skrits\special_defense.skrit?damage_min=35&damage_max=40&effect_script="fireball"&area_damage_radius=3;
+		}
+	}
+
+	[ofmajorfireball]
+	{
+		screen_name = "Of Major Fireball";
+		specializes = oflesserfireball;
+		power = 28;
+
+		[special_defense]
+		{
+			description = "+25% Chance to Cast Fireball on Taking Damage";
+			value = 25;
+			special_defense_skrit = world\global\skrits\special_defense.skrit?damage_min=35&damage_max=40&effect_script="fireball"&area_damage_radius=3;
+		}
+	}
+
+	[ofgreaterfireball]
+	{
+		screen_name = "Of Greater Fireball";
+		specializes = oflesserfireball;
+		power = 34;
+
+		[special_defense]
+		{
+			description = "+30% Chance to Cast Fireball on Taking Damage";
+			value = 30;
+			special_defense_skrit = world\global\skrits\special_defense.skrit?damage_min=35&damage_max=40&effect_script="fireball"&area_damage_radius=3;
+		}
+	}
+
+	//-- ATTACKBACK MULTISPARK
+	[oflessermultispark]
+	{
+		type = suffix;
+		object_types = armor;
+		screen_name = "Of Lesser Multispark";
+		power = 13;
+
+		[special_defense]
+		{
+			description = "+10% Chance to Cast Multispark on Taking Damage";
+			alteration = alter_special_defense;
+			special_defense = spark_multi;
+			value = 10;
+			duration = #infinite;
+			is_permanent = true;
+			is_single_instance = false;
+			special_defense_skrit = world\global\skrits\special_defense.skrit?damage_min=40&damage_max=45&effect_script="spark_multi";
+		}
+	}
+
+	[ofminormultispark]
+	{
+		screen_name = "Of Minor Multispark";
+		specializes = oflessermultispark;
+		power = 19;
+
+		[special_defense]
+		{
+			description = "+15% Chance to Cast Multispark on Taking Damage";
+			value = 15;
+			special_defense_skrit = world\global\skrits\special_defense.skrit?damage_min=40&damage_max=45&effect_script="spark_multi";
+		}
+	}
+
+	[ofmultispark]
+	{
+		screen_name = "Of Multispark";
+		specializes = oflessermultispark;
+		power = 26;
+
+		[special_defense]
+		{
+			description = "+20% Chance to Cast Multispark on Taking Damage";
+			value = 20;
+			special_defense_skrit = world\global\skrits\special_defense.skrit?damage_min=40&damage_max=45&effect_script="spark_multi";
+		}
+	}
+
+	[ofmajormultispark]
+	{
+		screen_name = "Of Major Multispark";
+		specializes = oflessermultispark;
+		power = 32;
+
+		[special_defense]
+		{
+			description = "+25% Chance to Cast Multispark on Taking Damage";
+			value = 25;
+			special_defense_skrit = world\global\skrits\special_defense.skrit?damage_min=40&damage_max=45&effect_script="spark_multi";
+		}
+	}
+
+	[ofgreatermultispark]
+	{
+		screen_name = "Of Greater Multispark";
+		specializes = oflessermultispark;
+		power = 38;
+
+		[special_defense]
+		{
+			description = "+30% Chance to Cast Multispark on Taking Damage";
+			value = 30;
+			special_defense_skrit = world\global\skrits\special_defense.skrit?damage_min=40&damage_max=45&effect_script="spark_multi";
+		}
+	}
+
+	//-- ATTACKBACK LIGHTNING BLAST
+	[oflesserlightningblast]
+	{
+		type = suffix;
+		object_types = armor;
+		screen_name = "Of Lesser Lightning Blast";
+		power = 14;
+
+		[special_defense]
+		{
+			description = "+10% Chance to Cast lightningblast on Taking Damage";
+			alteration = alter_special_defense;
+			special_defense = lightningblast;
+			value = 10;
+			duration = #infinite;
+			is_permanent = true;
+			is_single_instance = false;
+			special_defense_skrit = world\global\skrits\special_defense.skrit?damage_min=45&damage_max=50&is_lightning=true&effect_script="lightning_blast";
+		}
+	}
+
+	[ofminorlightningblast]
+	{
+		screen_name = "Of Minor Lightning Blast";
+		specializes = oflesserlightningblast;
+		power = 21;
+
+		[special_defense]
+		{
+			description = "+15% Chance to Cast lightningblast on Taking Damage";
+			value = 15;
+			special_defense_skrit = world\global\skrits\special_defense.skrit?damage_min=45&damage_max=50&is_lightning=true&effect_script="lightning_blast";
+		}
+	}
+
+	[oflightningblast]
+	{
+		screen_name = "Of Lightning Blast";
+		specializes = oflesserlightningblast;
+		power = 29;
+
+		[special_defense]
+		{
+			description = "+20% Chance to Cast lightningblast on Taking Damage";
+			value = 20;
+			special_defense_skrit = world\global\skrits\special_defense.skrit?damage_min=45&damage_max=50&is_lightning=true&effect_script="lightning_blast";
+		}
+	}
+
+	[ofmajorlightningblast]
+	{
+		screen_name = "Of Major Lightning Blast";
+		specializes = oflesserlightningblast;
+		power = 36;
+
+		[special_defense]
+		{
+			description = "+25% Chance to Cast lightningblast on Taking Damage";
+			value = 25;
+			special_defense_skrit = world\global\skrits\special_defense.skrit?damage_min=45&damage_max=50&is_lightning=true&effect_script="lightning_blast";
+		}
+	}
+
+	[ofgreaterlightningblast]
+	{
+		screen_name = "Of Greater Lightning Blast";
+		specializes = oflesserlightningblast;
+		power = 43;
+
+		[special_defense]
+		{
+			description = "+30% Chance to Cast lightningblast on Taking Damage";
+			value = 30;
+			special_defense_skrit = world\global\skrits\special_defense.skrit?damage_min=45&damage_max=50&is_lightning=true&effect_script="lightning_blast";
+		}
+	}
+
+	//-- ATTACKBACK LIGHT RAY
+	[oflesserlightray]
+	{
+		type = suffix;
+		object_types = armor;
+		screen_name = "Of Lesser Lightray";
+		power = 16;
+
+		[special_defense]
+		{
+			description = "+10% Chance to Cast Lightray on Taking Damage";
+			alteration = alter_special_defense;
+			special_defense = light_ray;
+			value = 10;
+			duration = #infinite;
+			is_permanent = true;
+			is_single_instance = false;
+			special_defense_skrit = world\global\skrits\special_defense.skrit?damage_min=50&damage_max=55&is_lightning=true&effect_script="laser_minor";
+		}
+	}
+
+	[ofminorlightray]
+	{
+		screen_name = "Of Minor Lightray";
+		specializes = oflesserlightray;
+		power = 24;
+
+		[special_defense]
+		{
+			description = "+15% Chance to Cast Lightray on Taking Damage";
+			value = 15;
+			special_defense_skrit = world\global\skrits\special_defense.skrit?damage_min=50&damage_max=55&is_lightning=true&effect_script="laser_minor";
+		}
+	}
+
+	[oflightray]
+	{
+		screen_name = "Of Lightray";
+		specializes = oflesserlightray;
+		power = 32;
+
+		[special_defense]
+		{
+			description = "+20% Chance to Cast Lightray on Taking Damage";
+			value = 20;
+			special_defense_skrit = world\global\skrits\special_defense.skrit?damage_min=50&damage_max=55&is_lightning=true&effect_script="laser_minor";
+		}
+	}
+
+	[ofmajorlightray]
+	{
+		screen_name = "Of Major Lightray";
+		specializes = oflesserlightray;
+		power = 39;
+
+		[special_defense]
+		{
+			description = "+25% Chance to Cast Lightray on Taking Damage";
+			value = 25;
+			special_defense_skrit = world\global\skrits\special_defense.skrit?damage_min=50&damage_max=55&is_lightning=true&effect_script="laser_minor";
+		}
+	}
+
+	[ofgreaterlightray]
+	{
+		screen_name = "Of Greater Lightray";
+		specializes = oflesserlightray;
+		power = 47;
+
+		[special_defense]
+		{
+			description = "+30% Chance to Cast Lightray on Taking Damage";
+			value = 30;
+			special_defense_skrit = world\global\skrits\special_defense.skrit?damage_min=50&damage_max=55&is_lightning=true&effect_script="laser_minor";
+		}
+	}
+
+	//-- ATTACKBACK STARBURST
+	[oflesserstarburst]
+	{
+		type = suffix;
+		object_types = armor;
+		screen_name = "Of Lesser Starburst";
+		power = 17;
+
+		[special_defense]
+		{
+			description = "+10% Chance to Cast Starburst on Taking Damage";
+			alteration = alter_special_defense;
+			special_defense = starburst;
+			value = 10;
+			duration = #infinite;
+			is_permanent = true;
+			is_single_instance = false;
+			special_defense_skrit = world\global\skrits\special_defense.skrit?damage_min=55&damage_max=60&effect_script="energy_ball";
+		}
+	}
+
+	[ofminorstarburst]
+	{
+		screen_name = "Of Minor Starburst";
+		specializes = oflesserstarburst;
+		power = 26;
+
+		[special_defense]
+		{
+			description = "+15% Chance to Cast Starburst on Taking Damage";
+			value = 15;
+			special_defense_skrit = world\global\skrits\special_defense.skrit?damage_min=55&damage_max=60&effect_script="energy_ball";
+		}
+	}
+
+	[ofstarburst]
+	{
+		screen_name = "Of Starburst";
+		specializes = oflesserstarburst;
+		power = 35;
+
+		[special_defense]
+		{
+			description = "+20% Chance to Cast Starburst on Taking Damage";
+			value = 20;
+			special_defense_skrit = world\global\skrits\special_defense.skrit?damage_min=55&damage_max=60&effect_script="energy_ball";
+		}
+	}
+
+	[ofmajorstarburst]
+	{
+		screen_name = "Of Major Starburst";
+		specializes = oflesserstarburst;
+		power = 43;
+
+		[special_defense]
+		{
+			description = "+25% Chance to Cast Starburst on Taking Damage";
+			value = 25;
+			special_defense_skrit = world\global\skrits\special_defense.skrit?damage_min=55&damage_max=60&effect_script="energy_ball";
+		}
+	}
+
+	[ofgreaterstarburst]
+	{
+		screen_name = "Of Greater Starburst";
+		specializes = oflesserstarburst;
+		power = 52;
+
+		[special_defense]
+		{
+			description = "+30% Chance to Cast Starburst on Taking Damage";
+			value = 30;
+			special_defense_skrit = world\global\skrits\special_defense.skrit?damage_min=55&damage_max=60&effect_script="energy_ball";
+		}
+	}
+
+	//-- ATTACKBACK FIREBOMB
+	[oflesserfirebomb]
+	{
+		type = suffix;
+		object_types = armor;
+		screen_name = "Of Lesser Firebomb";
+		power = 19;
+
+		[special_defense]
+		{
+			description = "+10% Chance to Cast Firebomb on Taking Damage";
+			alteration = alter_special_defense;
+			special_defense = firebomb;
+			value = 10;
+			duration = #infinite;
+			is_permanent = true;
+			is_single_instance = false;
+			special_defense_skrit = world\global\skrits\special_defense.skrit?damage_min=60&damage_max=65&effect_script="firebomb"&area_damage_radius=5;
+		}
+	}
+
+	[ofminorfirebomb]
+	{
+		screen_name = "Of Minor Firebomb";
+		specializes = oflesserfirebomb;
+		power = 28;
+
+		[special_defense]
+		{
+			description = "+15% Chance to Cast Firebomb on Taking Damage";
+			value = 15;
+			special_defense_skrit = world\global\skrits\special_defense.skrit?damage_min=60&damage_max=65&effect_script="firebomb"&area_damage_radius=5;
+		}
+	}
+
+	[offirebomb]
+	{
+		screen_name = "Of Firebomb";
+		specializes = oflesserfirebomb;
+		power = 38;
+
+		[special_defense]
+		{
+			description = "+20% Chance to Cast Firebomb on Taking Damage";
+			value = 20;
+			special_defense_skrit = world\global\skrits\special_defense.skrit?damage_min=60&damage_max=65&effect_script="firebomb"&area_damage_radius=5;
+		}
+	}
+
+	[ofmajorfirebomb]
+	{
+		screen_name = "Of Major Firebomb";
+		specializes = oflesserfirebomb;
+		power = 47;
+
+		[special_defense]
+		{
+			description = "+25% Chance to Cast Firebomb on Taking Damage";
+			value = 25;
+			special_defense_skrit = world\global\skrits\special_defense.skrit?damage_min=60&damage_max=65&effect_script="firebomb"&area_damage_radius=5;
+		}
+	}
+
+	[ofgreaterfirebomb]
+	{
+		screen_name = "Of Greater Firebomb";
+		specializes = oflesserfirebomb;
+		power = 56;
+
+		[special_defense]
+		{
+			description = "+30% Chance to Cast Firebomb on Taking Damage";
+			value = 30;
+			special_defense_skrit = world\global\skrits\special_defense.skrit?damage_min=60&damage_max=65&effect_script="firebomb"&area_damage_radius=5;
+		}
+	}
+
+	//-- ATTACKBACK NOVASTRIKE
+	[oflessernovastrike]
+	{
+		type = suffix;
+		object_types = armor;
+		screen_name = "Of Lesser Nova Strike";
+		power = 20;
+
+		[special_defense]
+		{
+			description = "+10% Chance to Cast Novastrike on Taking Damage";
+			alteration = alter_special_defense;
+			special_defense = nova_strike;
+			value = 10;
+			duration = #infinite;
+			is_permanent = true;
+			is_single_instance = false;
+			special_defense_skrit = world\global\skrits\special_defense.skrit?damage_min=65&damage_max=70&effect_script="energy_ball2";
+		}
+	}
+
+	[ofminornovastrike]
+	{
+		screen_name = "Of Minor Nova Strike";
+		specializes = oflessernovastrike;
+		power = 30;
+
+		[special_defense]
+		{
+			description = "+15% Chance to Cast Novastrike on Taking Damage";
+			value = 15;
+			special_defense_skrit = world\global\skrits\special_defense.skrit?damage_min=65&damage_max=70&effect_script="energy_ball2";
+		}
+	}
+
+	[ofnovastrike]
+	{
+		screen_name = "Of Nova Strike";
+		specializes = oflessernovastrike;
+		power = 41;
+
+		[special_defense]
+		{
+			description = "+20% Chance to Cast Novastrike on Taking Damage";
+			value = 20;
+			special_defense_skrit = world\global\skrits\special_defense.skrit?damage_min=65&damage_max=70&effect_script="energy_ball2";
+		}
+	}
+
+	[ofmajornovastrike]
+	{
+		screen_name = "Of Major Nova Strike";
+		specializes = oflessernovastrike;
+		power = 51;
+
+		[special_defense]
+		{
+			description = "+25% Chance to Cast Novastrike on Taking Damage";
+			value = 25;
+			special_defense_skrit = world\global\skrits\special_defense.skrit?damage_min=65&damage_max=70&effect_script="energy_ball2";
+		}
+	}
+
+	[ofgreaternovastrike]
+	{
+		screen_name = "Of Greater Nova Strike";
+		specializes = oflessernovastrike;
+		power = 61;
+
+		[special_defense]
+		{
+			description = "+30% Chance to Cast Novastrike on Taking Damage";
+			value = 30;
+			special_defense_skrit = world\global\skrits\special_defense.skrit?damage_min=65&damage_max=70&effect_script="energy_ball2";
+		}
+	}
+	//END ATTACKBACK OFFENSE-AS-DEFENSE
+
+
+	// TAT 8/15/2003
+	//	Brilliant shows up too often - let's add some more low level rares
+	[feisty]
+	{
+		type		= prefix;
+		screen_name	= "Feisty";
+		special_type	= rare;
+		power		= 4;
+		object_types	= weapon;
+		tooltip_weight  = 2;
+		tooltip_color   = "Rare";
+
+		[acid_chance]
+		{
+			description = "+3% Chance To Acidify And";
+			alteration = alter_custom_damage_chance_melee;
+			custom_damage = acid;
+			value = 3;
+			duration = #infinite;
+			is_permanent = true;
+			is_single_instance = false;
+		}
+		[acid_damage]
+		{
+			description = " Adds 1 to 4 Acid Damage";
+			alteration = alter_custom_damage_melee;
+			max_value = 4;
+			value = 1;
+			custom_damage = acid;
+			duration = #infinite;
+			is_permanent = true;
+			is_single_instance = false;
+			custom_damage_skrit = world\global\skrits\weapon_poison.skrit?duration=4&manager_template="dsx_base_acid_manager";
+		}
+		[health]
+		{
+			alteration			= alter_MAX_LIFE;
+			value				= 14;
+			description			= "Adds 14 to Health";
+			duration			= #infinite;
+			is_permanent		= true;
+			is_single_instance	= false;
+			effect_script_equip	= steal_drip_05_lwt;
+			effect_script_hit	= hit_glow_10_lbl;
+		}
+		[armor]
+		{
+			alteration			= alter_ARMOR;
+			value				= 6;
+			description			= "Adds 6 to Armor";
+			duration			= #infinite;
+			is_permanent		= true;
+			is_single_instance	= false;
+		}
+	}
+	[fierce]
+	{
+		type		= prefix;
+		screen_name	= "Fierce";
+		special_type	= rare;
+		power		= 4;
+		object_types	= weapon,armor,ring,amulet;
+		tooltip_weight  = 2;
+		tooltip_color   = "Rare";
+
+		[melee]
+		{
+			alteration		= alter_MELEE;
+			value			= 1;
+			description		= "Adds 1 to Melee Skill";
+			duration		= #infinite;
+			is_permanent		= true;
+			is_single_instance	= false;
+			effect_script_equip	= stat_flick_05_wt;
+			effect_script_hit	= hit_spark_10_lbl;
+		}
+		[armor]
+		{
+			alteration		= alter_ARMOR;
+			value			= 8;
+			description		= "Adds 8 to Armor";
+			duration		= #infinite;
+			is_permanent		= true;
+			is_single_instance	= false;
+		}
+		[dodge_hit]
+		{
+			alteration		= alter_chance_to_dodge_hit_melee;
+			value			= 2;
+			description		= "+2% Chance to Dodge Melee Attack";
+			duration		= #infinite;
+			is_permanent		= true;
+			is_single_instance	= false;
+		}
+	}
+
+	[therapeutic]
+	{
+		type		= prefix;
+		screen_name	= "Therapeutic";
+		special_type	= rare;
+		power		= 6;
+		object_types	= armor,staff,spellbook,ring,amulet;
+		tooltip_weight  = 2;
+		tooltip_color   = "Rare";
+
+		[nature_magic]
+		{
+			alteration		= alter_NATURE_MAGIC;
+			value			= 1;
+			description		= "Adds 1 to Nature Magic Skill";
+			duration		= #infinite;
+			is_permanent		= true;
+			is_single_instance	= false;
+		}
+		[health]
+		{
+			alteration			= alter_max_life;
+			value				= 17;
+			description			= "Adds 17 to Health";
+			duration			= #infinite;
+			is_permanent		= true;
+			is_single_instance	= false;
+		}
+		[block_nmagic]
+		{
+			alteration			= alter_chance_to_block_nmagic_damage;
+			value				= 3;
+			duration			= #infinite;
+			is_permanent		= true;
+			is_single_instance	= false;
+		}
+		[block_cmagic]
+		{
+			alteration			= alter_chance_to_block_cmagic_damage;
+			value				= 3;
+			description			= "+3% Chance to Block Magic Attacks";
+			duration			= #infinite;
+			is_permanent		= true;
+			is_single_instance	= false;
+			effect_script_equip	= arm_beam_05_lre;
+			effect_script_hit	= hit_spark_10_lre;
+		}
+	}
+	//	There are currently no RARE SUFFIXES in the game.  Let's add some
+	[ofzest]
+	{
+		type			= suffix;
+		screen_name		= "of Zest";
+		special_type	= rare;
+		power		= 4;
+		object_types	= armor,ring,amulet;
+		tooltip_weight  = 2;
+		tooltip_color   = "Rare";
+
+		[special_defense]
+		{
+			description = "+6% Chance to Cast Zap on Taking Damage";
+			alteration = alter_special_defense;
+			special_defense = zap;
+			value = 6;
+			duration = #infinite;
+			is_permanent = true;
+			is_single_instance = false;
+			special_defense_skrit = world\global\skrits\special_defense.skrit?damage_min=5&damage_max=10&is_lightning=true&effect_script="zap";
+		}
+		[reflect]
+		{
+			alteration			= alter_reflect_damage;
+			value				= 1;
+			description			= "1% of Damage Reflected to Enemy";
+			duration			= #infinite;
+			is_permanent		= true;
+			is_single_instance	= false;
+		}
+		[armor]
+		{
+			alteration			= alter_ARMOR;
+			value				= 6;
+			description			= "Adds 6 to Armor";
+			duration			= #infinite;
+			is_permanent		= true;
+			is_single_instance	= false;
+		}
+	}
+	[ofpluck]
+	{
+		type		= suffix;
+		screen_name	= "of Pluck";
+		special_type	= rare;
+		power		= 5;
+		object_types	= armor,ring,amulet;
+		tooltip_weight  = 2;
+		tooltip_color   = "Rare";
+
+		[special_defense]
+		{
+			description = "+5% Chance to Cast Fireshot on Taking Damage";
+			alteration = alter_special_defense;
+			special_defense = fireshot;
+			value = 5;
+			duration = #infinite;
+			is_permanent = true;
+			is_single_instance = false;
+			special_defense_skrit = world\global\skrits\special_defense.skrit?damage_min=10&damage_max=15;
+		}
+		[combat_magic]
+		{
+			alteration		= alter_COMBAT_MAGIC;
+			value			= 1;
+			description		= "Adds 1 to Combat Magic Skill";
+			duration		= #infinite;
+			is_permanent		= true;
+			is_single_instance	= false;
+		}
+		[mana]
+		{
+			alteration			= alter_MAX_MANA;
+			value				= 14;
+			description			= "Adds 14 to Mana";
+			duration			= #infinite;
+			is_permanent		= true;
+			is_single_instance	= false;
+		}
+		[armor]
+		{
+			alteration			= alter_ARMOR;
+			value				= 3;
+			description			= "Adds 3 to Armor";
+			duration			= #infinite;
+			is_permanent		= true;
+			is_single_instance	= false;
+		}
+	}
+	[offerocity]
+	{
+		type		= suffix;
+		screen_name	= "of Ferocity";
+		special_type	= rare;
+		power		= 7;
+		object_types	= weapon,armor,ring,amulet;
+		tooltip_weight  = 2;
+		tooltip_color   = "Rare";
+
+		[strength]
+		{
+			alteration		= alter_strength;
+			value			= 1;
+			description		= "Adds 1 to Strength";
+			duration		= #infinite;
+			is_permanent		= true;
+			is_single_instance	= false;
+			effect_script_equip	= steal_drip_15_ye;
+			effect_script_hit	= hit_chase_15_lor;
+		}
+		[combat_magic]
+		{
+			alteration		= alter_COMBAT_MAGIC;
+			value			= 1;
+			description		= "Adds 1 to Combat Magic Skill";
+			duration		= #infinite;
+			is_permanent		= true;
+			is_single_instance	= false;
+		}
+		[block_damage]
+		{
+			alteration			= alter_block_melee_damage;
+			value				= 2;
+			description			= "Melee Damage Reduced by 2%";
+			duration			= #infinite;
+			is_permanent		= true;
+			is_single_instance	= false;
+		}
+	}
+
+	//// BEGIN SUFFIXES ////
+
+
+
+
+	///////////////////////////////////////////////////////////
+	// $#$ BELOW THIS LINE WILL BE DELETED
+	///////////////////////////////////////////////////////
+
+	// New DSX Imbued Item modifiers
+/*
+	[ofironfist]
+	{
+		type	  = suffix;
+		screen_name   = "of Iron Fist";
+		power	 = 1;
+		object_types	= gloves;
+
+		tooltip_weight  = 2;
+		tooltip_color   = "imbued";
+
+		[*]
+		{
+			duration	= #infinite;
+			is_permanent	= true;
+			is_imbued   = true;
+
+			//min_level = 1;
+			//max_level = 15;
+
+			// copied from spell_iron_fist
+			alteration = alter_strength;
+			description = "Raise Strength by <alter_strength>";
+
+			value = 1;
+
+			// need to have the same state_name
+			state_name = fist;
+			state_desc = "Strengthened";
+
+			effect_script_equip = iron_fist;
+		}
+	}
+
+	[ofrage]
+	{
+		type	  = suffix;
+		screen_name   = "of Rage";
+		power	 = 2;
+		object_types	  = weapon;
+
+		tooltip_weight  = 4;
+		tooltip_color   = "negative";
+
+		[*]
+		{
+			duration	= #infinite;
+			is_permanent	= true;
+			is_imbued   = true;
+
+			min_level = 3;
+			max_level = 26;
+
+			alteration = alter_melee_damage_min;
+			description = "Raise Minimum Damage by <alter_melee_damage_min>";
+			value = ((#uberlevel+10)*0.078);
+
+			state_name = rage;
+			state_desc = "Rage";
+			effect_script_equip = rage;
+		}
+		[*]
+		{
+			duration	  = #infinite;
+			is_permanent	= true;
+			is_imbued	 = true;
+
+			min_level = 3;
+			max_level = 26;
+
+			alteration = alter_melee_damage_max;
+			description = "Raise Maximum Damage by <alter_melee_damage_max>";
+			value = ((#uberlevel+10)*0.14);
+		}
+		[*]
+		{
+			duration	  = #infinite;
+			is_permanent	= true;
+			is_imbued	 = true;
+			is_single_instance  = false;
+
+			min_level = 3;
+			max_level = 26;
+
+			alteration = alter_max_life;
+			description = "Lower max life by <alter_MAX_LIFE>";
+			value = -((#uberlevel+10)*0.009) * #life;
+		}
+	}
+
+	[ofinspiration]
+	{
+		type	  = suffix;
+		screen_name   = "of Inspiration";
+		power	 = 5;
+		object_types	  = body;
+
+		tooltip_weight  = 2;
+		tooltip_color   = "imbued";
+
+		[*]
+		{
+			duration	= #infinite;
+			is_permanent	= true;
+			is_imbued   = true;
+
+			min_level = 45;
+			max_level = 62;
+
+			alteration = alter_intelligence;
+			description = "Increase Intelligence by <alter_intelligence>";
+			value = (#uberlevel*0.05)+1;
+
+			state_name = inspiration;
+			state_desc = "Inspired";
+
+			effect_script_equip = inspiration;
+
+		}
+		[*]
+		{
+			duration	= #infinite;
+			is_permanent	= true;
+			is_imbued   = true;
+
+			alteration = alter_nature_magic;
+			description = "Increase Nature Magic by <alter_nature_magic>";
+			value = 1;
+		}
+		[*]
+		{
+			duration	= #infinite;
+			is_permanent	= true;
+			is_imbued   = true;
+
+			alteration = alter_combat_magic;
+			description = "Increase Combat Magic by <alter_combat_magic>";
+			value = 1;
+		}
+	}
+
+	// Imbued combination enchantments
+
+	// FOX
+	[ofthechargedfox]
+	{
+		specializes = ofchargedfist;
+		screen_name = "of the Charged Fox";
+		power = 2;
+
+		tooltip_weight  = 2;
+		tooltip_color   = "imbued";
+
+		[health]
+		{
+			alteration	  = alter_MAX_LIFE;
+			value	   = 7;
+			description	 = "Adds 7 to Health";
+			duration	  = #infinite;
+			is_permanent	= true;
+			is_single_instance  = false;
+			effect_script_equip = stat_flick_05_gr;
+			effect_script_hit = hit_spark_10_lgr;
+		}
+	}
+
+	[oftheironfox]
+	{
+		specializes = ofironfist;
+		screen_name = "of the Iron Fox";
+		power = 2;
+
+		tooltip_weight  = 2;
+		tooltip_color   = "imbued";
+
+		[health]
+		{
+			alteration	  = alter_MAX_LIFE;
+			value	   = 7;
+			description	 = "Adds 7 to Health";
+			duration	  = #infinite;
+			is_permanent	= true;
+			is_single_instance  = false;
+			effect_script_equip = stat_flick_05_gr;
+			effect_script_hit = hit_spark_10_lgr;
+		}
+	}
+
+	[ofthespiritedfox]
+	{
+		specializes = ofspiritarmor;
+		screen_name = "of the Spirited Fox";
+		power = 5;
+
+		tooltip_weight  = 2;
+		tooltip_color   = "imbued";
+
+		[health]
+		{
+			alteration	  = alter_MAX_LIFE;
+			value	   = 7;
+			description	 = "Adds 7 to Health";
+			duration	  = #infinite;
+			is_permanent	= true;
+			is_single_instance  = false;
+			effect_script_equip = stat_flick_05_gr;
+			effect_script_hit = hit_spark_10_lgr;
+		}
+	}
+
+
+	[oftheenragedfox]
+	{
+		specializes = ofrage;
+		screen_name = "of the Enraged Fox";
+		power = 3;
+
+		tooltip_weight  = 4;
+		tooltip_color   = "negative";
+
+		[health]
+		{
+			alteration	  = alter_MAX_LIFE;
+			value	   = 7;
+			description	 = "Adds 7 to Health";
+			duration	  = #infinite;
+			is_permanent	= true;
+			is_single_instance  = false;
+			effect_script_equip = stat_flick_05_gr;
+			effect_script_hit = hit_spark_10_lgr;
+		}
+	}
+
+	[oftheinspiredfox]
+	{
+		specializes = ofinspiration;
+		screen_name = "of the Inspired Fox";
+		power = 6;
+
+		tooltip_weight  = 2;
+		tooltip_color   = "imbued";
+
+		[health]
+		{
+			alteration	  = alter_MAX_LIFE;
+			value	   = 7;
+			description	 = "Adds 7 to Health";
+			duration	  = #infinite;
+			is_permanent	= true;
+			is_single_instance  = false;
+			effect_script_equip = stat_flick_05_gr;
+			effect_script_hit = hit_spark_10_lgr;
+		}
+	}
+
+	// BADGER
+	[ofthechargedbadger]
+	{
+		specializes = ofchargedfist;
+		screen_name = "of the Charged Badger";
+		power = 3;
+
+		tooltip_weight  = 2;
+		tooltip_color   = "imbued";
+
+		[health]
+		{
+			alteration	  = alter_MAX_LIFE;
+			value	   = 12;
+			description	 = "Adds 12 to Health";
+			duration	  = #infinite;
+			is_permanent	= true;
+			is_single_instance  = false;
+			effect_script_equip = stat_flick_05_gr;
+			effect_script_hit = hit_spark_10_lgr;
+		}
+	}
+
+	[oftheironbadger]
+	{
+		specializes = ofironfist;
+		screen_name = "of the Iron Badger";
+		power = 3;
+
+		tooltip_weight  = 2;
+		tooltip_color   = "imbued";
+
+		[health]
+		{
+			alteration	  = alter_MAX_LIFE;
+			value	   = 12;
+			description	 = "Adds 12 to Health";
+			duration	  = #infinite;
+			is_permanent	= true;
+			is_single_instance  = false;
+			effect_script_equip = stat_flick_05_gr;
+			effect_script_hit = hit_spark_10_lgr;
+		}
+	}
+
+	[ofthespiritedbadger]
+	{
+		specializes = ofspiritarmor;
+		screen_name = "of the Spirited Badger";
+		power = 6;
+
+		tooltip_weight  = 2;
+		tooltip_color   = "imbued";
+
+		[health]
+		{
+			alteration	  = alter_MAX_LIFE;
+			value	   = 12;
+			description	 = "Adds 12 to Health";
+			duration	  = #infinite;
+			is_permanent	= true;
+			is_single_instance  = false;
+			effect_script_equip = stat_flick_05_gr;
+			effect_script_hit = hit_spark_10_lgr;
+		}
+	}
+
+
+	[oftheenragedbadger]
+	{
+		specializes = ofrage;
+		screen_name = "of the Enraged Badger";
+		power = 4;
+
+		tooltip_weight  = 4;
+		tooltip_color   = "negative";
+
+		[health]
+		{
+			alteration	  = alter_MAX_LIFE;
+			value	   = 12;
+			description	 = "Adds 12 to Health";
+			duration	  = #infinite;
+			is_permanent	= true;
+			is_single_instance  = false;
+			effect_script_equip = stat_flick_05_gr;
+			effect_script_hit = hit_spark_10_lgr;
+		}
+	}
+
+	[oftheinspiredbadger]
+	{
+		specializes = ofinspiration;
+		screen_name = "of the Inspired Badger";
+		power = 7;
+
+		tooltip_weight  = 2;
+		tooltip_color   = "imbued";
+
+		[health]
+		{
+			alteration	  = alter_MAX_LIFE;
+			value	   = 12;
+			description	 = "Adds 12 to Health";
+			duration	  = #infinite;
+			is_permanent	= true;
+			is_single_instance  = false;
+			effect_script_equip = stat_flick_05_gr;
+			effect_script_hit = hit_spark_10_lgr;
+		}
+	}
+
+	// TAT - POISON TEST
+	[ofpoison]
+	{
+		type	  = suffix;
+		screen_name   = "of Poison";
+		power	 = 2;
+		object_types	= melee;
+
+		[poison_chance]
+		{
+			alteration	= alter_custom_damage_chance_melee;
+			custom_damage   = poison;
+			value	 = 25;
+			description   = "+25% Chance to Poison and";
+			duration	= #infinite;
+			is_permanent	= true;
+			is_single_instance  = false;
+		}
+		[poison_damage]
+		{
+			alteration	= alter_custom_damage_melee;
+			custom_damage   = poison;
+			value	 = 2;
+			max_value   = 5;
+			description   = "Adds 2 to 5 Poison Damage";
+			duration	= #infinite;
+			is_permanent	= true;
+			is_single_instance  = false;
+			effect_script_equip = dam_poison_7_wh;
+			effect_script_hit = hit_flash_10_lbl;
+			custom_damage_skrit = world\global\skrits\weapon_poison.skrit?duration=12.0;
+		}
+	}
+
+	// Imbued Spellbook Test
+	[flameretardant]
+	{
+		type	= prefix;
+		screen_name = "Flame Retardant";
+		power   = 4;
+		object_types  = spellbook;
+
+		[spell_cost]
+		{
+			alteration	= alter_spell_cost;
+			description   = "Reduces the cost of fire spells in this spell book";
+			imbued_spell_group  = spells_fire;
+			multiply_value	= true;
+			value	   = 0.8;
+		}   
+	} 
+*/
+}
+
+//////////////////////////////////////////////////////////////////////////////
