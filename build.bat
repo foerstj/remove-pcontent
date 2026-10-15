@@ -13,7 +13,12 @@ set copyright=CC-BY-SA %year%
 set author=Johannes Förstner
 set title=%mod_cs%
 
-:: build resource file - enchantments
+:: param
+set mode=%1
+echo %mode%
+
+:: build resource files - enchantments
+:: loa enchantments
 rmdir /S /Q "%tmp%\Bits"
 robocopy "%bits%\world\contentdb" "%tmp%\Bits\world\contentdb" /S pcontent-loa.gas
 pushd "%tmp%\Bits\world\contentdb"
@@ -21,8 +26,33 @@ ren pcontent-loa.gas pcontent.gas
 popd
 "%tc%\RTC.exe" -source "%tmp%\Bits" -out "%ds%\DSLOA\%mod_cs% - LoA enchantments.dsres" -copyright "%copyright%" -title "%title%" -author "%author%"
 if %errorlevel% neq 0 pause
+:: vanilla enchantments
+setlocal EnableDelayedExpansion
+if "%mode%"=="release" (
+  rmdir /S /Q "%tmp%\Bits"
+  robocopy "%bits%\world\contentdb" "%tmp%\Bits\world\contentdb" /S pcontent-vanilla.gas
+  pushd "%tmp%\Bits\world\contentdb"
+  ren pcontent-vanilla.gas pcontent.gas
+  popd
+  "%tc%\RTC.exe" -source "%tmp%\Bits" -out "%ds%\DSLOA\%mod_cs% - Vanilla enchantments.dsres" -copyright "%copyright%" -title "%title%" -author "%author%"
+  if !errorlevel! neq 0 pause
+)
+endlocal
+:: all enchantments
+setlocal EnableDelayedExpansion
+if "%mode%"=="release" (
+  rmdir /S /Q "%tmp%\Bits"
+  robocopy "%bits%\world\contentdb" "%tmp%\Bits\world\contentdb" /S pcontent-all.gas
+  pushd "%tmp%\Bits\world\contentdb"
+  ren pcontent-all.gas pcontent.gas
+  popd
+  "%tc%\RTC.exe" -source "%tmp%\Bits" -out "%ds%\DSLOA\%mod_cs% - All enchantments.dsres" -copyright "%copyright%" -title "%title%" -author "%author%"
+  if !errorlevel! neq 0 pause
+)
+endlocal
 
 :: build resource files - equipments
+:: loa equipments
 rmdir /S /Q "%tmp%\Bits"
 robocopy "%bits%\world\contentdb\templates" "%tmp%\Bits\world\contentdb\templates" /S dsx_amr_*.gas
 "%tc%\RTC.exe" -source "%tmp%\Bits" -out "%ds%\DSLOA\%mod_cs% - LoA equipments - armor.dsres" -copyright "%copyright%" -title "%title%" -author "%author%"
