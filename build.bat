@@ -31,27 +31,15 @@ endlocal
 
 :: build resource files - equipments
 :: loa equipments
-rmdir /S /Q "%tmp%\Bits"
-robocopy "%bits%\world\contentdb\templates" "%tmp%\Bits\world\contentdb\templates" /S dsx_amr_*.gas
-"%tc%\RTC.exe" -source "%tmp%\Bits" -out "%ds%\DSLOA\%mod_cs% - LoA equipments - armor.dsres" -copyright "%copyright%" -title "%title%" -author "%author%"
-if %errorlevel% neq 0 pause
-rmdir /S /Q "%tmp%\Bits"
-robocopy "%bits%\world\contentdb\templates" "%tmp%\Bits\world\contentdb\templates" /S dsx_wpn_*.gas
-"%tc%\RTC.exe" -source "%tmp%\Bits" -out "%ds%\DSLOA\%mod_cs% - LoA equipments - weapons.dsres" -copyright "%copyright%" -title "%title%" -author "%author%"
-if %errorlevel% neq 0 pause
-rmdir /S /Q "%tmp%\Bits"
-robocopy "%bits%\world\contentdb\templates" "%tmp%\Bits\world\contentdb\templates" /S dsx_spl_*.gas
-"%tc%\RTC.exe" -source "%tmp%\Bits" -out "%ds%\DSLOA\%mod_cs% - LoA equipments - spells.dsres" -copyright "%copyright%" -title "%title%" -author "%author%"
-if %errorlevel% neq 0 pause
-rmdir /S /Q "%tmp%\Bits"
-robocopy "%bits%\world\contentdb\templates" "%tmp%\Bits\world\contentdb\templates" /S dsx_set_*.gas
-"%tc%\RTC.exe" -source "%tmp%\Bits" -out "%ds%\DSLOA\%mod_cs% - LoA equipments - set items.dsres" -copyright "%copyright%" -title "%title%" -author "%author%"
-if %errorlevel% neq 0 pause
+call :build_equipments_loa "amr" "armor"
+call :build_equipments_loa "wpn" "weapons"
+call :build_equipments_loa "spl" "spells"
+call :build_equipments_loa "set" "set items"
 :: vanilla equipments
-rmdir /S /Q "%tmp%\Bits"
-robocopy "%bits%\world\contentdb\templates" "%tmp%\Bits\world\contentdb\templates" /S /xf dsx_*.gas
-"%tc%\RTC.exe" -source "%tmp%\Bits" -out "%ds%\DSLOA\%mod_cs% - Vanilla equipments.dsres" -copyright "%copyright%" -title "%title%" -author "%author%"
-if %errorlevel% neq 0 pause
+call :build_equipments_vanilla "amr" "armor"
+call :build_equipments_vanilla "wpn" "weapons"
+call :build_equipments_vanilla "spl" "spells"
+call :build_equipments_vanilla "trs" "misc"
 
 :: Cleanup
 rmdir /S /Q "%tmp%\Bits"
@@ -72,5 +60,27 @@ exit /b %errorlevel%
   ren pcontent-%infix%.gas pcontent.gas
   popd
   "%tc%\RTC.exe" -source "%tmp%\Bits" -out "%ds%\DSLOA\%mod_cs% - %name% enchantments.dsres" -copyright "%copyright%" -title "%title%" -author "%author%"
+  if %errorlevel% neq 0 pause
+exit /b 0
+
+:: build loa equipments file
+:build_equipments_loa
+  set infix=%~1
+  set name=%~2
+  echo build_equipments_loa %infix% %name%
+  rmdir /S /Q "%tmp%\Bits"
+  robocopy "%bits%\world\contentdb\templates" "%tmp%\Bits\world\contentdb\templates" /S "dsx_%infix%_*.gas"
+  "%tc%\RTC.exe" -source "%tmp%\Bits" -out "%ds%\DSLOA\%mod_cs% - LoA equipments - %name%.dsres" -copyright "%copyright%" -title "%title%" -author "%author%"
+  if %errorlevel% neq 0 pause
+exit /b 0
+
+:: build vanilla equipments file
+:build_equipments_vanilla
+  set infix=%~1
+  set name=%~2
+  echo build_equipments_vanilla %infix% %name%
+  rmdir /S /Q "%tmp%\Bits"
+  robocopy "%bits%\world\contentdb\templates" "%tmp%\Bits\world\contentdb\templates" /S "%infix%_*.gas" /xf dsx_*.gas
+  "%tc%\RTC.exe" -source "%tmp%\Bits" -out "%ds%\DSLOA\%mod_cs% - Vanilla equipments - %name%.dsres" -copyright "%copyright%" -title "%title%" -author "%author%"
   if %errorlevel% neq 0 pause
 exit /b 0
