@@ -59,7 +59,7 @@ exit /b %errorlevel%
   pushd "%tmp%\Bits\world\contentdb"
   ren pcontent-%infix%.gas pcontent.gas
   popd
-  "%tc%\RTC.exe" -source "%tmp%\Bits" -out "%ds%\DSLOA\%mod_cs% - %name% enchantments.dsres" -copyright "%copyright%" -title "%title%" -author "%author%"
+  "%tc%\RTC.exe" -source "%tmp%\Bits" -out "%ds%\DSLOA\%mod_cs% - enchantments - %name%.dsres" -copyright "%copyright%" -title "%title%" -author "%author%"
   if %errorlevel% neq 0 pause
 exit /b 0
 
