@@ -1,6 +1,3 @@
-# unmod-loa
+# remove-pcontent
 
-Removes LoA content from the game.
-
-- enchantments: Removes LoA enchantments like imbued items
-- equipments: Removes LoA equipment items from the loot pool like Zaurask / Hassat themed armor and weapons (split into armor, weapons, spells, and set items)
+Removes PContent from the game. This mod lets you remove all items and all enchantments from shops & drops.
